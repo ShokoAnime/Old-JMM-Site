@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Japanesemediamanager.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>JMM Setup</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
+
+          <h1 id="project_title">JMM Installation and Setup</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+
+<h1><a name="Installation" class="anchor" href="#Installation"><span class="octicon octicon-link"></span></a>Installation and Setup</h1>
+
+<p>JMM Server and JMM Desktop are mandatory installs, everything else is optional</p>
+
+<ul>
+<li>
+<strong>Step 1</strong> - Install JMM Server</li>
+<li>
+<strong>Step 2</strong> - Install JMM Desktop</li>
+<li>
+<strong>Step 3</strong> - Install My Anime 3 / Plex Agent / Anime Buddy</li>
+</ul>
+
+<p>NOTE – JMM Server and Desktop include automatic update functionality, and will inform you if an update is available.</p>
+
+<h2><a name="jmm-server" class="anchor" href="#jmm-server"><span class="octicon octicon-link"></span></a>Running JMM Server the First Time</h2>
+
+<p>JMM supports Microsoft SQL Server 2008 (and higher), MySQL and sqlite as the database back-ends. The first time you start JMM Server you will be prompted to select a database</p>
+<p>We recommend that you use SQL server or MySQL instead (especially if you have over 200 series in your collection)</p>
+
+<h3><a name="select-db" class="anchor" href="#select-db"><span class="octicon octicon-link"></span></a>Selecting a Database</h3>
+
+<p>The default is sqlite, which is the easiest to use and doesn’t require any setup from the user. For those who want to better performance you can read more info about <a href="setup_sqlserver.html">SQL Server</a> and <a href="setup_mysql.html">MySQL</a>.</p>
+<p>The links will also give you information on how to install and configure those database services</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/DB_01.JPG" alt="DB01"></p>
+
+<h3><a name="configure" class="anchor" href="#configure"><span class="octicon octicon-link"></span></a>Configuring JMM Server</h3>
+
+<p>After selecting and configuring your database, you should now see extra tabs in JMM Server</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/DB_02.JPG" alt="DB02"></p>
+
+<p>This means you are ready to enter your AniDB and other essential settings.</p>
+<p>The best way is to run ‘JMM Desktop’ and edit your settings there.</p>
+
+
+<h2><a name="jmm-desktop" class="anchor" href="#jmm-desktop"><span class="octicon octicon-link"></span></a>Running JMM Desktop the First Time</h2>
+
+<p>If you are running JMM Desktop on a different machine to JMM Server than you will probably see the following screens.</p>
+<p>Enter the address or name of the machine where JMM Server is running and press the ‘Test and Save’ button.</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/Login_02.jpg" alt="Login02"></p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/Login_03.jpg" alt="Login03"></p>
+
+<p>If it connects successfully (or you are running Desktop and Server on the same machine) you will see the login prompt.</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/Login_01.jpg" alt="Login01"></p>
+
+<p>When your JMM server initially setup your database it created two users. ‘Default’ and ‘Family Friendly’ (both with blank passwords)</p>
+<ul>
+<li>
+<strong>Default</strong> - Has all your content</li>
+<li>
+<strong>Family Friendly</strong> - Has hidden content based on the categories/genres that are not family friendly</li>
+</ul>
+
+<p>You can edit this on the ‘Users’ section of the ‘Settings’ tab.
+Log in and go to the ‘Settings’ tab.
+The ‘Essential’ section is what we are interested at this time.</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/Setup_01.jpg" alt="Setup_01"></p>
+
+<p>Enter your AniDB username and password. If you don’t have an AniDB account you will need to signup.</p>
+<p>Then start adding your Import Folders.<br>
+Basically these are the locations of the videos you want to import (sub folders will be included automatically)<br>
+If JMM Desktop is on a different folder to JMM Server you will need to enter the path as it is on the server, not on the client.<br>
+If you are in this situation the section below on mapping import folders on remote clients.</p>
+<p>At this stage you can either have a look at the other less important settings or go directly to the ‘Server’ tab</p>
+
+<p><img src="http://www.jmediamanager.org/Screenshots/Instructions/Install/Setup_02.jpg" alt="Setup_02"></p>
+
+<p>Press the ‘Run Import’ button to start processing your files.</p>
+<p>This can take a long time depending on how many files you have. However you can go to the ‘Collection’ tab to see the series/episodes/files as they are imported.</p>
+
+<h2><a name="jmm-import" class="anchor" href="#jmm-import"><span class="octicon octicon-link"></span></a>Post Import Completion</h2>
+
+<p>Once you have finished importing your collection, you can optionally choose to download your votes from AniDB</p>
+<p>This is available from the Actions tab on the JMM Server, or the Server tab on JMM Desktop</p>
+
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
