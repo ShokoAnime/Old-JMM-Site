@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Japanesemediamanager.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Japanese Media Manager</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
+
+          <h1 id="project_title">Japanese Media Manager</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>JMM User Manual</h1>
+
+<h2><a name="Permissions" class="anchor" href="#Permissions"><span class="octicon octicon-link"></span></a>Permissions</h2>
+
+<p>JMM Server needs to run in admin mode. You will need to elevate the permissions on start up</p>
+
+<h2><a name="Installation" class="anchor" href="#Installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3><a name="Import Folders" class="anchor" href="#Import Folders"><span class="octicon octicon-link"></span></a>Import Folders</h3>
+
+<p>Import folders are the the base locations where you keep your anime. You will need to add at least one folder before you can start cataloguing your collection</p>
+<p>If you plan to run clients such as JMM Desktop or MyAnime3, you will also need to share out these folders on your network</p>
+<p>Each Import Folder has a few options available</p>
+
+<ul>
+<li><strong>Drop Source</strong> - If you put any files here they will be moved to either the Drop Destination or an existing folder. If you have files for that series, they will be moved to that existing folder. If it is the first file in a new series, a folder will be created in the Drop Destination and moved there.</li>
+<li><strong>Drop Destination</strong> - Files for new series will be moved here. You can have only one folder as the Drop destination</li>
+<li><strong>Watch For New Files</strong> - If selected JMM Server will detect when new files ase added to this folder, and automatically add them to your collection</li>
+</ul>
+
+<h2><a name="Initial Import" class="anchor" href="#Initial Import"><span class="octicon octicon-link"></span></a>Initial Import</h2>
+
+<h3><a name="How long will it take?" class="anchor" href="#How long will it take?"><span class="octicon octicon-link"></span></a>How long will it take?</h3>
+
+<p>Because JMM needs to hash all your files, a lot will depend on your hard drive and processor speed.</p>
+<p>On average though it will take about 1 hour to process 80GB</p>
+
+<p><strong>Hashing benchmarks on External USB 2.0 Drive</strong><br/>
+File Size: 520MB</p>
+
+<p><strong>Using Hasher.dll</strong><br/>
+ED2k Hash only = 18 seconds <br/>
+ED2k+CRC32+MD5+SH1 = 24 seconds</p>
+
+<p><strong>NOT Using Hasher.dll</strong><br/>
+ED2k Hash only = 20 seconds <br/>
+ED2k+CRC32+MD5+SH1 = 28 seconds</p>
+
+
+<p><strong>Hashing benchmarks on Internal Drive</strong><br/>
+File Size: 520MB</p>
+
+<p><strong>Using Hasher.dll</strong><br/>
+ED2k Hash only = 6 seconds<br/>
+ED2k+CRC32+MD5+SH1 = 24 seconds</p>
+
+<p><strong>NOT Using Hasher.dll</strong><br/>
+ED2k Hash only = 20 seconds<br/>
+ED2k+CRC32+MD5+SH1 = 28 seconds</p>
+
+<h2><a name="Options" class="anchor" href="#Options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h3><a name="AniDB" class="anchor" href="#AniDB"><span class="octicon octicon-link"></span></a>AniDB</h3>
+
+<h4><a name="Automatically download related anime" class="anchor" href="#Automatically download related anime"><span class="octicon octicon-link"></span></a>Automatically download related anime</h4>
+
+<p>When selected this option will automatically download information about any related anime for series that you have.<br/>
+For example, when importing a file from Naruto, it will also download any informations abou sequels and movies<br/>
+This option is required if you want OMM Server to correctly group related series together.</p>
+
+<h4><a name="MyList Options" class="anchor" href="#MyList Options"><span class="octicon octicon-link"></span></a>MyList Options</h4>
+
+<p>MyList options relate to how file entries are stored on AniDB.</p>
+
+<ul>
+<li><strong>Add Files</strong> - If selected, whenever you add a file to your collection, the information will also be added to AniDB</li>
+<li><strong>MyList Sync and Import Options</strong> - These two options relate to what actions to take whenever a MyList sync is performed or during an import of new files. For example - if you have previously added the file to AniDB, and then import it, these options allow you to control what state the files are set to in your local collection.</li>
+<li><strong>Local Actions</strong> - Local actions refer to what happens when you manually mark a file/episode as watched using JMM Client or other clients such as MyAnime3. By selecting both you can keep your local collection in sync with your AniDB collection</li>
+</ul>
+
+<h3><a name="Web Cache" class="anchor" href="#Web Cache"><span class="octicon octicon-link"></span></a>Web Cache</h3>
+
+<p>The web cache is an online server which stores data which can help you manage your anime collection. The main goal of this is to store information which is not stored by places like AniDB and TheTvDB.</p>
+
+<h4><a name="Stay Anonymous" class="anchor" href="#Stay Anonymous"><span class="octicon octicon-link"></span></a>Stay Anonymous</h4>
+
+<p>For some of the web cache options your AniDB username will be submitted to the web cache, and consequently used in retrieval of data from the web cache. This allow you to retain your own preferences in the case that you ever need to import your database again.</p>
+<p>If you don't want this to happen you can select this option and your username will not be used for the web cache. This means you will get best matches from the web cache instead of what you have selected yourself.</p>
+
+<h4><a name="Hashes from file names - GET" class="anchor" href="#Hashes from file names - GET"><span class="octicon octicon-link"></span></a>Hashes from file names - GET</h4>
+
+<p>The way JMM typically works is by calculating an ED2K hash on each file in your collection. It then uses this unique hash to find the right file information on AniDB and build your database.</p>
+<p>However this process can take quite a long time, especially if you are sharing files across a network</p>
+<p>Turning this option ON will instead look up the web cache based on a combination of file name and file size. If a hash is found there it will use this instead of hashing the file directly</p>
+<p>This can save a significant amount of time, especially if you have not renamed your files</p>
+
+<h4><a name="Hashes from file names - SEND" class="anchor" href="#Hashes from file names - SEND"><span class="octicon octicon-link"></span></a>Hashes from file names - SEND</h4>
+
+<p>This complements the above option. If you hash a file and successfully match it on AniDB, that data will be submitted to the web cache</p>
+<p>This will help out other JMM users, and potentially help you out in the future if you lose your database and need to do an import again</p>
+
+<h4><a name="Manual file to episode associations - GET / SEND" class="anchor" href="#Manual file to episode associations - GET / SEND"><span class="octicon octicon-link"></span></a>Manual file to episode associations - GET / SEND</h4>
+
+<p>Sometimes you will have files in your collection that are not on AniDB. This can is usually because you have encoded them yourself or various other reasons.</p>
+<p>JMM allows you to manually associate these files against an anime and specific episode</p>
+<p>However if you lose your database or decide to start from scratch, all these associations will be lost and you will need to do them again</p>
+<p>By turning on this option you can submit these details to the web cache and the import process will automatically pick them up for you.</p>
+<p>NOTE - this process is quite specific to each user, so the options will be disabled if you have selected to remain anonymous.</p>
+
+<h4><a name="AniDB to TvDB associations - GET / SEND" class="anchor" href="#AniDB to TvDB associations - GET / SEND"><span class="octicon octicon-link"></span></a>AniDB to TvDB associations - GET / SEND</h4>
+
+<p>AniDB is great for information about everything anime. It also has artwork for anime posters, characters, creators etc.</p>
+<p>TheTvDB doesn't have much information about anime but it does have great fanart, banners and multiple series posters.</p>
+<p>We want to get information/media from both of these sources but neither AniDB or TheTvDB has links to each other</p>
+<p>So the web cache fills that gap by creating a cross reference between the two</p>
+<p>In JMM you can select an anime from AniDB and associate it with a series/season on TheTvDB. This information is then submitted to the web cache to make it easier for the next user.</p>
+
+
+
+
+
+
+
+
+	  
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
