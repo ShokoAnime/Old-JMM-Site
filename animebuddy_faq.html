@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Japanesemediamanager.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Anime Buddy</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
+
+          <h1 id="project_title">Anime Buddy</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>Frequently Asked Questions</h1>
+
+<h2><a name="JMM Server" class="anchor" href="#JMM Server"><span class="octicon octicon-link"></span></a>JMM Server</h2>
+
+<h3><a name="internet" class="anchor" href="#internet"><span class="octicon octicon-link"></span></a>Can Anime Buddy connect to JMM Server over the internet?</h3>
+
+<p>Yes, all aspects of Anime Buddy will work over the internet.</p>
+<p>Note that images are quite large, and initially loading them can take a quite a while over a slow connection</p>
+<p>Downloading of episode files will also work since the files are transferred via JMM server rather than directly accessing the local network</p>
+
+<h3><a name="Responding" class="anchor" href="#Responding"><span class="octicon octicon-link"></span></a>JMM Server Not Responding Errors</h3>
+
+<p>You may get an error when trying to connect to JMM Server along the lines of </p>
+<p>JMM Server is not responding.. </p>
+<p>Possible issues</p>
+
+<ul>
+<li>1. JMM Server is not running</li>
+<li>2. You have not entered the JMM Server details correctly</li>
+<li>3. Loopback issues when trying to connect Anime Buddy to JMM server on the same machine</li>
+</ul>
+
+<p>In regards to #3, this is a common issue where Metro applications are forbidden from sending network traffic to the local machine. You can over-ride this (and get a full explanation) from the following page <br/>
+<a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx">Windows 8 - Apps enable loopback network isolation </a></p>
+
+<p>Simply install the loopback utility and add Anime Buddy as an exemption</p>
+
+<h2><a name="Playing" class="anchor" href="#Playing"><span class="octicon octicon-link"></span></a>Playing an episode/video</h2>
+
+<p>To play an episode in Anime Buddy, it first downloads the file to your local folders. The reason for this is that Windows Store apps are not allowed to access the network, or local machine folders without manually using the File Picker.</p>
+<p>The file is downloaded into your temporary folder, and you can play it again later.</p>
+<p>You can also delete the temp file after you have finished watching it, or delete all temp files from the options charm</p>
+
+<h2><a name="episode" class="anchor" href="#episode"><span class="octicon octicon-link"></span></a>Why won't the episode play?</h2>
+
+<p>If you are on a Windows RT machine, you can only play videos which are supported by Windows Store apps. At the time of writing the Video app only supports avi/xvid files.</p>
+<p>We recommend trying the VLC app</p>
+
+<p>If you are on Windows 8 Pro, you can also download desktops apps like Media Player Classic, VLC, PotPlayer etc which will allow you to play most files.</p>
+
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
