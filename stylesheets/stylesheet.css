@@ -323,6 +323,25 @@ Full-Width Styles
   background: url('../images/icon_download.png') no-repeat 0% 90%;
 }
 
+.jmmdesktop{ 
+  color: #008080;
+  font-weight: bold;
+}
+
+.jmmserver{ 
+  color: #003366;
+  font-weight: bold;
+}
+
+.plex{ 
+  color: #880000;
+  font-weight: bold;
+}
+
+.ma3{ 
+  font-weight: bold;
+}
+
 .zip_download_link {
   display: block;
   float: right;
@@ -350,6 +369,19 @@ Full-Width Styles
 
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
+}
+
+.zip_download_link_jmm {
+  display: block;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom left;
+}
+
+.zip_download_link_jmm:hover {
+  background: url(../images/sprite_download.png) no-repeat top left;
 }
 
 #main_content_wrap {

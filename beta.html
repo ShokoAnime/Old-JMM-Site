@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Japanesemediamanager.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Japanese Media Manager</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
+
+          <h1 id="project_title">Japanese Media Manager</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>JMM betas</h1>
+
+<h2><a name="Notes" class="anchor" href="#Notes"><span class="octicon octicon-link"></span></a>Important Notes</h2>
+
+<p>This beta page will be updated regularly to include all the latest changes from the GitHub source. However please use this at your own risk, as some of the changes are still being tested</p>
+<p>The last official release was <strong>3.1.32</strong></p>
+
+<p>Breaking changes</p>
+<ul>
+<li>.NET Framework 4.5 is now required - <a href="https://github.com/japanesemediamanager">Download from Microsoft</a></li>
+<li>JMM Server config file needs changes. JMM Server will crash if you try to run it without fixing first. I have included a 'ConfigFixer' app as part of the download package</li>
+</ul>
+
+<p>Full package 3.4.1.0</p>
+<p><span><a class=zip_download_link_jmm href="http://www.jmediamanager.org/latestdownloads/beta/3.4.1.0.zip">Download</a></span></p>
+<p><em>Note - The beta does includes the auto updater, so you will be able to get future updates without coming to this page</em></p>
+
+<h2><a name="Changelog" class="anchor" href="#Changelog"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<h3><a name="3.4.1.0" class="anchor" href="#3.4.0.0"><span class="octicon octicon-link"></span></a>Version 3.4.0.0</h3>
+
+<ul>
+<li><span class=jmmdesktop>JMM Desktop</span> - Fixing most of the crashing that occurred while in the Dashboard</li>
+<li><span class=jmmserver>JMM Server</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/81">#81</a> - Reduce PING frequency to AniDB</li>
+<li><span class=jmmserver>JMM Server</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/82">#82</a> - Updated command gets stuck in a loop when the Web Cache has errors</li>
+<li><span class=plex>Plex</span> - Fixed bug in Date Serialization (Broke Android version)</li>
+<li><span class=jmmserver>JMM Server</span> - Updated SQLite libraries to .NET 4.5</li>
+<li><span class=jmmserver>JMM Server</span> - Adding caching to group retrievals. (Group retrievals are blazing fast now)</li>
+<li><span class=plex>Plex</span> - Fixed About Requester bug</li>
+<li><span class=plex>Plex</span> - SmartTV Support. (There is some limitation on embedded subtitles)</li>
+<li><span class=plex>Plex</span> - Updated back framework from 3.5 to 4.5. httplistener seems to be bandwidth limited on external ips, on 3.5.</li>
+<li><span class=plex>Plex</span> - Updated mediainfo.dll to the lastest version 0.7.67.0</li>
+<li><span class=plex>Plex</span> - Issue #473</li>
+<li><span class=plex>Plex</span> - Added support for Plex Media Server</li>
+<li><span class=plex>Plex</span> - Upgraded mediainfo.dll to latest version.</li>
+<li><span class=plex>Plex</span> - Added support to Plex Home Theater. (Direct Play, support for HEAD and OPTIONS verb in http, ip redirection)</li>
+<li><span class=plex>Plex</span> - Added Support for Http Range to File Streaming.</li>
+</ul>
+
+
+	  
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
