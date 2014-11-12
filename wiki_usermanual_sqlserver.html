@@ -33,9 +33,38 @@
 <h2><a name="Contents" class="anchor" href="#Contents"><span class="octicon octicon-link"></span></a>Contents</h2>
 
 <a href="#Backups">1. Backing up your databases</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BackupBackup">a. Take a Backup</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#BackupRestore">b. Restore from a Backup</a><br/>
 <a href="#MigrateGroupFilters">2. Migrating Group Filters from one database to another</a><br/>
 
 <h2><a name="Backups" class="anchor" href="#Backups"><span class="octicon octicon-link"></span></a>Backing up your databases</h2>
+
+<h3><a name="BackupBackup" class="anchor" href="#BackupBackup"><span class="octicon octicon-link"></span></a>Take a Backup</h3>
+
+<p>Open SQL Server Management Studio, and expand the database list</p>
+<p>Make sure JMM Server is NOT running</p>
+
+<p>Right click on your database and select the following menu options</p>
+
+<p><img src="screens/sql/sql09.jpg"></p>
+
+<p>Simply select the name and location of the backup and then press the OK button</p>
+
+<p><img src="screens/sql/sql10.jpg"></p>
+
+<h3><a name="BackupRestore" class="anchor" href="#BackupRestore"><span class="octicon octicon-link"></span></a>Restore from a Backup</h3>
+
+<p>The easiest way to restore, is to first delete any existing database that you want to over-write (Right click -> Delete)</p>
+<p>Then select the following options to Restore from your backup<p/>
+
+<p><img src="screens/sql/sql11.jpg"></p>
+
+<p>In the below options, you can choose to change the database name if you like</p>
+<p>In <strong>From Device</strong> select the backup you created earlier</p>
+
+<p><img src="screens/sql/sql12.jpg"></p>
+
+<p>Press the OK button, and the restore will be complete</p>
 
 <h2><a name="MigrateGroupFilters" class="anchor" href="#MigrateGroupFilters"><span class="octicon octicon-link"></span></a>Migrating Group Filters from one database to another</h2>
 		
