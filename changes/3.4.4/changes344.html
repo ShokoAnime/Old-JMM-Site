@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Japanesemediamanager.github.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>Japanese Media Manager</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
+
+          <h1 id="project_title">Japanese Media Manager</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>Changes in 3.4.4</h1>
+
+<h2><a name="Metro" class="anchor" href="#Metro"><span class="octicon octicon-link"></span></a>Metro Dashboard</h2>
+
+<p><img src="Series01_Labelled.jpg"></p>
+
+<p>The series display in the Metro dashboard has received a few small tweaks</p>
+<ul>
+<li>1 - A button has been added to refresh this series</li>
+<li>2 - The previous episode you watch is now shown, so you can re-watch it easily, or just in case you accidentally marked it as watched</li>
+<li>3 - The next episode to watch is highlighted and shows a few more details than other episodes</li>
+
+</ul>
+
+<h2><a name="Trakt" class="anchor" href="#Trakt"><span class="octicon octicon-link"></span></a>Trakt</h2>
+
+<p>The major focus of this release has been adding support for Version 2.0 of the Trakt API. For the last 6-9 months this has been broken in JMM</p>
+<p>Most of this is invisible to the user, but a few things will be different and are detailed below</p>
+
+<p><img src="Trakt_Settings.jpg"></p>
+
+<p>Trakt now uses OAuth to verify your credentials, and you are no longer required to enter your login/password into JMM</p>
+<p>Once Trakt is enabled, simply click on the "Get PIN" link, and this will re-direct you to the Trakt website, and you will given a temporary PIN as shown below</p>
+
+<p><img src="Trakt_Settings02.jpg"></p>
+
+<p>Copy and paste this PIN into the text box in JMM Desktop, and then hit "Authorize JMM". At this point JMM stores a token which it can use to start sending data to Trakt.</p>
+
+<p>Since Trakt has not been working for such a long time, you will probably find that a lot of your Trakt data is not valid anymore.</p>
+<p>A new utility has been added to help fix this data</p>
+
+<p><img src="CommTrakt1.jpg"></p>
+
+<p>Step 1 - Select the first 2 check boxes and Press Start. This will check with Trakt that your exist data is correct, if it is not it will be removed from your local database</p>
+<p>NOTE - This can take quite a while depending on the number of series you have. It also has the benefit of updating your existing data.</p>
+
+<p>Step 2 - Un-check the first 2 check boxes and select the third "Check if my links are different from Community Recommendations". This will check the links you have selected against what the admins have selected as the correct links</p>
+
+<p>You can then filter the list to see what series are missing a link entirely or differ from the recommendation.</p>
+
+<p><img src="CommTrakt2.jpg"></p>
+
+<p>From here you can open the series to fix the data manually</p>
+
+<p><img src="CommTrakt3.jpg"></p>
+
+<p>Click on the button to search, and it will show you the community recommendation, and you can use this instead</p>
+
+<p><img src="CommTrakt4.jpg"></p>
+
+<p>You can now see Trakt comments on the regular series view</p>
+
+<p><img src="SeriesComments.jpg"></p>
+
+<h2><a name="Other" class="anchor" href="#Other"><span class="octicon octicon-link"></span></a>Other</h2>
+
+
+
+
+	  </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
