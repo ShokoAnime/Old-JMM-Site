@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>SQL Server</title>
+    <title>SQL Server Setup</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
 
-          <h1 id="project_title">SQL Server</h1>
+          <h1 id="project_title">SQL Server Setup</h1>
           <h2 id="project_tagline"></h2>
 
         </header>
@@ -28,11 +28,42 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>SQL Server Setup</h1>
-
-<p>Placeholder</p>
-
-<p><a href="wiki_usermanual_sqlserver.html">SQL Server FAQ</a></p>
+<a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>SQL Server Setup        </h1>
+        <p>JMM supports Microsoft SQL Server 2008, and we   recommend it (or MySQL) for users who have large collections or just   want the fastest possible performance.</p>
+        <h2>Why SQL Server Over MySQL </h2>
+        <p>If your collection contains more than 200 series, performance wise your better off using either SQL Server or MySQL. While SQLite is a one click setup single file, it's not designed to handle a database that size.        </p>
+        <p>Some of the differences between SQL Server and SQLite</p>
+        <ul>
+          <li>SQL Server is more powerful but will use more memory than SQLite.</li>
+          <li>SQLite does not handle multiple operations as well as SQL Server. </li>
+          <li>Using SQLite and running any kind of tasks in JMM Server will cause considerable and noticeable slowdowns  in JMM   Desktop, My Anime 3, or Plex Agent when running them at the same time.</li>
+        </ul>
+        <p>SQL Server should only be used by advanced users. We recommend <a href="setup_mysql" target="new"><strong>MySQL</strong></a> for users looks for a performance boost without a complicated setup. </p>
+        <h2>Download</h2>
+        <p>SQL Server 2008 Express is free can be downloaded from the following <a href="http://www.microsoft.com/download/en/details.aspx?id=27597" target="_blank"><strong>link</strong></a></p>
+        <h2>Install</h2>
+        <p>Start the Installer and then go to the <strong>Installation</strong> section.<br>
+          From there click on <strong>New SQL server standalone installation…</strong></p>
+        <p><a href="screens/sql/mssql_01.jpg" target="new"><img src="screens/sql/mssql_01_sm.jpg" alt="" title="mssql_01" ></a></p>
+        <p>The installer will check for setup dependencies. If you receive no errors click<strong> OK </strong>to continue, if you do receive any errors you must fix them first before proceeding on. </p>
+        <p><a href="screens/sql/mssql_02.jpg" target="new"><img src="screens/sql/mssql_02_sm.jpg" alt="" title="mssql_02" ></a></p>
+        <p>Follow the instructions and proceed through the product key and license page. Click the <strong>Install</strong> button on the <strong>Setup Support Files </strong>section.        </p>
+        <p><a href="screens/sql/mssql_03.jpg" target="new"><img src="screens/sql/mssql_03_sm.jpg" alt="" title="mssql_03" ></a></p>
+        <p>Once complete, select the following options. </p>
+        <p><a href="screens/sql/mssql_04.jpg" target="new"><img src="screens/sql/mssql_04_sm.jpg" alt="" title="mssql_04" ></a></p>
+        <p><a href="screens/sql/mssql_05.jpg" target="new"><img src="screens/sql/mssql_05_sm.jpg" alt="" title="mssql_05" ></a></p>
+        <p><a href="screens/sql/mssql_06.jpg" target="new"><img src="screens/sql/mssql_06_sm.jpg" alt="" title="mssql_06" ></a></a></p>
+        <p>In the <strong>Database Engine Configuration</strong> you will have the option of setting the Administrator password. If you already know how to set up users in SQL Server you can miss this step. Otherwise select <strong>Mixed Mode</strong> and enter a password. The username for this password is <strong>sa </strong>as this is the Username and Password for JMM Server setup.<br>
+        </p>
+        <p>Make sure you press the <strong>Add Current Use</strong>r button.</p>
+        <p><a href="screens/sql/mssql_07.jpg" target="new"><img src="screens/sql/mssql_07_sm.jpg" alt="" title="mssql_07" ></a></p>
+        <p>From here you can click through on the <strong>Next</strong> button to finish the installation.</p>
+        <h2>Run JMM Server Setup</h2>
+        <p>If you are running JMM Server for the first time it will prompt you to select a database type. Otherwise you can go to the setup tab and enter your details there. Enter all your details from above and press the <strong>Save and Start Server</strong> button.</p>
+        <p>Th server name will be <strong>localhost</strong> if you are running JMM Server on the same machine as SQL Server. Alternatively you can enter the name of the server yourself, or press the <strong>Refresh </strong>button to get a list of machines running SQL Server on your local network.</p>
+        <p><a href="screens/sql/mssql_08.jpg" target="new"><img src="screens/sql/mssql_08.jpg" alt="" title="mssql_08" ></a></p>
+        <p>Once this is successful, you can go to the <strong>Import Folders</strong> tab and start adding your collection</p>
+        <p><a href="wiki_usermanual_sqlserver.html"><strong>SQL Server FAQ</strong></a></p>
 
 	  </section>
     </div>
