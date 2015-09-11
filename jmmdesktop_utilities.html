@@ -62,9 +62,7 @@
         <strong>Logs</strong> - Opens your log folder, useful if you have a lot of unrecognized files and want more information on why.        </p>
         <h3><a name="Linking Files" class="anchor" href="#Linking Files"><span class="octicon octicon-link"></span></a>Linking Your Unrecognized Files        </h3>
         <p>You have a number of options when linking files to an episode</p>
-        <p>If you select one file, you can then select a single episode from the episode drop down list. You can also optionally select an episode range. This is used when you have one file that covers multiple episodes</p>
-        <p>You can also select multiple files. After doing this you would usually select an episode range. For example, select 20 files and then assign episode 1 - 20</p>
-        <p>You can also just select one episode. This is needed for episodes that are split across multiple files        </p>
+        <p>If you select one file, you can then select a single episode from the episode drop down list. You can also optionally select an episode range which is used when you have one file that covers multiple episode. You can also select multiple file followed by selecting the episode range. For example, select 20 files and then assign episode 1 - 20. You can also just select one episode for episodes that are split across multiple files        </p>
         <h2><a name="utilities-ignored" class="anchor" href="#utilities-ignored"><span class="octicon octicon-link"></span></a>Ignored</h2>
         <p>&nbsp;</p>
         <h2><a name="utilities-manuallylinked" class="anchor" href="#utilities-manuallylinked"><span class="octicon octicon-link"></span></a>Manually Linked</h2>
@@ -543,7 +541,24 @@ DO ADD '%sna'</code></pre>
         <h2><a name="utilities-updateanidbdata" class="anchor" href="#utilities-updateanidbdata"><span class="octicon octicon-link"></span></a>Update AniDB Data</h2>
         <p>&nbsp;</p>
         <h2><a name="utilities-communitydata" class="anchor" href="#utilities-communitydata"><span class="octicon octicon-link"></span></a>Community Data</h2>
-        <p>&nbsp;</p>
+        <p>The Community Data section allows you to compare your community links against JMM's user submitted and approved community links.  JMM Desktop currently supports comparing your Trakt and TvDB community links against the JMM community links.</p>
+        <p>A detailed explanation of community links can be found <strong><a href="faq.html#faq-communityrecommendations" target="new">here</a></strong>.</p>
+        <p><a href="screens/jmmdesktop/JMMD_Community_Data_01.png" target="new"><img src="screens/jmmdesktop/JMMD_Community_Data_01_sm.png" alt="JMM Desktop - Community Data 01"/></a></p>
+        <p><strong>Trakt Only<br>
+        Check my links are still valid on Trakt</strong> - Will check your links to make sure they are still accurate on Trakt.<br>
+        <strong>Automatically remove bad information from the database</strong> - Will remove any outdated information from your collection and Trakt. </p>
+        <p><strong>Global<br>
+        Check 
+      if my links are different from the community recommendations</strong> - Will check your community links (TvDB) against JMM's community links and display any series that do not match.<br>
+        <strong>Stop after finding this many problems</strong> - Will stop  searching for errors once JMM Desktop reaches the number you've entered. Default value is <strong>50</strong>.</p>
+        <p><a href="screens/jmmdesktop/JMMD_Community_Data_02.png" target="new"><img src="screens/jmmdesktop/JMMD_Community_Data_02_sm.png" alt="JMM Desktop - Community Data 02"/></a></p>
+        <p><strong>Filter</strong> <strong>Options</strong><br>
+          <strong>All</strong> - Will show all found problems. <br>
+          <strong>Missing A Link</strong> - Will only show series that do not have a valid Trakt link on your side. <br>
+        <strong>Link is Different to Approved Link</strong> - Will only show series that don't match up with JMM's Community Recommendation link.</p>
+        <p><strong>Reading The Results</strong><br>
+          In the example image, the series <strong>11 Eyes</strong> does not have a Trakt link. Because there is no Trakt link, JMM Desktop can not confirm if the Trakt link is valid which is why the<strong> Valid Trakt Link</strong> indicator is neither red or green. The <strong>Community Link</strong> being green does not mean the link is correct, it means your <strong>Community Link</strong> (TvDB) is different than the approved community recommended link. In this case a red indicator would mean the <strong>Community Link</strong> (TvDB) is correct as we are comparing Trakt TV link to the <strong>Community Link</strong> (TvDB). If you use the community recommended link and refresh the series it will show a red indicator under <strong>Links Match?</strong> which tells you the  <strong>Community Link</strong> (TvDB) is correct but does not match the Trakt link. <br>
+        </p>
         <h2><a name="utilities-myvotes" class="anchor" href="#utilities-myvotes"><span class="octicon octicon-link"></span></a>My Votes</h2>
         <p>&nbsp;</p>
         <h2><a name="utilities-logs" class="anchor" href="#utilities-logs"><span class="octicon octicon-link"></span></a>Logs</h2>
