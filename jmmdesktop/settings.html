@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
++
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Settings Tab</strong></li>
+      <li><a href="#essential">Essential</a></li>
+      <li><a href="#anidb">AniDB</a></li>
+      <li><a href="#community-sites">Community Sites</a></li>
+      <li><a href="#web-cache">Web Cache</a></li>
+      <li><a href="#display">Display</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#video-player">Video Player</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <h2 id="latest-downloads">Settings Tab</h2>
+      <p>&nbsp;</p>
+      <span class="anchor" id="essential"></span>
+      <h3>Essential</h3>
+      <p>&nbsp;</p>
+      <span class="anchor" id="anidb"></span>
+      <h3>AniDB</h3>
+      <p> </p>
+      <span class="anchor" id="community-sites"></span>
+      <h3>Community Sites</h3>
+      <p>JMM supports linking to other sites for importing and exporting data. By design, JMM uses AniDB for almost all anime related data but also uses TvDB for images and episode information. Additionally a Trakt.TV and/or a My Anime List account can be linked to sync watch status and rating among other things. The Movie DB is also used for pulling information for Movies but is not fully supported at this time. </p>
+      <p><a href="../images/jmmdesktop/settings-community-sites.png" data-lightbox="settings-community-sites" data-title="JMM Desktop - Settings - Community Sites"><img src="../images/jmmdesktop/settings-community-sites.png" alt="JMM Desktop - Settings - Community Sites"/></a></p>
+      <div id="tab-01">
+        <ul>
+          <li><a href="#tvdb">The TvDB</a></li>
+          <li><a href="#tmdb">The Movie DB</a></li>
+          <li><a href="#trakt">Trakt TV</a></li>
+          <li><a href="#mal">My Anime List</a></li>
+        </ul>
+        <div id="tvdb">
+          <p>Tab 1</p>
+        </div>
+        <div id="tmdb">
+          <p>Tab 2</p>
+        </div>
+        <div id="trakt">
+          <p>Tab 3</p>
+        </div>
+        <div id="mal">
+          <p>Tab 4</p>
+        </div>
+      </div>
+      <span class="anchor" id="web-cache"></span>
+      <h3>Web Cache</h3>
+      <p> </p>
+      <span class="anchor" id="display"></span>
+      <h3>Display</h3>
+      <p> </p>
+      <span class="anchor" id="users"></span>
+      <h3>Users</h3>
+      <p> </p>
+      <span class="anchor" id="video-player"></span>
+      <h3>Video Player</h3>
+      <p>JMM Desktop provides basic video player support for Media Player Classic, PotPlayer and VLC allowing certain functions to be monitored by JMM. If the media player you use is not listed below, you can <a href="https://github.com/japanesemediamanager/jmmclient/issues">request</a> that it be added in a future update.</p>
+      <span class="anchor" id="mpc"></span>
+      <h3>Media Player Classic</h3>
+      <h4>Functionality Supported</h4>
+      <ul>
+        <li>Play files</li>
+        <li>Playlist support</li>
+        <li>Automatically mark episodes watched when a certain % is watched</li>
+      </ul>
+      <p>Depending on your version of MPC, you should enable the following options.</p>
+      <p><a href="../images/general/mpc-01.jpg" data-lightbox="mpc-01" data-title="Media Player Classic - 01"><img src="../images/general/mpc-01.jpg" alt="Media Player Classic - 01"></a></p>
+      <span class="anchor" id="pot-player"></span>
+      <h3>Pot Player</h3>
+      <h4>Functionality Supported</h4>
+      <ul>
+        <li>Play files</li>
+        <li>Playlist support</li>
+        <li>Automatically mark episodes watched when a certain % is watched</li>
+      </ul>
+      <p>You should enable the following settings.</p>
+      <p><a href="../images/general/pot-player-01.jpg" data-lightbox="pot-player-01" data-title="Pot Player - 01"><img src="../images/general/pot-player-01.jpg" alt="Pot Player - 01"></a></p>
+      <p><a href="../images/general/pot-player-02.jpg" data-lightbox="pot-player-02" data-title="Pot Player - 02"><img src="../images/general/pot-player-02.jpg" alt="Pot Player - 02"></a></p>
+      <span class="anchor" id="vlc"></span>
+      <h3>VLC</h3>
+      <h4>Functionality Supported</h4>
+      <ul>
+        <li>Play files</li>
+        <li>Playlist support</li>
+        <li>Automatically mark episodes watched when a certain % is watched (VLC 2.2+)</li>
+      </ul>
+      <p>Depending on your version of VLC, you should check the following options (No changes needed - default as shown).</p>
+      <p><a href="../images/general/vlc-01.png" data-lightbox="vlc-01" data-title="VLC - 01"><img src="../images/general/vlc-01.png" alt="VLC - 01"></a></p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>

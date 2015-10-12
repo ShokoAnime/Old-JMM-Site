@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Installation and Setup</strong></li>
+      <li><a href="#why-sql-server">Why SQL Server</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#sql-server-install">Installing SQL Server</a></li>
+      <li><a href="#sql-server-config">Configuring SQL Server</a></li>
+      <li><a href="#jmm-server-config">Configuring JMM Server</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <h2 id="installing-mysql">Installing and Setting Up SQL Server </h2>
+      <p>JMM supports Microsoft SQL Server 2008, and we   recommend it (or   MySQL) for users who have large collections or just   want the fastest   possible performance. SQL Server should only be used by advanced users, we recommend <a href="mysql.html" target="new"><strong>MySQL</strong></a> for users looks for a performance boost without a complicated setup. </p>
+      <span class="anchor" id="why-sql-server"></span>
+      <h3>Why SQL Server Over SQLite </h3>
+      <p>If your collection contains more than 200 series, performance wise your better off using SQL Server. While SQLite is a one   click setup single file, it's not designed to handle a database that   size and it will show it's limitations as your collection continues to grow by causing slowdowns when accessed by JMM.</p>
+      <p>Some of the differences between SQL Server and SQLite</p>
+      <ul>
+        <li>SQL Server is more powerful but will use more memory than SQLite.</li>
+        <li>SQLite does not handle multiple operations as well as SQL Server. </li>
+        <li>Using SQLite and running any kind of tasks in JMM Server will   cause considerable and noticeable slowdowns  when running multiple JMM products. </li>
+      </ul>
+      <span class="anchor" id="download"></span>
+      <h3>Download</h3>
+      <p>SQL Server is available in many different versions, for use with JMM Server you'll want to download SQL Server Express 2008 which is <a href="http://www.microsoft.com/en-us/download/details.aspx?id=27597">free to download</a>.</p>
+      <span class="anchor" id="condition-types"></span>
+      <h3 id="sql-server-install">Installing SQL Server</h3>
+      <p>Start the Installer and then go to the <strong>Installation</strong> section. From there click on <strong>New SQL server standalone installation</strong>.</p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" data-lightbox="sql-server-setup-01" data-title="SQL Server - Setup 01"><img src="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" alt="" title="SQL Server - Setup 01"></a></p>
+      <p>The installer will check for setup dependencies. If you receive no errors click<strong> OK </strong>to continue, if you do receive any errors they need to be fixed before you can proceed further with the install.</p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" data-lightbox="sql-server-setup-02" data-title="SQL Server - Setup 02"><img src="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" alt="" title="SQL Server - Setup 02"></a></p>
+      <p>Follow the instructions and proceed through the product key and license page. Click the <strong>Install</strong> button on the <strong>Setup Support Files </strong>section. </p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" data-lightbox="sql-server-setup-03" data-title="SQL Server - Setup 03"><img src="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" alt="" title="SQL Server - Setup 03"></a></p>
+      <span class="anchor" id="sql-server-config"></span>
+      <h3>Configuring SQL Server</h3>
+      <p>Once complete, select the following options. </p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" data-lightbox="sql-server-setup-04" data-title="SQL Server - Setup 04"><img src="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" alt="" title="SQL Server - Setup 04"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" data-lightbox="sql-server-setup-05" data-title="SQL Server - Setup 05"><img src="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" alt="" title="SQL Server - Setup 05"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" data-lightbox="sql-server-setup-06" data-title="SQL Server - Setup 06"><img src="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" alt="" title="SQL Server - Setup 06"></a></p>
+      <p>In the <strong>Database Engine Configuration</strong> you'll have the option of setting the <strong>Administrator</strong> password. If you   already know how to set up users in SQL Server you can skip this step, otherwise select <strong>Mixed Mode</strong> and enter a password. The username for this password is <strong>sa </strong>as this is the Username and Password for JMM Server setup. Make sure you press the <strong>Add Current Use</strong>r button.</p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" data-lightbox="sql-server-setup-07" data-title="SQL Server - Setup 07"><img src="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" alt="" title="SQL Server - Setup 07"></a></p>
+      <p>From here you can click through on the <strong>Next</strong> button to finish the installation.</p>
+      <span class="anchor" id="jmm-server-config"></span>
+      <h3>Configuring JMM Server</h3>
+      <p>If you're running JMM Server for the <strong>first time</strong> you'll be prompted to select a database type, select <strong>SQL Server</strong>.</p>
+      <p>If you're <strong>changing the database type</strong> to SQL Server click the <strong>Setup</strong> tab and select <strong>SQL Server</strong>. </p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-08.jpg" data-lightbox="sql-server-setup-08" data-title="SQL Server - Setup 08"><img src="../images/jmmserver/sqlserver/sql-server-setup-08.jpg" alt="" title="SQL Server - Setup 08"></a></p>
+      <p>You'll be asked to input the following settings.<br>
+        <strong>Server Address</strong> - Only change if connection to a database on a different computer. Default: <strong>Localhost</strong><br>
+        <strong>Database Name</strong> - Only change if created a custom database for JMM. Default: <strong>JMMServer</strong><br>
+        <strong>Username</strong> - If you created an account  for JMM, use that username. Default: <strong>root</strong><br>
+        <strong>Password</strong> - If you created an account  for JMM, use that username, otherwise it's the root password you inputted.</p>
+      <p>Pressing the <strong>Refresh </strong>button will get a list of computers running SQL Server on your local network.</p>
+      <p>If successful JMM Server will connect, create the database (initial connect only) and populate it. </p>
+      <p>You've successfully configured JMM Server with SQL Server!</p>
+      <p>[<a href="http://japanesemediamanager.github.io/wiki_usermanual_sqlserver.html">SQL Server FAQ</a>]</p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>
