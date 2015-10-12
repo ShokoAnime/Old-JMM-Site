@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>JMM Server</strong></li>
+      <li><a href="#import-folders">Import Folders Tab</a></li>
+      <li><a href="#how-long">How Long Will Importing Take</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content"> <span class="anchor" id="import-folders"></span>
+      <h2>Import Folders Tab</h2>
+      <p>The Import Folders section is the core of JMM Server and the way you   manage the physical location of your collection. At least one folder is   required before you can start using any JMM program or plugin. </p>
+      <p><a href="../images/jmmserver/jmm-server-import-folders.jpg" data-lightbox="jmm-server-import-folders" data-title="JMM Server - Import Folders Tab"><img src="../images/jmmserver/jmm-server-import-folders.jpg" alt="JMM Server - Import Folders Tab"></a></p>
+      <p>Click<strong> New Folder</strong> to add an import folder to your collection. </p>
+      <p>A new window will open asking you for the physical or   networked location. You'll also be presented with three different   options, <strong>Drop Source</strong>, <strong>Drop Destination</strong> and <strong>Watch For New Files</strong> which are explained below.</p>
+      <ul>
+        <li><strong>Drop Source</strong> - If you put any files here   they will   be moved to either the Drop Destination or an existing   folder. If you   have files for that series, they will be moved to that   existing folder.   If it is the first file in a new series, a folder   will be created in the   Drop Destination and moved there.</li>
+        <li><strong>Drop Destination</strong> - Files for new series will be moved here. You can have only one folder as the Drop Destination</li>
+        <li><strong>Watch For New Files</strong> - If selected JMM Server will detect when new files are added to this folder, and automatically add them to your collection</li>
+      </ul>
+      <span class="anchor" id="how-long"></span>
+      <h3>How Long Will Importing Take</h3>
+      <p>Every file you add needs to be hashed before it can be added   to your collection. The exact amount of time depends on your hard drive   and processor speed though on average though it  takes about 1 hour to   process 80GB. </p>
+      <p><strong>Hashing benchmarks on External USB 2.0 Drive</strong><br>
+        File Size: 520MB</p>
+      <p><strong>Using Hasher.dll</strong><br>
+        ED2k Hash only = 18 seconds <br>
+        ED2k+CRC32+MD5+SH1 = 24 seconds</p>
+      <p><strong>NOT Using Hasher.dll</strong><br>
+        ED2k Hash only = 20 seconds <br>
+        ED2k+CRC32+MD5+SH1 = 28 seconds</p>
+      <p><strong>Hashing benchmarks on Internal Drive</strong><br>
+        File Size: 520MB</p>
+      <p><strong>Using Hasher.dll</strong><br>
+        ED2k Hash only = 6 seconds<br>
+        ED2k+CRC32+MD5+SH1 = 24 seconds</p>
+      <p><strong>NOT Using Hasher.dll</strong><br>
+        ED2k Hash only = 20 seconds<br>
+        ED2k+CRC32+MD5+SH1 = 28 seconds </p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>
