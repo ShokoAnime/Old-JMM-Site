@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Setting Up Anime Buddy</strong></li>
+      <li><a href="#anime-buddy-install">Downloading Anime Buddy</a></li>
+      <li><a href="#initial-startup">Initial Startup</a></li>
+      <li><a href="#jmm-server-connect">Connecting JMM Server</a></li>
+      <li><a href="../changelog.html#anime-buddy">Changelog</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content"> <span class="anchor" id="anime-buddy-install"></span>
+      <h2>Installing and Setting Up Anime Buddy</h2>
+      <p>Open up the Windows Store and search for Anime Buddy. </p>
+      <p><a href="../images/animebuddy/windows-store.png" data-lightbox="windows-store" data-title="Anime Buddy - Searching Windows Store"><img src="../images/animebuddy/windows-store.png" alt="Anime Buddy - Searching Windows Store"></a></p>
+      Once you've found it, click the <strong>Install</strong> button. Once it's done installing start Anime Buddy. <span class="anchor" id="initial-startup"></span>
+      <p><a href="../images/animebuddy/calendar-overview.png" data-lightbox="collection-calendar-overview" data-title="Anime Buddy - Calendar Overview"><img src="../images/animebuddy/calendar-overview.png" alt="Anime Buddy - Setup 02"></a></p>
+      <p>By default, Anime Buddy will only show you a calendar of upcoming TV Shows, Movies, OVA's and Adult Titles.  To have it show files from your collection you'll need to connect Anime Buddy to JMM Server. You can do this by clicking <strong>Login to JMM</strong> in the upper-right corner. </p>
+      <p><a href="../images/animebuddy/jmm-server-login.png" data-lightbox="jmm-server-login" data-title="Anime Buddy - Logging Into JMM Server"><img src="../images/animebuddy/jmm-server-login.png" alt="Anime Buddy - Logging Into JMM Server"></a></p>
+      <span class="anchor" id="jmm-server-connect"></span>
+      <p>You'll be asked to input some information Anime Buddy needs to connect to JMM Server. </p>
+      <p>If JMM Server and Anime Buddy <strong>are on the same computer</strong>, use the following information</p>
+      <p><strong>JMM Server Address</strong>: Use either <strong>127.0.0.1</strong> or <strong>localhost</strong><br>
+        <strong>JMM Server Port</strong>: By default it's <strong>8111</strong><br>
+        <strong>Username</strong>: Input your JMM Desktop Username<br>
+        <strong>Password</strong>: Input your JMM Desktop Password, if blank than leave blank</p>
+      <p>If JMM Server and Anime Buddy <strong>are on different computers</strong>, use the following information</p>
+      <p><strong>JMM Server Address</strong>: Input the IP address of the computer JMM Server is on<strong></strong><br>
+        <strong>JMM Server Port</strong>: By default it's <strong>8111</strong><br>
+        <strong>Username</strong>: Input your JMM Desktop Username<br>
+        <strong>Password</strong>: Input your JMM Desktop Password, if blank than leave blank</p>
+      <p><a href="../images/animebuddy/collection-mix-overview.png" data-lightbox="collection-mix-overview" data-title="Anime Buddy - Collection & Calendar Overview"><img src="../images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
+      <p>If you've inputted the correct information, Anime Buddy will refresh and your collection will be shown. Make sure to check out the <a href="../animebuddy/faq.html">Frequently Asked Questions</a> page for more information. </p>
+      <p>If you like Anime Buddy, please consider reviewing in on the Windows App Store!</p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>

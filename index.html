@@ -1,102 +1,159 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Japanesemediamanager.github.io : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Japanese Media Manager</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/japanesemediamanager">View on GitHub</a>
-
-          <h1 id="project_title">Japanese Media Manager</h1>
-          <h2 id="project_tagline"></h2>
-      </header>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="css/style.css">
+<link rel="alternate stylesheet" title="dark" href="css/style2.css">
+<link rel="stylesheet" href="css/prettify.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" href="css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1><a name="what-is-jmm" class="anchor" href="#what-is-jmm"><span class="octicon octicon-link"></span></a>What is JMM</h1>
-        <p>JMM (Japanese Media Manager) is a series of programs and plugins that allow you to not only watch, but manage your anime collection with a great deal of flexibility. JMM is currently composed of the following programs and plugins. </p>
-        <ul>
-  <li>
-  <a href="#jmm-server"><strong>JMM Server</strong></a> - Shared server component</li>
-  <li>
-  <a href="#jmm-desktop"><strong>JMM Desktop</strong></a> - Windows application</li>
-  <li>
-  <a href="#my-anime3"><strong>My Anime 3</strong></a> - A plugin for MediaPortal (Home Theatre PC's)</li>
-  <li> 
-  <a href="#plex"><strong>Plex Agent</strong></a> - An agent for Plex</li>
-  <li>
-  <a href="#anime-buddy"><strong>AnimeBuddy</strong></a> - A Windows Store app for Windows 8/8.1/10</li>
-</ul>
-        <p>Information from various sites such as <a href="http://anidb.net/"><strong>AniDB</strong></a> and <a href="http://thetvdb.com/"><strong>TheTvDB</strong></a> and<a href="http://www.themoviedb.org/" target="_blank"> <strong>TMDb</strong></a> is gathered and complied to deliver the best anime experience possible. The goal of JMM is to reduce the amount of work you have to do by making everything as automated as possible. This is possible thanks to  AniDB and it's vast anime database as AniDB is used by most subbing groups as an information repository, which then allows JMM to use this information for your collection. This allows JMM to not have to rely on your files being named in a specific format which results in your files being recognized, cataloged and ready for playback with no additional work on your part. JMM also provides tools to identify and catalog your files in those rare instances where it could not be done automatically.</p>
-        <p>While there are other programs out there with similar functionality, JMM differs from them as it uses a client-server based architecture called JMM Server. This means you have one central server running which keeps track of your collection, while clients like JMMDesktop, MyAnime3 and Plex Agent connect to the server to display your collection. </p>
-
-<p><a href="downloads.html"><strong>Download and Get Started Now!</strong></a></p>
-
-<p><a href="documentation.html"><strong>Documentation - Wikis, FAQ's etc</strong></a></p>
-
-<h1>
-<a name="key-features" class="anchor" href="#key-features"><span class="octicon octicon-link"></span></a>Key Features</h1>
-
-<ul>
-<li>One server allowing for multiple clients</li>
-<li>Store your anime on internal and external media, JMM complies the information into it's database</li>
-<li>Create multiple profiles each with their own collection and stats</li>
-<li>Advanced filtering and sorting options for displaying and updating your collection</li>
-<li>Supports popular sites AniDB, The TvDB, MovieDB, MyAnimeList and Trakt.tv</li>
-<li>Supports Sqlite, MySQL or Microsoft SQL Server for your database</li>
-<li>Direct integration with uTorrent and multiple torrent trackers (Anime Byt.es, BakaBT, Nyaa and Tokyo Toshoka) </li>
-<li>Support for advanced file management such as file renaming, missing episodes check, duplicate files check, manual linking, AVDump and more</li>
-<li>Rate your series to get recommendations based off your ratings. </li>
-<li>For Trakt.tv users, see what your friends are watching</li>
-</ul>
-<h1><a name="jmm-server" class="anchor" href="#jmm-server"><span class="octicon octicon-link"></span></a>JMM Server</h1>
-<p>JMM Server is the heart of JMM. </p>
-<p>It's responsible for all the behind the scenes work you don't have to do. JMM Server performs all the file hashing, file comparing, information compiling and image downloading and stores it all in it's shared database. With JMM Server, you can run multiple clients such as JMM Desktop or My Anime 3 across multiple computers and always keep your information centralized.</p>
-<p><strong><a href="downloads.html">Get started with JMM Server</a></strong></p>
-<h1>
-  <a name="jmm-desktop" class="anchor" href="#jmm-desktop"><span class="octicon octicon-link"></span></a>JMM Desktop</h1>
-
-<p><a href="http://www.jmediamanager.org/Screenshots/JMMDesktop/Dashboard_Metro_01.jpg" target="new"><img src="http://www.jmediamanager.org/Screenshots/JMMDesktop/Dashboard_Metro_01_sm.jpg" alt="JMM Desktop - Dash 01"></a></p>
-
-<p>JMM Dekstop is a windows based program built with .NET/WPF for managing your anime collection.</p>
-<p>Unlike My Anime 3, which is mainly for watching your collection, JMM Desktop provides a lot of advanced features for better manging and optimizing your anime collection. However like My Anime 3, JMM Desktop also allows you to watch your anime collection and will keep track of anything you watch.</p>
-<p><strong><a href="downloads.html">Download JMM Desktop</a></strong></p>
-<h1> <a name="my-anime3" class="anchor" href="#my-anime3"><span class="octicon octicon-link"></span></a>My Anime 3</h1>
-<p><a href="http://www.jmediamanager.org/Screenshots/MA3/Avalon/Facade_ListFanart.jpg" target="new"><img src="http://www.jmediamanager.org/Screenshots/MA3/Avalon/Facade_ListFanart_sm.jpg" alt="MA3 - Avalon"></a></p>
-<p>My Anime 3 is a plugin designed for<strong> <a href="http://www.team-mediaportal.com/">MediaPortal</a></strong><a href="http://www.team-mediaportal.com/"></a></p>
-<p>With My Anime 3, you can easily watch your anime collection on your home theater PC. It displays detailed information not only about your collection, but the different anime series within your collection as well. Fanart, DVD Covers, posters, and banners are automatically downloaded giving you a pleasing look to your anime collection. Each series is listed in full detail showing each episode summary, preview picture and air date.</p>
-<p><strong><a href="downloads.html">Download My Anime 3</a></strong></p>
-<h1>
-  <a name="plex" class="anchor" href="#plex"><span class="octicon octicon-link"></span></a>Plex Agent</h1>
-
-<p><a href="http://www.jmediamanager.org/Screenshots/Plex/01.jpg" target="new"><img src="http://www.jmediamanager.org/Screenshots/Plex/01.jpg" alt="Plex 01"></a></p>
-<p>Plex Agent is a plugin for Plex that allows you to stream your anime collection that's been cataloged via JMM Server. Like My Anime 3 plugin for MediaPortal, it displays detailed information not only about your collection and the different anime series within your collection as well. Fanart, DVD Covers, posters, and banners are automatically downloaded giving you a pleasing look to your anime collection. Each series is listed in full detail showing each episode summary, preview picture and air date.</p>
-<p><strong><a href="downloads.html">Download Plex Agent</a></strong></p>
-<h1> <a name="anime-buddy" class="anchor" href="#anime-buddy"><span class="octicon octicon-link"></span></a>Anime Buddy</h1>
-<p><a href="http://www.jmediamanager.org/Screenshots/AnimeBuddy/106_05.jpg" target="new"><img src="http://www.jmediamanager.org/Screenshots/AnimeBuddy/106_05.jpg" alt="Anime Buddy 01"></a></p>
-<p>Anime Buddy is a Windows Store app available on Windows 8/8.1/10 that when connected to JMM server gives you the ability to stream your anime collection or play it locally. It pulls all relevant information from JMM server allowing you to continue watching where you left out and provides detailed information about any show you select such as the characters in it and what other's have to say. </p>
-<p>You can search for it on the store, or use the following <a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702"><strong>link</strong></a>	  </p>
-      </section>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Getting Started</strong></li>
+      <li><a href="#what-is-jmm">What Is JMM</a></li>
+      <li><a href="#key-features">Key Features</a></li>
+      <li><a href="#jmm-server">JMM Server</a></li>
+      <li><a href="#jmm-desktop">JMM Desktop</a></li>
+      <li><a href="#my-anime3">My Anime 3</a></li>
+      <li><a href="#plex">Plex</a></li>
+      <li><a href="#anime-buddy">Anime Buddy</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <div class="alert-box notice"><span>notice: </span><br>
+      We're looking for volunteers to help with the website! <a href="contribute.html">Click Here</a> for more information. </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="docs-content"> <span class="anchor" id="what-is-jmm"></span>
+      <h2>What Is JMM</h2>
+      <p> JMM (Japanese Media Manager) is a series of programs and plugins that are ideal for any anime fan looking for a way to catalog their anime collection regardless of size without the hassle of manually inputting each and every file. In addition, the JMM suite provides the user with the most flexibility in managing their collection requiring minimal input from the user allowing the user to enjoy their collection. </p>
+      <h3>JMM is currently composed of the following programs and plugins.</h3>
+      <ul>
+        <li> <a href="#jmm-server">JMM Server</a> - Shared server component</li>
+        <li> <a href="#jmm-desktop">JMM Desktop</a> - Windows application</li>
+        <li> <a href="#my-anime3">My Anime 3</a> - A plugin for MediaPortal (Home Theatre PC's)</li>
+        <li> <a href="#plex">Plex Plugin</a> - A plugin for Plex</li>
+        <li> <a href="#anime-buddy">AnimeBuddy</a> - A Windows Store app for Windows 8/8.1/10</li>
+      </ul>
+      <h2>How does JMM work? </h2>
+      <p>Information from various sites such as <a href="http://anidb.net/" target="new"><strong>AniDB</strong></a>, <a href="http://thetvdb.com/" target="new"><strong>TheTvDB</strong></a> and<a href="http://www.themoviedb.org/" target="new"> <strong>TMDb</strong></a> is gathered and complied to deliver the best anime experience possible. The goal of JMM is to reduce the amount of work you have to do by making everything as automated as possible. This is possible thanks to  AniDB and it's vast anime database as AniDB is used by most subbing groups as an information repository, which then allows JMM to use this information for your collection. This allows JMM to not have to rely on your files being named in a specific format which results in your files being recognized, cataloged and ready for playback with no additional work on your part. JMM also provides tools to identify and catalog your files in those rare instances where it could not be done automatically.</p>
+      <p>While there are other programs out there with similar functionality, JMM differs from them as it uses a client-server based architecture called JMM Server. This means you have one central server running which keeps track of your collection, while clients like JMMDesktop, MyAnime3 and Plex Plugin connect to the server to display your collection.</p>
+      <span class="anchor" id="key-features"></span>
+      <h2>Key Features</h2>
+      <p>Here are some of the key features JMM provides. </p>
+      <ul>
+        <li>One server allowing for multiple clients</li>
+        <li>Store your anime on internal and external media, JMM complies the information into it's database</li>
+        <li>Create multiple profiles each with their own collection and stats</li>
+        <li>Advanced filtering and sorting options for displaying and updating your collection</li>
+        <li>Supports popular sites AniDB, The TvDB, MovieDB, MyAnimeList and Trakt.tv</li>
+        <li>Supports SQLite, MySQL or Microsoft SQL Server for your database</li>
+        <li>Direct integration with uTorrent and multiple torrent trackers (Anime Byt.es, BakaBT, Nyaa and Tokyo Toshoka) </li>
+        <li>Support for advanced file management such as file renaming, missing episodes check, duplicate files check, manual linking, AVDump and more</li>
+        <li>Ability to generate recommendations based off your ratings</li>
+        <li>For Trakt.tv users, see what your friends are watching</li>
+      </ul>
+      <span class="anchor" id="jmm-server"></span>
+      <h2>JMM Server</h2>
+      <p>JMM Server is the heart of JMM. </p>
+      <p>It's responsible for all the behind the scenes work you don't have to do. JMM Server performs all the file hashing, file comparing, information compiling and image downloading and stores it all in it's shared database. With JMM Server, you can run multiple clients such as JMM Desktop or My Anime 3 across multiple computers and always keep your information centralized.</p>
+      <p><a href="jmmserver/index.html">Learn more about JMM Server</a></p>
+      <span class="anchor" id="jmm-desktop"></span>
+      <h2>JMM Desktop</h2>
+      <p><a href="images/jmmdesktop/dashboard-metro.png" data-lightbox="dashboard-metro" data-title="JMM Desktop - Metro Dashboard"><img src="images/jmmdesktop/dashboard-metro.png" alt="JMM Desktop - Metro Dashboard"></a></p>
+      <p>JMM Desktop is a windows based program built with .NET/WPF for managing your anime collection.</p>
+      <p>Unlike My Anime 3, which is mainly for watching your collection, JMM Desktop provides a lot of advanced features for better manging and optimizing your anime collection. However like My Anime 3, JMM Desktop also allows you to watch your anime collection and will keep track of anything you watch.</p>
+      <p><strong><a href="jmmdesktop/index.html">Learn more about JMM Desktop</a></strong></p>
+      <span class="anchor" id="my-anime3"></span>
+      <h2>My Anime 3</h2>
+      <p><a href="images/myanime3/avalon/facade-list-fanart.jpg" data-lightbox="facade-list-fanart" data-title="My Anime 3 - Avalon Theme"><img src="images/myanime3/avalon/facade-list-fanart.jpg" alt="My Anime 3 - Avalon Theme"></a></p>
+      <p>My Anime 3 is a plugin designed for<strong> <a href="http://www.team-mediaportal.com/" target="new">MediaPortal</a></strong></p>
+      <p>With My Anime 3, you can easily watch your anime collection on your home theater PC. It displays detailed information not only about your collection, but the different anime series within your collection as well. Fanart, DVD Covers, posters, and banners are automatically downloaded giving you a pleasing look to your anime collection. Each series is listed in full detail showing each episode summary, preview picture and air date.</p>
+      <p><a href="myanime3/index.html">Learn more about My Anime 3</a></p>
+      <span class="anchor" id="plex"></span>
+      <h2>Plex Plugin</h2>
+      <p><a href="images/plex/continue-watching-overview-01.jpg" data-lightbox="continue-watching-overview-0" data-title="Plex - Continue Watching"><img src="images/plex/continue-watching-overview-01.jpg" alt="Plex - Continue Watching"></a></p>
+      <p>Plex Plugin is designed for use with <a href="https://plex.tv/" target="new">Plex</a>.</p>
+      <p>With Plex Plugin, you can stream your anime collection to any device that supports Plex allowing you to always have access to your collection no matter where you go. Like the My Anime 3 plugin for MediaPortal, Plex Plugin is capable of displaying your collection data, including images in a detailed and easy to navigate layout providing you the best experience possible.</p>
+      <p><a href="plex/index.html">Click here to learn more about Plex Plugin</a></p>
+      <span class="anchor" id="anime-buddy"></span>
+      <h2>Anime Buddy</h2>
+      <p><a href="images/animebuddy/collection-mix-overview.png" data-lightbox="collection-mix-overview" data-title="Anime Buddy - Collection & Calendar Overview"><img src="images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
+      <p>Anime Buddy is a Windows Store app available on Windows 8/8.1/10 that when connected to JMM server gives you the ability to stream your anime collection or play it locally. It pulls all relevant information from JMM server allowing you to continue watching where you left out and provides detailed information about any show you select such as the characters in it and what other's have to say. </p>
+      <p><a href="animebuddy/index.html">Learn more about Anime Buddy</a></p>
     </div>
-  </body>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="js/styleswitch.js"></script> 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.responsiveTabs.js"></script> 
+<script src="js/stickUp.js"></script> 
+<script src="js/layout.js"></script> 
+<script src="js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="js/jquery.sidr.min.js"></script> 
+<script src="js/jquery.localscroll.js"></script> 
+<script src="js/jquery.scrollTo.js"></script> 
+<script src="js/lightbox.js"></script>
+</body>
 </html>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Installation and Setup</strong></li>
+      <li><a href="jmmserver.html">Installing JMM Server</a></li>
+      <li><a href="jmmdesktop.html">Installing JMM Desktop</a></li>
+      <li><a href="myanime3.html">Installing My Anime 3</a></li>
+      <li><a href="plex.html">Installing Plex Plugin</a></li>
+      <li><a href="animebuddy.html">Installing Anime Buddy</a></li>
+      <li><a href="mysql.html">Installing MySQL</a></li>
+      <li><a href="sqlserver.html">Installing SQL Server</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <h2 id="jmm-desktop-install">Installing and Setting Up JMM Desktop</h2>
+      <p>JMM Desktop is a <strong>Mandatory Install</strong> and must be installed, we recommend you install it after installing JMM Server to avoid any potential problems. </p>
+      <p>If you start JMM Desktop without having JMM Server  running or if JMM Server is located on a different computer, you'll see the following error message. </p>
+      <p><a href="../images/jmmdesktop/server-error.png" data-lightbox="server-error" data-title="JMM Desktop - Server Error"><img src="../images/jmmdesktop/server-error.png" alt="JMM Desktop - Server Error"></a></p>
+      <p>Clicking <strong>OK</strong> will take you back to the JMM Server settings page<a href="../images/jmmdesktop/server-input.png" data-lightbox="server-input" data-title="JMM Desktop - Server Input"><img src="../images/jmmdesktop/server-input.png" alt="JMM Desktop - Server Input"></a></p>
+      <p>If JMM Server is running on the <strong>same computer</strong> simply start JMM Server then click <strong>Test And Save</strong> once JMM Server has finished loading your database.</p>
+      <p>If JMM server is running on a <strong>different computer</strong> then input the IP address of the computer it's on. If on the same network then use the network IP address. If on a computer not on your network enter the computer's IP address. Once down  click <strong>Test And Save</strong>, if correct JMM Desktop will start. </p>
+      <p>If it connects successfully or if you are running JMM Desktop and JMM Server on the same machine you'll see the login prompt.</p>
+      <p><a href="../images/jmmdesktop/jmm-login.png" data-lightbox="jmm-login" data-title="JMM Desktop - Login Window"><img src="../images/jmmdesktop/jmm-login.png" alt="JMM Desktop - Login Window"></a></p>
+      <p>When JMM Server created your database, it created two different users labeled <strong>Default</strong> and <strong>Family Friendly</strong>, by default the password was left blank. Here's the difference between the two user accounts. </p>
+      <ul>
+        <li> <strong>Default</strong> - Will display all your content.</li>
+        <li> <strong>Family Friendly</strong> - Has hidden content based on the categories/genres that are not family friendly</li>
+      </ul>
+      <p>If you'd like to make changes to the default users you can once you're done setting up JMM Desktop by clicking on the <strong>Settings </strong>tab and then clicking the <strong>User</strong> section. </p>
+      <p>Now before you do anything else click the <strong>Settings</strong> tab and then the <strong>Essential</strong> section, you need to input some additional information for JMM Desktop and JMM Server to work properly. </p>
+      <p><a href="../images/jmmdesktop/settings-essential.png" data-lightbox="settings-essentia" data-title="JMM Desktop - Settings Tab - Essential"> <img src="../images/jmmdesktop/settings-essential.png" alt="JMM Desktop - Settings Tab - Essential"></a></p>
+      <p>The <strong>Essential</strong> section is where all information required for JMM Server and JMM Desktop to work is stored allowing you easy access to make changes as needed. </p>
+      <p>If you've been following this guide then you may of seen the AniDB section before on JMM Server. The first thing you need to do is input both your AniDB username and password. An AniDB account is required for JMM Server and JMM Desktop to work, <strong><a href="http://anidb.net/perl-bin/animedb.pl?show=signup" target="new">Click Here</a></strong> to sign up. Once done click <strong>Test and Save</strong> to make sure your inputted AniDB information is valid. If you encounter any errors double-check your account information is correct by logging into the AniDB website. </p>
+      <p>Now setup your <strong>Import Folders</strong>, you just need to add   the root folder of the location where you keep your anime. All sub   folders are automatically added. If JMM Desktop is on a different   computer than JMM Server, you will need to enter the path as it is on the   server, not on the client. The screenshot below has an example of a   mapped server path. </p>
+      <p><a href="../images/jmmdesktop/server-options.png" data-lightbox="server-options" data-title="JMM Desktop - Server Settings"><img src="../images/jmmdesktop/server-options.png" alt="JMM Desktop - Server Settings"></a></p>
+      <p>You can ignore the other settings for now, for the last part click the <strong>Server</strong> tab. The <strong>Server </strong>tab shares a lot of options with JMM Server, so if you need to make changes you can do it via JMM Server as well. </p>
+      <p>Click the <strong>Run Import</strong> button, this will start   scanning and adding your anime into your collection. Depending on the   amount of files that need to be scanned this process could take a very   long time. JMM Desktop does not need to be running as the importing   process is handled by JMM Server. However if you'd like to view your   collection while it's importing click on the <strong>Collections </strong>tab to see what's been imported so far.</p>
+      <p>JMM Desktop is now installed and setup! </p>
+      <p>If you need to install and setup anything else, click it's related link on the menu on the left. </p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>
