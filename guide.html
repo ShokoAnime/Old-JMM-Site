@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/jquery.sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
-<body style="margin-top:45px">
+<body style="margin-top:45px" onload="prettyPrint()">
 <nav class="sticky">
   <div class="container">
     <h1><a href="index.html">JMM</a></h1>
@@ -28,7 +28,7 @@
         <li><a href="changelog.html">Changelog</a></li>
         <li><a href="support.html">Support</a></li>
         <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKLajoKc" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -45,8 +45,8 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Getting Started</strong></li>
-      <li><a href="#displaying-code">Displaying Code</a></li>
-      <li><a href="#link-to-menu">Creating A Link To The Menu</a></li>
+      <li><a href="#displaying-code">Displaying Raw Code</a></li>
+      <li><a href="#internal-external-link">Creating An Internal/External Link Using ID Tags</a></li>
       <li><a href="#link-on-menu">Creating A Link On The Menu</a></li>
       <li><a href="#drop-down-menu">Creating A Drop Down Menu</a></li>
       <li><a href="#adding-lightbox">Adding Lightbox To Images</a></li>
@@ -61,7 +61,7 @@
         <li><a href="changelog.html">Changelog</a></li>
         <li><a href="support.html">Support</a></li>
         <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="https://discordapp.com/invite/0XKJW7TObKIo51WA" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKLajoKc" target="new">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
         <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
@@ -72,44 +72,63 @@
     <div class="docs-content">
       <h2 id="website-guide"> Website Guide</h2>
       <p>Thank you for volunteering to help out with the website, we truly appreciate it!</p>
-      <p>This guide was written to make it easier for anyone to contribute to the website regardless of skill level. Below you'll find code examples and instructions on how to add different functionality present in this website to the page you are working on. </p>
-      <p>Couple notes before you continue.</p>
+      <p>The purpose of this guide is to make it easier for anyone that's wants to contribute to the website and provide the code for specific functions that are used on the website. With each code example you'll find detailed instructions on implamenting the code and an example to see how it looks. </p>
+      <p>Some things to keep in mind before continuing on.</p>
       <ul>
-        <li>All available functionality is listed, if you'd like additional functionality added <a href="https://github.com/japanesemediamanager/japanesemediamanager.github.io/issues">create a issue</a> on the GitHub page.</li>
-        <li>Only resize an image if needed, also you do not need to create a thumbnail. </li>
-        <li>This guide does not cover the basics of HTML, head over to <a href="http://www.w3schools.com/html/html_basic.asp">W3Schools</a> if you need help with that.</li>
+        <li>All available functionality is listed, additional functionality or an alternative to a current function can be requested by <a href="https://github.com/japanesemediamanager/japanesemediamanager.github.io/issues" target="new">creating an issue</a> on GitHub.</li>
+        <li>Images are automatically scaled, no need for resizing or creating thumbnails.</li>
+        <li>This guide is only meant to explain the functionality used on this site, if you're looking for information on coding, check out <a href="http://www.w3schools.com/html/html_basic.asp">W3Schools</a>.</li>
       </ul>
       <span class="anchor" id="displaying-code"></span>
-      <h3>Displaying Code </h3>
-      <p>This layout uses <a href="https://github.com/google/code-prettify">Google's Prettifier</a> that allows syntax highlighting in HTML which is useful for showing bits of code. Since it's used for showing all the examples on this page, we'll cover it first. </p>
+      <h3>Displaying Raw Code </h3>
+      <p>This layout uses <a href="https://github.com/google/code-prettify">Google's Prettifier</a> that allows syntax highlighting in HTML which is useful for showing raw code. Since it's used for showing all the examples on this page, we'll cover it first. </p>
       <p><strong>Code</strong> </p>
-      <pre class="prettyprint">&lt;pre class=&quot;prettyprint&quot;&gt;Your code bit goes here.&lt;/pre&gt;</pre>
-      <span class="anchor" id="link-to-menu"></span>
-      <h3>Creating A Link To The Menu</h3>
-      <p>If you want to have a link on the menu you need to assign the <strong>id</strong> tag to the links location. The <strong>id </strong> tag is usually assigned to a span class tag above the link title, for example to an <strong>h3</strong> as the header tags are used to break up the content on your page. When creating the <strong>id</strong> for the link use a hyphen &quot;<strong>-</strong>&quot; between words, also do not create long link names. Move down this page a bit and click <span class="prettyprint"><strong>Creating A Link To The Menu</strong> from the menu to be taken back here. </span></p>
+      <pre class="prettyprint">&lt;pre class=&quot;prettyprint&quot;&gt;Your code bit goes here&lt;/pre&gt;</pre>
+      Simply add the above to the page and input the code you want to show by replacing the <strong>Your code bit goes here</strong> part. If your editor provides a code and design view of the page, insert the code in code view and then input the code you want to show in the design view. <span class="anchor" id="internal-external-link"></span>
+      <h3>Creating An Internal/External Link Using ID Tags</h3>
+      <p>Notice how when you scroll down the page, the location on the menu changes to match your current location or if you click a link to another page it takes you to an exact spot? This is done by creating a link to a specific <strong>ID</strong> tag which you can use in multiple ways. </p>
+      <p>If you're creating a link on the same page, you can do it by simply linking to the <strong>ID</strong> using the following code. </p>
       <p><strong>Code</strong></p>
-      <pre class="prettyprint">&lt;span class=&quot;anchor&quot; id=&quot;link-to-menu&quot;&gt;&lt;/span&gt;<br>&lt;h3&gt;Creating A Link To The Menu&lt;/h3&gt;</pre>
-      <span class="anchor" id="link-on-menu"></span>
-      <h3>Creating A Link On The Menu</h3>
-      <p>After creating your link locations you need to create the corresponding link so the user can click on it on the menu. Here's the code for this sections link on the menu. </p>
-      <p><strong>Code - Link Within Page</strong></p>
+      <pre class="prettyprint">&lt;span class=&quot;anchor&quot; id=&quot;internal-external-link&quot;&gt;&lt;/span&gt;
+</pre>
+      <p>Put this code above your link's location. Avoid creating long link names and use hypens &quot;<strong>-</strong>&quot; to sperate words, letters or numbers, using anything else causes problems,. Here's what the code looks like for the link to this section. </p>
+      <p><strong>Code</strong></p>
+      <pre class="prettyprint">&lt;span class=&quot;anchor&quot; id=&quot;internal-external-link&quot;&gt;&lt;/span&gt;<br>&lt;h3&gt;Creating An Internal/External Link Using ID Tags&lt;/h3&gt;</pre>
+      <p>Scroll down a bit and then click on <strong>Creating An Internal/External Link Using ID Tag</strong>s from the menu on the right-side to be taken back to this section.</p>
+      <p>If you're linking to another page its a very similar setup</p>
+      <p><strong>Code</strong></p>
+      <pre class="prettyprint">&lt;a href=&quot;index.html#jmm-desktop&quot;&gt;JMM Desktop&lt;/a&gt;</pre>
+      <p>In this example, the link will take the user directly to the JMM Desktop part on the index page. The setup is your normal link setup with the <strong>ID</strong> after the <strong>.html</strong> part which in this case is <strong>#jmm-desktop</strong>. </p>
+      <h3>Adding A Link To The Menu</h3>
+      <p>After you've created your link locations on the page, you need a way for the user to access them. Look for the link menu in the code which is apart of the <strong>docs-nav</strong> class and add the following code to the menu.</p>
+      <p><strong>Code</strong></p>
       <pre class="prettyprint">&lt;li&gt;&lt;a href=&quot;#link-on-menu&quot; class=&quot; &quot;&gt;Creating A Link On The Menu&lt;/a&gt;&lt;/li&gt;</pre>
-      <p>You can also create links to other pages.</p>
-      <p><strong>Code - Link To Different Page</strong></p>
-      <pre class="prettyprint">&lt;li&gt;&lt;a href=&quot;changelog.html&quot; class=&quot; &quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;</pre>
+      <p>Here's what the first couple of entires of the menu on this page looks like.</p>
+      <p><strong>Code</strong></p>
+      <pre class="prettyprint">&lt;li&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#displaying-code&quot;&gt;Displaying Raw Code&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#internal-external-link&quot;&gt;Creating An Internal/External Link Using ID Tags&lt;/a&gt;&lt;/li&gt;</pre>
+      <p>You can also create links to other pages. Only set the taget to <strong>new</strong> if the link is to another site.</p>
+      <p><strong>Code</strong></p>
+      <pre class="prettyprint">&lt;li&gt;&lt;a href=&quot;changelog.html&quot;&gt;Changelog&lt;/a&gt;&lt;/li&gt;</pre>
+      <p>You can also add a seperator to space out links on the menu.</p>
+      <p><strong>Code</strong></p>
+      <pre class="prettyprint">&lt;li class=&quot;separator&quot;&gt;&lt;/li&gt;</pre>
       <span class="anchor" id="drop-down-menu"></span>
-      <h3>Creating A Drop Down Menu</h3>
-      <p>If you're creating a page that has more than 15 links, you'll find that the scroll menu won't display all the links. You can get around this by creating a drop down menu. </p>
-      <p>The drop down menu and its contents are contained within the <span class="prettyprint"><strong>&lt;div class=&quot;click-nav&quot;&gt;</strong> class so just copy the code starting there and ending </span>at <span class="prettyprint"><strong>&lt;/div&gt;.</strong></span> Just place that code where you want your drop down menu and you'll all set. For a live example check the <a href="jmmdesktop/utilities.html">JMM Desktop Utilities Tab</a> page.</p>
-      <pre class="prettyprint">      &lt;div class=&quot;click-nav&quot;&gt;<br>        &lt;ul class=&quot;no-js&quot;&gt;<br>          &lt;li&gt; &lt;a href=&quot;#&quot; class=&quot;clicker&quot;&gt;Unrecognized&lt;/a&gt;<br>            &lt;ul&gt;<br>              &lt;li&gt;&lt;a href=&quot;#unrecognized-overview&quot;&gt;Unrecognized Overview&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#managing-unrecognized-files&quot;&gt;Manging Your Unrecognized Files&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#linking-unrecognized-files&quot;&gt;Linking Your Unrecognized Files &lt;/a&gt;&lt;/li&gt;<br>            &lt;/ul&gt;<br>          &lt;/li&gt;<br>        &lt;/ul&gt;<br>      &lt;/div&gt;<br></pre>
+      <h3>Creating A Drop Down Menu      </h3>
+      <p>If you're creating a page that has 10 or more links, the menu will not display correctly and some of your links will not be accesible. This is because the menu scrolls with the user and a long menu will not scroll. To get around this you can incorporate a drop down menu into your menu structure using the following code.      </p>
+      <pre class="prettyprint">      &lt;div class=&quot;click-nav&quot;&gt;<br>        &lt;ul class=&quot;no-js&quot;&gt;<br>          &lt;li&gt; &lt;a href=&quot;#&quot; class=&quot;clicker&quot;&gt;drop down menu activator&lt;/a&gt;<br>            &lt;ul&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link3&quot;&gt;Link 3/a&gt;&lt;/li&gt;<br>            &lt;/ul&gt;<br>          &lt;/li&gt;<br>        &lt;/ul&gt;<br>      &lt;/div&gt;</pre>
+      <p>The drop down menu and its contents are contained within the<strong>&lt;div class=&quot;click-nav&quot;&gt;</strong>as shown above. The link with the<strong> clicker</strong> class is the name of drop down menu with the links in the unordered lists below it. Just place that code where you want your drop down menu and you'll all set. </p>
+      <p>For a live example check the <a href="jmmdesktop/utilities.html">JMM Desktop Utilities Tab</a> page.</p>
       <span class="anchor" id="adding-lightbox"></span>
       <h3>Adding Lightbox To Images</h3>
-      <p>Lightbox is required for all images you display on your page. Add <span class="prettyprint"><strong>data-lightbox=&quot;data-name&quot;</strong> and <strong>data-title=&quot;Data Name&quot;</strong> to the image's link. Best practice is to use the image name as the data-name and link alt as the data name. The code below is for the JMM Desktop image on the index page.</span></p>
+      <p>Lightbox is <strong>required</strong> for all images you display on your page, don't worry though as it's extremely easy to implament. Simpy add<strong>data-lightbox=&quot;data-name&quot;</strong> and <strong>data-title=&quot;Data Name&quot;</strong> to the image's link. Best practice is to use the image name as the data-name and link alt as the data name.</p>
+      <p>The code below is for the JMM Desktop image on the index page.</p>
       <p><strong>Code</strong></p>
       <pre class="prettyprint">&lt;a href=&quot;images/jmmdesktop/metro/metro-dashboard-01.jpg&quot; data-lightbox=&quot;metro-dashboard-01&quot; data-title=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;img src=&quot;images/jmmdesktop/metro/metro-dashboard-01.jpg&quot; alt=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;/a&gt;</pre>
       <span class="anchor" id="alerts"></span>
+      <p>You can also link images together by making <strong>data-lightbox=&quot;data-name&quot;</strong> the same for each image. </p>
       <h3>Creating Alerts</h3>
-      <p>There are four different types of alerts that can be displayed depending on the need, alerts should not be overused. An example can be see on the <a href="setup/mysql.html#mysql-install">Installing and Setting Up MySQL</a> page.</p>
+      <p>There are four different types of alerts supported that can be displayed depending on the need. Alerts should be used sparingly as they are not meant to be used as indicators or seperators. </p>
+      <p>An example can be see on the <a href="setup/mysql.html#mysql-install">Installing and Setting Up MySQL</a> page.</p>
       <div class="alert-box error"><span>error: </span><br>
         Write your error message here.</div>
       <div class="alert-box success"><span>success: </span><br>
@@ -121,28 +140,31 @@
       <pre class="prettyprint">&lt;div class=&quot;alert-box error&quot;&gt;&lt;span&gt;error: &lt;/span&gt;&lt;br&gt;Write your error message here.&lt;/div&gt;<br>&lt;div class=&quot;alert-box success&quot;&gt;&lt;span&gt;success: &lt;/span&gt;&lt;br&gt;Write your success message here.&lt;/div&gt;<br>&lt;div class=&quot;alert-box warning&quot;&gt;&lt;span&gt;warning: &lt;/span&gt;&lt;br&gt;Write your warning message here.&lt;/div&gt;<br>&lt;div class=&quot;alert-box notice&quot;&gt;&lt;span&gt;notice: &lt;/span&gt;&lt;br&gt;Write your notice message here.&lt;/div&gt;</pre>
       <span class="anchor" id="tabs"></span>
       <h3>Adding Tabs</h3>
-      <p>Tabs are beneficial when you have a lot of content to display for a particular section. You can have as many tabs as you want though you should break up the section if you have more than 5 tabs. Linking to another tab within a tab is supported, however linking to a tab from either another page or from another part of the site is not currently supported.</p>
+      <p>Tabs are beneficial for keeping your page length from becoming too long. The max amount of tabs you can have per section is <strong>five</strong> tabs. Linking to another tab within a tab is supported, as well as directly linking to a tab on another page. </p>
+      <p>You can have up to <strong>four</strong> tabs per page. Simply change the div id from <strong>tab-01</strong> to <strong>tab-02</strong>,<strong>tab-03</strong> or <strong>tab-04</strong>. </p>
+      <p><strong>Example</strong></p>
       <div id="tab-01">
         <ul>
-        <li><a href="#tab-1">Tab 1</a></li>
-        <li><a href="#tab-2">Tab 2</a></li>
-        <li><a href="#tab-3">Tab 3</a></li>
-    </ul>
-    <div id="tab-1">
-    <p>Tab 1</p>
-    </div>
-    <div id="tab-2">
-    <p>Tab 2</p>
-    </div>
-    <div id="tab-3">
-    <p>Tab 3</p>
-    </div>
+          <li><a href="#tab-1">Tab 1</a></li>
+          <li><a href="#tab-2">Tab 2</a></li>
+          <li><a href="#tab-3">Tab 3</a></li>
+        </ul>
+        <div id="tab-1">
+          <p>Tab 1</p>
+        </div>
+        <div id="tab-2">
+          <p>Tab 2</p>
+        </div>
+        <div id="tab-3">
+          <p>Tab 3</p>
+        </div>
       </div>
+      <p><strong>Code</strong></p>
       <pre class="prettyprint">      &lt;div id=&quot;tab-01&quot;&gt;<br>        &lt;ul&gt;<br>          &lt;li&gt;&lt;a href=&quot;#tab-1&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;<br>          &lt;li&gt;&lt;a href=&quot;#tab-2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;<br>          &lt;li&gt;&lt;a href=&quot;#tab-3&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;<br>        &lt;/ul&gt;<br>        &lt;div id=&quot;tab-1&quot;&gt;<br>          &lt;p&gt;Tab 1&lt;/p&gt;<br>        &lt;/div&gt;<br>        &lt;div id=&quot;tab-2&quot;&gt;<br>          &lt;p&gt;Tab 2&lt;/p&gt;<br>        &lt;/div&gt;<br>        &lt;div id=&quot;tab-3&quot;&gt;<br>          &lt;p&gt;Tab 3&lt;/p&gt;<br>        &lt;/div&gt;<br>      &lt;/div&gt;</pre>
       <h3>Website References</h3>
       <ul>
         <li><a href="www.berriart.com/sidr/">www.berriart.com/sidr/</a> - Mobile Menu</li>
-        <li><a href="http://codepen.io/cssjockey/pen/jGzuK" target="new">http://codepen.io/cssjockey/pen/jGzuK</a> - Tab Menu</li>
+        <li><a href="https://github.com/jellekralt/Responsive-Tabs" target="new">https://github.com/jellekralt/Responsive-Tabs</a> - Tab Menu</li>
         <li><a href="http://www.dynamicdrive.com/dynamicindex9/stylesheetswitcher.htm" target="new">http://www.dynamicdrive.com/dynamicindex9/stylesheetswitcher.htm</a> - Theme Changer</li>
         <li><a href="https://github.com/ppowalowski/stickUp2" target="new">https://github.com/ppowalowski/stickUp2</a> - Sticky Menu</li>
         <li><a href="http://lokeshdhakar.com/projects/lightbox2/" target="new">http://lokeshdhakar.com/projects/lightbox2/</a> - Lightbox</li>
@@ -162,12 +184,11 @@
   </div>
 </footer>
 <script src="js/styleswitch.js"></script> 
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script> 
 <script src="js/jquery.responsiveTabs.js"></script> 
 <script src="js/stickUp.js"></script> 
 <script src="js/layout.js"></script> 
-<script src="js/prettify.js"></script> 
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script> 
+<script src="js/prettify.js"></script>
 <script src="js/jquery.sidr.min.js"></script> 
 <script src="js/jquery.localscroll.js"></script> 
 <script src="js/jquery.scrollTo.js"></script> 
