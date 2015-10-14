@@ -191,11 +191,11 @@ nav #menu {
 	clear: none;
 }
 nav a {
-	padding: 0.7em;
-	color: #EEE;
-	font-size: .96em;
+	padding: 0.4em;
+	color: #FFF;
+	font-size: 1.2vw;
 	height: 60px;
-	line-height: 65px;
+	line-height: 70px;
 	display: block;
 }
 nav a:hover {
@@ -267,6 +267,20 @@ strong, dt, h3, h4 {
 }
 
 /* Screen Settings */
+
+@media screen and (max-width: 1400px) {
+nav #menu-toggle {
+	display: none !important;
+}
+.mobile-only-links {
+	display: none !important;
+}
+nav a {
+	padding: 0.4em;
+	font-size: 1.2vw;
+	line-height: 75px;
+}
+}
 
 @media only screen and (max-width: 1024px) {
 body {
