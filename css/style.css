@@ -190,11 +190,11 @@ nav #menu {
 	clear: none;
 }
 nav a {
-	padding: 0.7em;
-	color: #EEE;
-	font-size: .96em;
+	padding: 0.4em;
+	color: #FFF;
+	font-size: 1.2vw;
 	height: 60px;
-	line-height: 65px;
+	line-height: 70px;
 	display: block;
 }
 nav a:hover {
@@ -275,10 +275,9 @@ nav #menu-toggle {
 	display: none !important;
 }
 nav a {
-	padding: 0.7em;
-	font-size: 0.96em;
-	height: auto;
-	line-height: 100%;
+	padding: 0.4em;
+	font-size: 1.2vw;
+	line-height: 75px;
 }
 }
 
@@ -294,10 +293,11 @@ body {
 }
 nav #existing-content-menu {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 0px;
 	font-size: 1.5em;
-	padding: 0 16px;
+	top: 0px;
+	line-height: 60px;
+	padding: 0px 16px;
 }
 nav #menu {
 	max-height: 0 !important;
