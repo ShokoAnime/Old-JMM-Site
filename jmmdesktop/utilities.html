@@ -159,12 +159,39 @@
       <h3>Tests</h3>
       <p>For most tests you can insert a'<strong>!</strong>' inside the brackets to indicate <strong>NOT</strong></p>
       <p>For example </p>
-      <pre class="code">IF A(69) DO FAIL // If the anime id is 69 (Naruto) then don't rename the file  IF A(!69) DO FAIL // If the anime id is NOT 69 (Naruto) then don't rename the file</pre>
+      <pre class="code">IF A(69) 
+DO FAIL 
+// If the anime id is 69 (Naruto) then don't rename the file  
+
+IF A(!69) 
+DO FAIL 
+// If the anime id is NOT 69 (Naruto) then don't rename the file</pre>
       <p>Some tests  will also allow the following operators. These will be referred to as numerical operators below</p>
-      <pre class="code">&gt; // Greater Than  &gt;= // Greater Than or Equal To  &lt; // Less Than  &lt;= // Less Than or Equal To</pre>
+      <pre class="code">&gt; 
+// Greater Than 
+ 
+&gt;= 
+// Greater Than or Equal To  
+
+&lt; 
+// Less Than  
+
+&lt;= 
+// Less Than or Equal To</pre>
       <p>You can have multiple tests on one line by using the <strong>AND</strong> and <strong>OR</strong> operators<br>
         However you cannot have both an <strong>AND</strong> and an <strong>OR</strong> on the same line</p>
-      <pre class="code">, // OR  ; // AND  IF A(69),A(1),A(2) DO FAIL // If Anime ID is 69 or 1 or 2, do not rename the file  IF I(epn);I(!epr) DO ADD '%epn' //If the episode has an romaji title but not an English title add the romaji episode title</pre>
+      <pre class="code">, 
+// OR  
+
+; 
+// AND  
+
+IF A(69),A(1),A(2) 
+DO FAIL 
+// If Anime ID is 69 or 1 or 2, do not rename the file  IF I(epn);I(!epr) 
+
+DO ADD '%epn' 
+//If the episode has an romaji title but not an English title add the romaji episode title</pre>
       <br>
       <table>
         <tbody>
@@ -428,23 +455,222 @@
       <h3>Sample Scripts</h3>
       <span class="anchor" id="sample-scripts-general example"></span>
       <h3>General Example</h3>
-      <pre class="code">IF A(69) DO FAIL //Do not rename file if it is Naruto  // Sub groups  DO ADD '[%grp] ' //sub group name short  // Anime Name  IF I(eng) DO ADD '%eng - ' // if the anime has an official/main title English add it to the string  IF I(ann);I(!eng) DO ADD '%ann - ' //If the anime has a romaji title but not an English title add the romaji anime title  // Episode number  DO ADD '%enr - ' //Add the Episode number, same for all files  // Episode name  IF I(epr) DO ADD '%epr' //If the episode has an English title add to string  IF I(epn);I(!epr) DO ADD '%epn' //If the episode has an romaji title but not an English title add the romaji episode title  // Audio and subtitle languages  IF I(sub) DO ADD ' (SUB:%sub)'  IF I(dub) DO ADD ' (LAN:%dub)'  // FILE Version  IF F(!1) DO ADD ' [v%ver]' //If the file is not version 1, add the file version</pre>
+      <pre class="code">IF A(69) 
+DO FAIL 
+//Do not rename file if it is Naruto  
+
+// Sub groups  
+DO ADD '[%grp] ' 
+//sub group name short  
+
+// Anime Name  
+IF I(eng) DO ADD '%eng - ' 
+// if the anime has an official/main title English add it to the string  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann - ' 
+//If the anime has a romaji title but not an English title add the romaji anime title  
+
+// Episode number  
+DO ADD '%enr - ' 
+//Add the Episode number, same for all files  
+
+// Episode name  
+IF I(epr) 
+DO ADD '%epr' 
+//If the episode has an English title add to string  
+
+IF I(epn);I(!epr) 
+DO ADD '%epn' 
+//If the episode has an romaji title but not an English title add the romaji episode title  
+
+// Audio and subtitle languages  
+IF I(sub) 
+DO ADD ' (SUB:%sub)'  
+
+IF I(dub) 
+DO ADD ' (LAN:%dub)' 
+ 
+// FILE Version  
+IF F(!1) 
+DO ADD ' [v%ver]' 
+//If the file is not version 1, add the file version</pre>
       <span class="anchor" id="sample-scripts-sample-1"></span>
       <h3>Sample 1</h3>
       <p><strong>Output:</strong> [Coalgirls]_Highschool_of_the_Dead_-_01_(1920x1080_Blu-ray_H264)_[90CC6DC1].mkv</p>
-      <pre class="code">// Sub group name  DO ADD '[%grp] '  // Anime Name, use English name if it exists, otherwise use the Romaji name  IF I(eng) DO ADD '%eng '  IF I(ann);I(!eng) DO ADD '%ann '  // Episode Number, don't use episode number for movies  IF T(!Movie) DO ADD '- %enr'  // If the file version is v2 or higher add it here  IF F(!1) DO ADD 'v%ver'  // Video Resolution  DO ADD ' (%res'  // Video Source (only if blu-ray or DVD)  IF R(DVD),R(Blu-ray) DO ADD ' %src'  // Video Codec  DO ADD ' %vid'  // Video Bit Depth (only if 10bit)  IF Z(10) DO ADD ' %bitbit'  DO ADD ') '  DO ADD '[%CRC]'    // Replacement rules (cleanup)  DO REPLACE ' ' '_' // replace spaces with underscores  DO REPLACE '0x0' ''  DO REPLACE '__' '_'  DO REPLACE '__' '_'    // Replacement rules (codecs)  DO REPLACE 'H264/AVC' 'H264'  DO REPLACE 'DivX5/6' 'DivX'  DO REPLACE 'WMV9' 'WMV9'    DO REPLACE 'MP3 CBR' 'MP3'  DO REPLACE 'MP3 VBR' 'MP3'  DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'    // Replace all illegal file name characters  DO REPLACE '&lt;' '('   DO REPLACE '&gt;' ')'   DO REPLACE ':' ';'   DO REPLACE '"' '`'  DO REPLACE '/' '_'  DO REPLACE '\' '_'   DO REPLACE '|' '_'   DO REPLACE '?' '_'   DO REPLACE '*' '_'</pre>
+      <pre class="code">// Sub group name  
+DO ADD '[%grp] '  
+// Anime Name, use English name if it exists, otherwise use the Romaji name  
+
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+// Episode Number, don't use episode number for movies  
+
+IF T(!Movie) 
+DO ADD '- %enr'  
+// If the file version is v2 or higher add it here  
+
+IF F(!1) 
+DO ADD 'v%ver'  
+
+// Video Resolution  
+DO ADD ' (%res'  
+
+// Video Source (only if blu-ray or DVD)  
+IF R(DVD),R(Blu-ray) 
+DO ADD ' %src' 
+ 
+// Video Codec  
+DO ADD ' %vid'  
+
+// Video Bit Depth (only if 10bit)  
+IF Z(10) 
+DO ADD ' %bitbit'  
+DO ADD ') '  
+DO ADD '[%CRC]'  
+  
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replacement rules (codecs)  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE 'DivX5/6' 'DivX'  
+DO REPLACE 'WMV9' 'WMV9'    
+DO REPLACE 'MP3 CBR' 'MP3'  
+DO REPLACE 'MP3 VBR' 'MP3'  
+DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'  
+  
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('   
+DO REPLACE '&gt;' ')'   
+DO REPLACE ':' ';'   
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'   
+DO REPLACE '|' '_'   
+DO REPLACE '?' '_'   
+DO REPLACE '*' '_'</pre>
       <span class="anchor" id="sample-scripts-sample-2"></span>
       <h3>Sample 2 - Video format instead of resolution</h3>
       <p><strong>Output:</strong> [Coalgirls]_Highschool_of_the_Dead_-_01_(1080p_Blu-ray_H264)_[90CC6DC1].mkv</p>
-      <pre class="code">// Sub group name  DO ADD '[%grp] '  // Anime Name, use English name if it exists, otherwise use the Romaji name  IF I(eng) DO ADD '%eng '  IF I(ann);I(!eng) DO ADD '%ann '  // Episode Number, don't use episode number for movies  IF T(!Movie) DO ADD '- %enr'  // If the file version is v2 or higher add it here  IF F(!1) DO ADD 'v%ver'  // Video Format  IF W(&gt;=1920) DO ADD ' (1080p'  IF W(&gt;=1280);W(&lt;1920) DO ADD ' (720p'  IF W(&lt;1280) DO ADD ' (SD'  // Video Source (only if blu-ray or DVD)  IF R(DVD),R(Blu-ray) DO ADD ' %src'  // Video Codec  DO ADD ' %vid'  // Video Bit Depth (only if 10bit)  IF Z(10) DO ADD ' %bitbit'  DO ADD ') '  DO ADD '[%CRC]'    // Replacement rules (cleanup)  DO REPLACE ' ' '_' // replace spaces with underscores  DO REPLACE 'H264/AVC' 'H264'  DO REPLACE '0x0' ''  DO REPLACE '__' '_'  DO REPLACE '__' '_'    // Replace all illegal file name characters  DO REPLACE '&lt;' '('  DO REPLACE '&gt;' ')'  DO REPLACE ':' '-'  DO REPLACE '"' '`'  DO REPLACE '/' '_'  DO REPLACE '/' '_'  DO REPLACE '\' '_'  DO REPLACE '|' '_'  DO REPLACE '?' '_'  DO REPLACE '*' '_'</pre>
+      <pre class="code">// Sub group name  
+DO ADD '[%grp] '  
+
+// Anime Name, use English name if it exists, otherwise use the Romaji name  
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+
+// Episode Number, don't use episode number for movies  
+IF T(!Movie) DO ADD '- %enr'  
+
+// If the file version is v2 or higher add it here  
+IF F(!1) DO ADD 'v%ver'  
+
+// Video Format  
+IF W(&gt;=1920) 
+DO ADD ' (1080p'  IF W(&gt;=1280);W(&lt;1920) 
+DO ADD ' (720p'  IF W(&lt;1280) 
+DO ADD ' (SD'  
+
+// Video Source (only if blu-ray or DVD)  
+IF R(DVD),R(Blu-ray) 
+DO ADD ' %src'  
+
+// Video Codec  
+DO ADD ' %vid'  
+
+// Video Bit Depth (only if 10bit)  
+IF Z(10) 
+DO ADD ' %bitbit'  
+DO ADD ') ' 
+DO ADD '[%CRC]'    
+
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('  
+DO REPLACE '&gt;' ')'  
+DO REPLACE ':' '-'  
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'  
+DO REPLACE '|' '_'  
+DO REPLACE '?' '_'  
+DO REPLACE '*' '_'</pre>
       <span class="anchor" id="sample-scripts-sample-3"></span>
       <h3>Sample 3</h3>
       <p><strong>Output:</strong> Highschool of the Dead - 01 [1920x1080] [Coalgirls].mkv</p>
-      <pre class="code">// Anime Name, use English name if it exists, otherwise use the Romaji name  IF I(eng) DO ADD '%eng '  IF I(ann);I(!eng) DO ADD '%ann '  // Episode Number, don't use episode number for movies  IF T(!Movie) DO ADD '- %enr'  // If the file version is v2 or higher add it here  IF F(!1) DO ADD 'v%ver'  // Video Resolution  DO ADD ' [%res]'  // Sub group name  DO ADD ' [%grp] '    // Replacement rules (cleanup)  DO REPLACE ' ' '_' // replace spaces with underscores  DO REPLACE '0x0' ''  DO REPLACE '__' '_'  DO REPLACE '__' '_'    // Replacement rules (codecs)  DO REPLACE 'H264/AVC' 'H264'  DO REPLACE 'DivX5/6' 'DivX'  DO REPLACE 'WMV9' 'WMV9'    DO REPLACE 'MP3 CBR' 'MP3'  DO REPLACE 'MP3 VBR' 'MP3'  DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'    // Replace all illegal file name characters  DO REPLACE '&lt;' '('   DO REPLACE '&gt;' ')'   DO REPLACE ':' ';'   DO REPLACE '"' '`'  DO REPLACE '/' '_'  DO REPLACE '\' '_'   DO REPLACE '|' '_'   DO REPLACE '?' '_'   DO REPLACE '*' '_'</pre>
+      <pre class="code">// Anime Name, use English name if it exists, otherwise use the Romaji name  
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+
+// Episode Number, don't use episode number for movies  
+IF T(!Movie) 
+DO ADD '- %enr'  
+
+// If the file version is v2 or higher add it here  
+IF F(!1) 
+DO ADD 'v%ver'  
+
+// Video Resolution  
+DO ADD ' [%res]'  
+
+// Sub group name  
+DO ADD ' [%grp] '    
+
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replacement rules (codecs)  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE 'DivX5/6' 'DivX'  
+DO REPLACE 'WMV9' 'WMV9'    
+DO REPLACE 'MP3 CBR' 'MP3'  
+DO REPLACE 'MP3 VBR' 'MP3'  
+DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'    
+
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('   
+DO REPLACE '&gt;' ')'   
+DO REPLACE ':' ';'   
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'   
+DO REPLACE '|' '_'   
+DO REPLACE '?' '_'   
+DO REPLACE '*' '_'</pre>
       <span class="anchor" id="sample-scripts-sample-4"></span>
       <h3>Sample 4 - Original File Name</h3>
       <p><strong>Output:</strong> [Coalgirls] Highschool of the Dead - 06 [1920x1080 Blu-Ray FLAC] [00AF0C10].mkv</p>
-      <pre class="code">// Use the file name as original specified by the release group  DO ADD '%sna'</pre>
+      <pre class="code">// Use the file name as original specified by the release group  
+DO ADD '%sna'</pre>
       <span class="anchor" id="update-anidb-data"></span>
       <h3>Update AniDB Data</h3>
       <p> </p>
