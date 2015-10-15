@@ -56,19 +56,20 @@
       </div>
     </ul>
     <div class="docs-content"> <span class="anchor" id="import-folders"></span>
-      <h2>Import Folders Tab</h2>
-      <p>The Import Folders section is the core of JMM Server and the way you   manage the physical location of your collection. At least one folder is   required before you can start using any JMM program or plugin. </p>
-      <p><a href="../images/jmmserver/jmm-server-import-folders.jpg" data-lightbox="jmm-server-import-folders" data-title="JMM Server - Import Folders Tab"><img src="../images/jmmserver/jmm-server-import-folders.jpg" alt="JMM Server - Import Folders Tab"></a></p>
-      <p>Click<strong> New Folder</strong> to add an import folder to your collection. </p>
-      <p>A new window will open asking you for the physical or   networked location. You'll also be presented with three different   options, <strong>Drop Source</strong>, <strong>Drop Destination</strong> and <strong>Watch For New Files</strong> which are explained below.</p>
+      <h2>Import Folders Tab      </h2>
+      <p>The <strong>Import Folders</strong> tab is where you'll manage all your import locations for your files. At least one folder is   required before you can start using any JMM program or plugin. </p>
+      <p><a href="../images/jmmserver/jmm-server-import-folders.png" data-lightbox="jmm-server-import-folders" data-title="JMM Server - Import Folders Tab"><img src="../images/jmmserver/jmm-server-import-folders.png" alt="JMM Server - Import Folders Tab"></a></p>
+      <p>Click<strong> New Folder</strong> to add a import folder for your collection. </p>
+      <p><a href="../images/jmmserver/jmm-server-import-folders-select.png" data-lightbox="jmm-server-import-folders-select" data-title="JMM Server - Import Folders - Select Folders"><img src="../images/jmmserver/jmm-server-import-folders-select.png" alt="JMM Server - Import Folders - Select Folders"></a></p>
+      <p>A new window will open allowing you to input the location of your files, this can either be the physical location or a networked location. We recommend clicking the folder icon to select the location to avoid any mistakes from manually typing the location in. You'll also be presented with three different options that will tell JMM Server what to do with this import folder.      </p>
       <ul>
-        <li><strong>Drop Source</strong> - If you put any files here   they will   be moved to either the Drop Destination or an existing   folder. If you   have files for that series, they will be moved to that   existing folder.   If it is the first file in a new series, a folder   will be created in the   Drop Destination and moved there.</li>
-        <li><strong>Drop Destination</strong> - Files for new series will be moved here. You can have only one folder as the Drop Destination</li>
-        <li><strong>Watch For New Files</strong> - If selected JMM Server will detect when new files are added to this folder, and automatically add them to your collection</li>
+        <li><strong>Drop Source</strong> - If selected, JMM Server will monitor this folder and move any files it detects to the folder selected as a<strong> Drop Destination</strong>. Additionally JMM Server will automatically group files that belong to the same series and create the series folder in the Drop Destination if it doesn't already exist. You can have as many Drop Sources as you want, however you must setup a Drop Destination to use Drop Source.</li>
+        <li><strong>Drop Destination</strong> - Used in conjunction with Drop Source, JMM Server will move all files from your Drop Source/Drop Sources into the selected Drop Destination. You can only have one folder listed as a Drop Destination.</li>
+        <li><strong>Watch For New Files</strong> - If you don't want JMM Server moving your files and instead just want it to watch a specified folder then select Watch For New Files. JMM Server will monitor the selected folder and add any files it detects to your collection. </li>
       </ul>
       <span class="anchor" id="how-long"></span>
       <h3>How Long Will Importing Take</h3>
-      <p>Every file you add needs to be hashed before it can be added   to your collection. The exact amount of time depends on your hard drive   and processor speed though on average though it  takes about 1 hour to   process 80GB. </p>
+      <p>Every file you add needs to be hashed before it can be added to your collection and while the time it takes to do this will vary depending on the computer setup, mainly the CPU and HDD read/write speed. The average computer should take 1 hour to process 80GB worth of files.      </p>
       <p><strong>Hashing benchmarks on External USB 2.0 Drive</strong><br>
         File Size: 520MB</p>
       <p><strong>Using Hasher.dll</strong><br>
