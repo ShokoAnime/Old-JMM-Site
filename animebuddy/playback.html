@@ -45,11 +45,10 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Episode Playback</strong></li>
-      <li><a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702l" target="new">Download Anime Buddy</a></li>
-      <li><a href="../setup/animebuddy.html">Installing Anime Buddy</a></li>
-      <li><a href="faq.html">Frequently Asked Questions</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="../changelog.html#anime-buddy">Changelog</a></li>
+      <li><a href="#file-playback" target="new">File Playback</a></li>
+      <li><a href="#same-computer">Anime Buddy &amp; JMM Server - Same Computer</a></li>
+      <li><a href="#same-network">Anime Buddy &amp; JMM Server - Same Network</a></li>
+      <li><a href="#over-the-internet">Anime Buddy &amp; JMM Server - Over The Internet</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -67,6 +66,7 @@
       </div>
     </ul>
     <div class="docs-content">
+    <span class="anchor" id="file-playback"></span>
       <h2 id="anime-buddy">File Playback</h2>
       <p>With Anime Buddy, you can connect JMM Server allowing to locally and remotely playback the files in your collection. Additionally with Anime Buddy, your watched state data will be automatically tracked and updated in your collection. You can also manually set the watched state for files you've watched outside of Anime Buddy. </p>
       <p>After installing Anime Buddy, click Login to JMM Server in the upper-right hand corner. You'll be taken to the following menu. </p>
@@ -84,8 +84,10 @@
         <strong>Username</strong>: Input your JMM Desktop Username<br>
         <strong>Password</strong>: Input your JMM Desktop Password, if blank than leave blank</p>
       <p>If everything works by default then you're all set! However for most people some additional steps will need to be taken to get Anime Buddy to connect to JMM Server. </p>
+      <span class="anchor" id="same-computer"></span>
       <h3>JMM Server and Anime Buddy  on the same computer</h3>
       <p>By design, Windows prevents Windows Store Apps from sending network traffic to a local machine. You can override this and get a more detail explanation from the <a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx" target="new">following link</a>.      </p>
+      <span class="anchor" id="same-network"></span>
       <h3>JMM Server and Anime Buddy  on different computers (Same Network)</h3>
       <p>If you don't know how to get the IP Address of the computer JMM Server is on visit the<a href="http://www.whatsmyip.org/" target="new"> following site</a> on the computer JMM Server is on and write down the IP it shows you.</p>
             <div id="tab-01">
@@ -119,6 +121,7 @@
           <p>You should now be able to connect to JMM Server with no problem. </p>
         </div>
       </div>
+            <span class="anchor" id="over-the-internet"></span>
             <h3>JMM Server and Anime Buddy  on different computers (Different Network)</h3>
             <p>First you'll need to open the port JMM Server uses. Use <a href="http://portforward.com/english/routers/port_forwarding/routerindex.htm" target="new">PortForward</a> to get specific instructions on how to enable port forwarding on your router. Once down check and make sure the port is actually <a href="http://www.canyouseeme.org/" target="new">opened and accessible</a> over the internet. If you get a success message then you should be able to connect, if you get a failure message than continue reading. </p>
             <p>The most common reason you get a failure message even after opening the port is due to a security feature most routers have built in called <strong>Port Scan and DoS Protection</strong>, how to access this setting varies between routers. If you can add an exception to it, add the port JMM Server uses, if not then you'll need to disable it. We advise you do your own research before disabling it so you know what it does and if you need it, however it has been known to <a href="https://www.google.com/search?q=Port+Scan+and+DoS+Protection&ie=utf-8&oe=utf-8" target="new">cause issues</a> for just about every device that connects over the interent. </p>
