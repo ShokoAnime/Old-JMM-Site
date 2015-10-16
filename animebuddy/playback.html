@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../css/style2.css">
+<link rel="stylesheet" href="../css/prettify.css">
+<link rel="stylesheet" href="../css/lightbox.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Episode Playback</strong></li>
+      <li><a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702l" target="new">Download Anime Buddy</a></li>
+      <li><a href="../setup/animebuddy.html">Installing Anime Buddy</a></li>
+      <li><a href="faq.html">Frequently Asked Questions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="../changelog.html#anime-buddy">Changelog</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+        <li><a href="../documentation.html">Documentation</a></li>
+        <li><a href="../changelog.html">Changelog</a></li>
+        <li><a href="../support.html">Support</a></li>
+        <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <h2 id="anime-buddy">File Playback</h2>
+      <p>With Anime Buddy, you can connect JMM Server allowing to locally and remotely playback the files in your collection. Additionally with Anime Buddy, your watched state data will be automatically tracked and updated in your collection. You can also manually set the watched state for files you've watched outside of Anime Buddy. </p>
+      <p>After installing Anime Buddy, click Login to JMM Server in the upper-right hand corner. You'll be taken to the following menu. </p>
+      <p><a href="../images/animebuddy/jmm-server-login.png" data-lightbox="jmm-server-login" data-title="Anime Buddy - Logging Into JMM Server"><img src="../images/animebuddy/jmm-server-login.png" alt="Anime Buddy - Logging Into JMM Server"></a></p>
+      <span class="anchor" id="jmm-server-connect"></span>
+      <p>You'll be asked to input some information Anime Buddy needs to connect to JMM Server. </p>
+      <p>If JMM Server and Anime Buddy <strong>are on the same computer</strong>, use the following information</p>
+      <p><strong>JMM Server Address</strong>: Use either <strong>127.0.0.1</strong> or <strong>localhost</strong><br>
+        <strong>JMM Server Port</strong>: By default it's <strong>8111</strong><br>
+        <strong>Username</strong>: Input your JMM Desktop Username<br>
+        <strong>Password</strong>: Input your JMM Desktop Password, if blank than leave blank</p>
+      <p>If JMM Server and Anime Buddy <strong>are on different computers</strong>, use the following information. </p>
+      <p><strong>JMM Server Address</strong>: Input the IP address of the computer JMM Server is on<br>
+        <strong>JMM Server Port</strong>: By default it's <strong>8111</strong><br>
+        <strong>Username</strong>: Input your JMM Desktop Username<br>
+        <strong>Password</strong>: Input your JMM Desktop Password, if blank than leave blank</p>
+      <p>If everything works by default then you're all set! However for most people some additional steps will need to be taken to get Anime Buddy to connect to JMM Server. </p>
+      <h3>JMM Server and Anime Buddy  on the same computer</h3>
+      <p>By design, Windows prevents Windows Store Apps from sending network traffic to a local machine. You can override this and get a more detail explanation from the <a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx" target="new">following link</a>.      </p>
+      <h3>JMM Server and Anime Buddy  on different computers (Same Network)</h3>
+      <p>If you don't know how to get the IP Address of the computer JMM Server is on visit the<a href="http://www.whatsmyip.org/" target="new"> following site</a> on the computer JMM Server is on and write down the IP it shows you.</p>
+            <div id="tab-01">
+        <ul>
+          <li><a href="#tab-1"><strong>Adding JMM Server and Anime Buddy to Windows Firewall Exception List</strong></a></li>
+          <li><a href="#tab-2"><strong>Creating An Inbound Rule for JMM Server</strong></a></li>
+        </ul>
+        <div id="tab-1">
+          <p>You'll need to add an exception for both JMM Server and Anime Buddy on the computer <strong>where JMM Server is installed</strong>. If you don't have Anime Buddy installed than install it before proceeding. </p>
+          <p>These instructions might vary between different versions of Windows. </p>
+          <p>Open up the <strong>Control Panel</strong> and select <strong>Network and Internet</strong>, then select<strong> Network and Sharing Center</strong>. In the bottom left-hand corner select <strong>Windows Firewall</strong> and then from the menu on the right select <strong>Allow an app or feature through Window Firewall</strong>, a list of programs will open. </p>
+          <p>Anime Buddy will be there by default, enable the <strong>Private</strong> and<strong> Public</strong> exception for each entry if there are multiple entries. If JMM Server is not there you'll need to add it, click the <strong>allow another app</strong> button and navigate to where you've installed JMM Server. After adding JMM Server enable the <strong>Private</strong> and<strong> Public</strong> exception for JMM Server.</p>
+          <p>Open Anime Buddy and try to connect to JMM Server again, if it works then you're set. If not then you'll proceed to the <a href="#tab-2">next tab</a>. </p>
+        </div>
+        <div id="tab-2">
+          <p>Because we're going to be adding an Inbound Rule to Windows Firewall which for some might be a little too advanced, we'll be doing this step-by-step with images showing every part. </p>
+          <p>In the <strong>Windows Firewall</strong> settings, click<strong> Advanced Settings</strong>.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced.png" data-lightbox="windows-firewall-advanced" data-title="Windows Firewall - Advanced Settings"><img src="../images/animebuddy/windows-firewall-advanced.png" alt="Windows Firewall Advanced Settings"></a></p>
+          <p>Windows will open up a new window with a lot of information and options, for our purposes we need to add a new inbound rule. First make sure <strong>Inbound Rules</strong> is selected. On the right side is the <strong>Actions</strong> menu, from there select <strong>New Rule...</strong> to create a new inbound rule.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules.png" data-lightbox="windows-firewall-advanced-rules" data-title="Windows Firewall - Advanced Settings - Adding An Inbound Rule"><img src="../images/animebuddy/windows-firewall-advanced-rules.png" alt="Windows Firewall - Advanced Settings - Adding An Inbound Rule"></a></p>
+          <p>Another window will open allowing us configure or new inbound rule. Since were adding a port, select <strong>Port</strong> for the <strong>Rule Type</strong> and then click <strong>Next</strong>. </p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules-type.png" data-lightbox="windows-firewall-advanced-type" data-title="Windows Firewall - Inbound Rule - Selecting Type"><img src="../images/animebuddy/windows-firewall-advanced-rules-type.png" alt="Windows Firewall - Inbound Rule - Selecting Type"></a></p>
+          <p><strong>Protocol and Ports</strong> allows us to select the port type and the port itself, select <strong>TCP</strong> for the first option and select <strong>Specific local ports</strong> for the second option. In the box you'll need to input the port JMM Server uses, by default it's <strong>8111</strong>.Once done click <strong>Next</strong>.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules-port.png" data-lightbox="windows-firewall-advanced-port" data-title="Windows Firewall - Inbound Rule - Selecting Port"><img src="../images/animebuddy/windows-firewall-advanced-rules-port.png" alt="Windows Firewall - Inbound Rule - Selecting Port"></a></p>
+          <p>Now we need to set the <strong>Action</strong> for our rule, since we want to be able to connect select <strong>Allow the connection</strong> and click <strong>Next</strong>.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules-action.png" data-lightbox="windows-firewall-advanced-action" data-title="Windows Firewall - Inbound Rule - Selecting Action"><img src="../images/animebuddy/windows-firewall-advanced-rules-action.png" alt="Windows Firewall - Inbound Rule - Selecting Action"></a></p>
+          <p>The <strong>Profile</strong> tells Windows how to apply our inbound rule, select <strong>Domain</strong> and <strong>Private</strong> but not <strong>Public</strong> and then click <strong>Next</strong>.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules-profile.png" data-lightbox="windows-firewall-advanced-profile" data-title="Windows Firewall - Inbound Rule - Selecting Profile"><img src="../images/animebuddy/windows-firewall-advanced-rules-profile.png" alt="Windows Firewall - Inbound Rule - Selecting Profile"></a></p>
+          <p>Almost done! Now we just need to name our inbound Rule, you can put whatever you want as it doesn't matter. For this example I put <strong>JMM Server - Anime Buddy</strong>, add a description of you'd like and once done click <strong>Finish</strong> to have your inbound rule added.</p>
+          <p><a href="../images/animebuddy/windows-firewall-advanced-rules-name.png" data-lightbox="windows-firewall-advanced-name" data-title="Windows Firewall - Inbound Rule - Selecting Name"><img src="../images/animebuddy/windows-firewall-advanced-rules-name.png" alt="Windows Firewall - Inbound Rule - Selecting Name"></a></p>
+          <p>You should now be able to connect to JMM Server with no problem. </p>
+        </div>
+      </div>
+            <h3>JMM Server and Anime Buddy  on different computers (Different Network)</h3>
+            <p>First you'll need to open the port JMM Server uses. Use <a href="http://portforward.com/english/routers/port_forwarding/routerindex.htm" target="new">PortForward</a> to get specific instructions on how to enable port forwarding on your router. Once down check and make sure the port is actually <a href="http://www.canyouseeme.org/" target="new">opened and accessible</a> over the internet. If you get a success message then you should be able to connect, if you get a failure message than continue reading. </p>
+            <p>The most common reason you get a failure message even after opening the port is due to a security feature most routers have built in called <strong>Port Scan and DoS Protection</strong>, how to access this setting varies between routers. If you can add an exception to it, add the port JMM Server uses, if not then you'll need to disable it. We advise you do your own research before disabling it so you know what it does and if you need it, however it has been known to <a href="https://www.google.com/search?q=Port+Scan+and+DoS+Protection&ie=utf-8&oe=utf-8" target="new">cause issues</a> for just about every device that connects over the interent. </p>
+      <p><a href="../images/animebuddy/collection-mix-overview.png" data-lightbox="collection-mix-overview" data-title="Anime Buddy - Collection & Calendar Overview"><img src="../images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
+      <p>If you've inputted the correct information, Anime Buddy will refresh and your collection will be shown. </p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../js/styleswitch.js"></script> 
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/stickUp.js"></script> 
+<script src="../js/layout.js"></script> 
+<script src="../js/prettify.js"></script> 
+<script src="../js/jquery.sidr.min.js"></script> 
+<script src="../js/jquery.localscroll.js"></script> 
+<script src="../js/jquery.scrollTo.js"></script> 
+<script src="../js/lightbox.js"></script>
+</body>
+</html>

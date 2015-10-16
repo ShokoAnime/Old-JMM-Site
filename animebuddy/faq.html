@@ -69,26 +69,26 @@
       <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
       <span class="anchor" id="jmmserver-connect"></span>
       <h3>Can Anime Buddy connect to JMM Server over the internet?</h3>
-      <p>Yes it can! </p>
-      <p>However there are a few things to keep in mind when  connecting remotely to JMM Server. All data (images and information) will temporarily download for the series being displayed. Depending on your internet connection, this can take a while causing an image outline to appear in the places of images and blank information boxes. JMM Server also handles the downloading of your media which again depending on your internet connection can take awhile to load. </p>
-      <p>Information for how to do this can be found in the <a href="../setup/animebuddy.html#jmm-server-connect">Anime Buddy setup</a> section.</p>
+      <p>You bet it can! </p>
+      <p>However there are a few things you'll need to keep in mind when remotely connecting to JMM Server. First, all metadata and images will temporarily download for any series being displayed in Anime Buddy. Download speeds will depend entirely on your connections download speed and the upload speed of the connection JMM Server is using. You can still view your entire collection even if it's associated metadata and images have not been downloaded yet, you'll just see a placeholder for it until it's been downloaded.</p>
+      <p>Setting Anime Buddy up to<a href="../setup/animebuddy.html#jmm-server-connect"> access JMM Server over the interent </a>is easy. Anime Buddy can also <a href="#episode-playblack">remotely playback</a> files in your collection!</p>
       <span class="anchor" id="jmmserver-error"></span>
       <h3>JMM Server Not Responding Errors</h3>
       <p>When attempting to connect to JMM Server, you may receive an error message that's similar to the following: </p>
       <p><strong>JMM Server is not responding.. </strong></p>
-      <p>This is a generic error message that is called when Anime Buddy times out when connecting to JMM Server. </p>
-      <p>Here's are the possible reasons:</p>
+      <p>This is a generic error message that is called when Anime Buddy times out when attempting to connect to JMM Server. </p>
+      <p>Here's are the most likely reasons:</p>
       <ul>
-        <li>1. JMM Server is not running.</li>
-        <li>2. You have not entered the JMM Server details correctly.</li>
-        <li>3. Loopback issues when trying to connect Anime Buddy to JMM server on the same machine.</li>
+        <li>Check to make sure JMM Server is running.</li>
+        <li>Check to make sure JMM Server has been <a href="../jmmserver/setup.html">configured correctly</a> and the settings in Anime Buddy match. </li>
+        <li>If every thing's configured correctly and you're trying to access JMM Server on the same machine it's most likely a loopback issue. </li>
       </ul>
       <p>In regards to #3, this is a common issue where Windows Store Apps are forbidden from sending network traffic to the local machine. You can over-ride this (and get a full explanation) from the following page:</p>
       <p><a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx">Windows 8 - Apps enable loopback network isolation </a></p>
-      <p>Simply install the loopback utility and add Anime Buddy as an exemption and retry to connect to JMM Server.</p>
+      <p>Simply install the loopback utility and add Anime Buddy as an exemption and retry  connecting to JMM Server.</p>
       <span class="anchor" id="episode-playblack"></span>
       <h3>Playing An Episode/Video</h3>
-      <p>To play an episode from your collection in Anime Buddy, the file must first be downloaded. The reason for this is that Windows Store Apps are not allowed to access the network, or local machine folders without manually using the <strong>File Picker</strong>. When the file is done downloading it will immediately begin playing, additionally downloaded files are not deleted automatically allowing you to re-watch them. However if you'd like to delete your temporary downloads click <strong>Clear Temp Downloads</strong> on the episode summary window or <strong>Delete Cached Video Files</strong> in the options menu.</p>
+      <p>Anime Buddy has the ability to play local files as well as remotely download files from your collection if   you've connected Anime Buddy to JMM Server. Setting Anime Buddy up for <a href="playback.html">remote playback</a> is easy and will work on any PC running Windows 8 or newer. </p>
       <span class="anchor" id="episode-playblack-error"></span>
       <h3>Why Won't The Episode Play?</h3>
       <p>If you are running Windows RT, you can only play videos which are supported by Windows Store Apps. At the time of writing the Video App only supports playback of AVI and XVID files. </p>
