@@ -22,13 +22,13 @@
     <div id="menu">
       <ul class="toplinks">
         <li><a href="../about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="../downloads.html">Downloads</a></li>
         <li><a href="../documentation.html">Documentation</a></li>
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -45,7 +45,7 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Episode Playback</strong></li>
-      <li><a href="#file-playback" target="new">File Playback</a></li>
+      <li><a href="#file-playback" target="_blank">File Playback</a></li>
       <li><a href="#same-computer">Anime Buddy &amp; JMM Server - Same Computer</a></li>
       <li><a href="#same-network">Anime Buddy &amp; JMM Server - Same Network</a></li>
       <li><a href="#over-the-internet">Anime Buddy &amp; JMM Server - Over The Internet</a></li>
@@ -57,10 +57,10 @@
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
@@ -86,14 +86,14 @@
       <p>If everything works by default then you're all set! However for most people some additional steps will need to be taken to get Anime Buddy to connect to JMM Server. </p>
       <span class="anchor" id="same-computer"></span>
       <h3>JMM Server and Anime Buddy  on the same computer</h3>
-      <p>By design, Windows prevents Windows Store Apps from sending network traffic to a local machine. You can override this and get a more detail explanation from the <a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx" target="new">following link</a>.      </p>
+      <p>By design, Windows prevents Windows Store Apps from sending network traffic to a local machine. More information on why this happens and how to override can be found <a href="http://blogs.msdn.com/b/fiddler/archive/2011/12/10/fiddler-windows-8-apps-enable-loopback-network-isolation-exemption.aspx" target="_blank">here</a>, the program offered on that site to download is safe and works. </p>
       <span class="anchor" id="same-network"></span>
       <h3>JMM Server and Anime Buddy  on different computers (Same Network)</h3>
-      <p>If you don't know how to get the IP Address of the computer JMM Server is on visit the<a href="http://www.whatsmyip.org/" target="new"> following site</a> on the computer JMM Server is on and write down the IP it shows you.</p>
+      <p>If you don't know how to get the IP Address of the computer JMM Server is on visit <a href="http://www.whatsmyip.org/" target="_blank"> WhatsMyIP</a> on the computer JMM Server is on and write down the IP it shows you.</p>
             <div id="tab-01">
         <ul>
-          <li><a href="#tab-1"><strong>Adding JMM Server and Anime Buddy to Windows Firewall Exception List</strong></a></li>
-          <li><a href="#tab-2"><strong>Creating An Inbound Rule for JMM Server</strong></a></li>
+          <li><a href="#tab-1">Adding JMM Server and Anime Buddy to Windows Firewall Exception List</a></li>
+          <li><a href="#tab-2">Creating An Inbound Rule for JMM Server</a></li>
         </ul>
         <div id="tab-1">
           <p>You'll need to add an exception for both JMM Server and Anime Buddy on the computer <strong>where JMM Server is installed</strong>. If you don't have Anime Buddy installed than install it before proceeding. </p>
@@ -123,8 +123,8 @@
       </div>
             <span class="anchor" id="over-the-internet"></span>
             <h3>JMM Server and Anime Buddy  on different computers (Different Network)</h3>
-            <p>First you'll need to open the port JMM Server uses. Use <a href="http://portforward.com/english/routers/port_forwarding/routerindex.htm" target="new">PortForward</a> to get specific instructions on how to enable port forwarding on your router. Once down check and make sure the port is actually <a href="http://www.canyouseeme.org/" target="new">opened and accessible</a> over the internet. If you get a success message then you should be able to connect, if you get a failure message than continue reading. </p>
-            <p>The most common reason you get a failure message even after opening the port is due to a security feature most routers have built in called <strong>Port Scan and DoS Protection</strong>, how to access this setting varies between routers. If you can add an exception to it, add the port JMM Server uses, if not then you'll need to disable it. We advise you do your own research before disabling it so you know what it does and if you need it, however it has been known to <a href="https://www.google.com/search?q=Port+Scan+and+DoS+Protection&ie=utf-8&oe=utf-8" target="new">cause issues</a> for just about every device that connects over the interent. </p>
+            <p>First you'll need to open the port JMM Server uses. Use <a href="http://portforward.com/english/routers/port_forwarding/routerindex.htm" target="_blank">PortForward</a> to get specific instructions on how to enable port forwarding on your router. Once down check and make sure the port is actually <a href="http://www.canyouseeme.org/" target="_blank">opened and accessible</a> over the internet. If you get a success message then you should be able to connect, if you get a failure message than continue reading. </p>
+            <p>The most common reason you get a failure message even after opening the port is due to a security feature most routers have built in called <strong>Port Scan and DoS Protection</strong>, how to access this setting varies between routers. If you can add an exception to it, add the port JMM Server uses, if not then you'll need to disable it. We advise you to do your own research before disabling it so you know what it does and if you need it, however it has been known to <a href="https://www.google.com/search?q=Port+Scan+and+DoS+Protection&ie=utf-8&oe=utf-8" target="_blank">cause issues</a> for just about every program that connects over the interent. </p>
       <p><a href="../images/animebuddy/collection-mix-overview.png" data-lightbox="collection-mix-overview" data-title="Anime Buddy - Collection & Calendar Overview"><img src="../images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
       <p>If you've inputted the correct information, Anime Buddy will refresh and your collection will be shown. </p>
     </div>
