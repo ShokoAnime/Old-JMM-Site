@@ -107,4 +107,5 @@ $(document).ready(function() {
         });
     });
 	
+    prettyPrint();
 });

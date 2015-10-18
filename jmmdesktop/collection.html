@@ -22,13 +22,13 @@
     <div id="menu">
       <ul class="toplinks">
         <li><a href="../about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="../downloads.html">Downloads</a></li>
         <li><a href="../documentation.html">Documentation</a></li>
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -46,34 +46,17 @@
     <ul class="docs-nav" id="menu-left">
       <li><strong>Collections Tab</strong></li>
       <li><a href="#collections-tab">Collection Overview</a></li>
-      <li><a href="#random-series">Random Series</a></li>
-      <li><a href="#random-episode">Random Episode</a></li>
+      <li><a href="#random">Random Series/Episodes</a></li>
       <li class="separator"></li>
       <li><strong> Filters</strong></li>
-      <li><a href="#group-filters">What Are Filters</a></li>
+      <li><a href="#what-are-filters">What Are Filters</a></li>
       <li><a href="#filter-basics">Filter Basics</a></li>
       <li><a href="#condition-types">Condition Types</a></li>
       <li><a href="#operators">Operators</a></li>
       <li class="separator"></li>
       <li><strong>Collection Overview</strong></li>
       <li><a href="#collection-overview">Collection Overview</a></li>
-      <li><a href="#series-info-tab">Series Info Tab</a></li>
-      <div class="click-nav">
-        <ul class="no-js">
-          <li> <a href="#" class="clicker">Series Info Section</a>
-            <ul>
-              <li><a href="#series-info">Series Info</a></li>
-              <li><a href="#series-next-episode-preview">Next Episode Preview</a></li>
-              <li><a href="#series-overview">Series Overview</a></li>
-              <li><a href="#series-more-information">More Information</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <li><a href="#series-episodes">Episodes</a></li>
-      <li><a href="#series-images">Images</a></li>
-      <li><a href="#series-related&similar">Related & Similar</a></li>
-      <li><a href="#series-comments">Comments From Users</a></li>
+      <li><a href="#series-information">Series Information</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -82,30 +65,37 @@
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
     <div class="docs-content"> <span class="anchor" id="collections-tab"></span>
       <h2>Collection Tab</h2>
-      <p>When you first select the <strong>Collections</strong> tab, you'll see two columns, the left column contains a list of pre-made and custom filters while the right column contains the preview of the selected filter. </p>
+      <p>When you first select the <strong>Collections</strong> tab, you'll see two columns. The left column contains a list of pre-made and custom filters while the right column contains the preview of the selected filter. </p>
       <p><a href="../images/jmmdesktop/collection-filter-overview.png" data-lightbox="collection-filter-overview" data-title="JMM Desktop - Filter Overview"><img src="../images/jmmdesktop/collection-filter-overview.png" alt="JMM Desktop - Filter Overview"/></a></p>
+      <span class="anchor" id="random"></span>
       <p>Additionally, in the right column you have two options to provide random results for the selected filter, <strong>Random Series</strong> and <strong>Random Episode</strong>. </p>
-      <span class="anchor" id="random-series"></span>
-      <h3>Random Series</h3>
-      <p>When clicked, the <strong>Random Series</strong> button will display a random series from your collection. Additionally you can further fine tune the results by specifying the watch state and adding tags to the filter list by clicking the<strong> Edit</strong> button. Note that any tag filtering done on the <strong>User</strong> section under the <strong>Settings</strong> tab will supersede any tags you select as well as the initial results shown. </p>
-      <p><a href="../images/jmmdesktop/collection-random-series.png" data-lightbox="collection-random-series" data-title="JMM Desktop - Random Series"><img src="../images/jmmdesktop/collection-random-series.png" alt="JMM Desktop - Random Series"/></a></p>
-      <span class="anchor" id="random-episode"></span>
-      <h3>Random Episode</h3>
-      <p>When clicked, the <strong>Random Episode</strong> button will display a random series from your collection. Additionally you can further fine tune the results by and specifying the watch state and adding tags to the filter list by clicking the<strong> Edit</strong> button . Note that any tag filtering done on the <strong>User</strong> section under the <strong>Settings</strong> tab will supersede any tags you select as well as the initial results shown. </p>
-      <p><a href="../images/jmmdesktop/collection-random-episode.png" data-lightbox="collection-random-episode" data-title="JMM Desktop - Random Series"><img src="../images/jmmdesktop/collection-random-episode.png" alt="JMM Desktop - Random Series"/></a></p>
-      <span class="anchor" id="group-filters"></span>
-      <h3> What Are  Filters</h3>
-      <p> Filters provided more control over your collection   allowing by allowing you to organize your collection in a variety of   ways. The conditions and operators you set are carried out at a series   level but shown at a group level. For example, if you have a group that   consists of three different series with two of those series being marked   as complete, a filter setup to show only <strong>Completed Series</strong> will include this group because at least one series in the group is complete.</p>
+      <div id="tab-01">
+        <ul>
+          <li><a href="#random-series">Random Series</a></li>
+          <li><a href="#random-episode">Random Episodes</a></li>
+        </ul>
+        <div id="random-series">
+          <p>When clicked, the <strong>Random Series</strong> button will display a random series from your collection. Additionally you can further fine tune the results by specifying the watch state and adding tags to the filter list by clicking the<strong> Edit</strong> button. Note that any tag filtering done on the <strong>User</strong> section under the <strong>Settings</strong> tab will supersede any tags you select as well as the initial results shown. </p>
+          <p><a href="../images/jmmdesktop/collection-random-series.png" data-lightbox="collection-random-series" data-title="JMM Desktop - Random Series"><img src="../images/jmmdesktop/collection-random-series.png" alt="JMM Desktop - Random Series"/></a></p>
+        </div>
+        <div id="random-episode">
+          <p>When clicked, the <strong>Random Episode</strong> button will display a random series from your collection. Additionally you can further fine tune the results by and specifying the watch state and adding tags to the filter list by clicking the<strong> Edit</strong> button . Note that any tag filtering done on the <strong>User</strong> section under the <strong>Settings</strong> tab will supersede any tags you select as well as the initial results shown. </p>
+          <p><a href="../images/jmmdesktop/collection-random-episode.png" data-lightbox="collection-random-episode" data-title="JMM Desktop - Random Series"><img src="../images/jmmdesktop/collection-random-episode.png" alt="JMM Desktop - Random Series"/></a></p>
+        </div>
+      </div>
+      <span class="anchor" id="what-are-filters"></span>
+      <h3>What Are Filters</h3>
+      <p> Filters provided more control over your collection by allowing you to organize your collection in a variety of   ways to your liking. The conditions and operators you set are carried out at a series   level but shown at a group level. For example, if you have a group that   consists of three different series with two of those series being marked   as complete, a filter setup to show only <strong>Completed Series</strong> will include this group because at least one series in the group is complete. This default behavior can be overwritten by enabling the <strong>Apply Filter At Series Level Instead Of Group Level</strong> setting which is explained below. </p>
       <p>It's important to remember that each filter you add will act as an <strong>AND</strong> operator meaning a series must pass all selected conditions to be added in the filter. </p>
       <span class="anchor" id="filter-basics"></span>
       <h3>Filter Basics</h3>
@@ -116,166 +106,268 @@
       <span class="anchor" id="condition-types"></span>
       <h3>Condition Types</h3>
       <p>Conditions allow you to define certain rules for your filter, JMM Desktop provides a wide range of conditions allowing you complete   control over how you display your collection.</p>
-      <p><strong>Air Date<br>
-        </strong> Air date is the date a series<strong> FIRST </strong>started   airing. You can filter out series that started before or after your   selected date or you can select an air date that is within <strong>X </strong>days with<strong> X </strong>being the number you inputted.</p>
-      <p><strong>Anime Type</strong> <br>
-        This is basically a choice between TV Series, TV Special, Movie, OVA and Web. </p>
-      <p><strong>Audio Language</strong> <br>
-        Filter by the possible audio tracks in your collection, for example English or Japanese.</p>
-      <p><strong>Category</strong> <br>
-        Categories in JMM Desktop are pulled from AniDB where they are   listed as tags for the series in your collection. You can select a   single category or multiple categories for your filter.</p>
-      <p><strong>Completed Series</strong> <br>
-        A series is considered complete if the show has finished airing <strong>AND </strong>you have all the episodes for that series in you collection.</p>
-      <p><strong>Episode Added Date</strong> <br>
-        Refers to the date an episode was added to your collection. The   date for a series will be the date the latest episode was added.</p>
-      <p><strong>Episode Watched Date</strong> <br>
-        Refers to the date an episode was watched. The date for a series will be the date the latest episode was watched.</p>
-      <p><strong>Favorite</strong> <br>
-        Favorites are an exception to the <strong>Apply Filter At Series Level Instead Of Group Level </strong>rule, as they apply at the group level only.          You can toggle a group as being a favorite using the <strong>Star</strong> button when viewing a group in JMM Desktop. </p>
-      <p><strong>Finished Airing</strong> <br>
-        A seres is considered finished airing <strong>IF</strong> the series end date is before the current date.</p>
-      <p><strong>Group</strong> <br>
-        Group is an exception to the<strong> Apply Filter At Series Level Instead Of Group Level </strong>rule, as they apply at the group level.            When using this filter you will be prompted to select an existing <strong>Anime Group</strong> from your collection. Keep in mind that this condition is evaluated in a special manner than other conditions. For example if you add a condition and select the group Macross Frontier, this group will always be included in the filter regardless if it matches any other conditions. Alternatively you can use this condition to always exclude a series or group that you don't want to appear. Lastly, this condition can also be used to manually build a watch list composed of series or groups. </p>
-      <p><strong>Has Unwatched Episodes</strong> <br>
-        A series will pass this condition if you have episodes that are not yet watched, and also available in your collection.</p>
-      <p><strong>Missing Episodes</strong> <br>
-        If <strong>Any</strong> subing group has released a new episode for a series in your collection, this condition will show that series as missing an episode. For example if <strong>Fansub Group A</strong> had released episode 13 of Bleach and you only had up to episode 12 from <strong>Fansub Group B</strong>, this condition would take effect. </p>
-      <p><strong>Missing Episodes (Collecting)</strong><br>
-        This is the same condition as <strong>Missing Episodes</strong> with one difference, it will only look for releases from fansub groups you are collecting. For example if <strong>Fansub Group A</strong> had released episode 13 of Bleach and you only had up to episode 12 from <strong>Fansub Group B</strong>, this condition would not take effect as <strong>Fansub Group B </strong>had not released episode 13. However this condition will take effect if you are collecting from multiple fansub groups.<br>
-      </p>
-      <p><strong>Rating - AniDB</strong> <br>
-        This condition looks at the overall rating given by AniDB   users. You can specify a value to filter by between 0 and 10.          The actual rating value is the average value of permanent and   temporary votes combined.</p>
-      <p><strong>Rating - User</strong> <br>
-        This is the same as <strong>Rating - AniDB</strong> except that it only looks at your own votes.</p>
-      <p><strong>Series Added Date</strong> <br>
-        This looks at the date a series was added to your local   collection. It can be useful for finding what you have recently added.</p>
-      <p><strong>Subtitle Language</strong> <br>
-        Filter by the possible subtitle tracks in your collection, for example English or Japanese.</p>
-      <p><strong>User Voted (Perm)</strong> <br>
-        This is a simple condition to determine if you have voted   permanently for a series. It would usually be used in conjunction with   the <strong>Completed Series</strong> condition to determine which series are missing your votes.</p>
-      <p><strong>Video Quality</strong> <br>
-        Video quality looks at the original source of the files such as Blu-ray, DVD, HDTV and filters accordingly.</p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td width="17%">Condition Type</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Air Date</strong></td>
+            <td>Air date is the date a series<strong> FIRST </strong>started   airing. You can filter out series that started before or after your   selected date or you can select an air date that is within <strong>X </strong>days with<strong> X </strong>being the number you inputted.</td>
+          </tr>
+          <tr>
+            <td><strong>Anime Type</strong></td>
+            <td>This is basically a choice between TV Series, TV Special, Movie, OVA and Web.</td>
+          </tr>
+          <tr>
+            <td><strong>Audio Language</strong></td>
+            <td>Filter by the possible audio tracks in your collection, for example English or Japanese.</td>
+          </tr>
+          <tr>
+            <td><strong>Category</strong></td>
+            <td>Categories in JMM Desktop are pulled from AniDB where they are   listed as tags for the series in your collection. You can select a   single category or multiple categories for your filter.</td>
+          </tr>
+          <tr>
+            <td><strong>Completed Series</strong></td>
+            <td>A series is considered complete if the show has finished airing <strong>AND </strong>you have all the episodes for that series in you collection.</td>
+          </tr>
+          <tr>
+            <td><strong>Episode Added Date</strong></td>
+            <td>Refers to the date an episode was added to your collection. The   date for a series will be the date the latest episode was added.</td>
+          </tr>
+          <tr>
+            <td><strong>Episode Watched Date</strong></td>
+            <td>Refers to the date an episode was watched. The date for a series will be the date the latest episode was watched.</td>
+          </tr>
+          <tr>
+            <td><strong>Favorite</strong></td>
+            <td>Favorites are an exception to the <strong>Apply Filter At Series Level Instead Of Group Level </strong>rule, as they apply at the group level only.          You can toggle a group as being a favorite using the <strong>Star</strong> button when viewing a group in JMM Desktop. </td>
+          </tr>
+          <tr>
+            <td><strong>Finished Airing</strong></td>
+            <td>A seres is considered finished airing <strong>IF</strong> the series end date is before the current date.</td>
+          </tr>
+          <tr>
+            <td><strong>Group</strong></td>
+            <td>Group is an exception to the<strong> Apply Filter At Series Level Instead Of Group Level </strong>rule, as they apply at the group level.            When using this filter you will be prompted to select an existing <strong>Anime Group</strong> from your collection. Keep in mind that this condition is evaluated in a special manner than other conditions. For example if you add a condition and select the group Macross Frontier, this group will always be included in the filter regardless if it matches any other conditions. Alternatively you can use this condition to always exclude a series or group that you don't want to appear. Lastly, this condition can also be used to manually build a watch list composed of series or groups. </td>
+          </tr>
+          <tr>
+            <td><strong>Has Unwatched Episodes</strong></td>
+            <td>A series will pass this condition if you have episodes that are not yet watched, and also available in your collection.</td>
+          </tr>
+          <tr>
+            <td><strong>Missing Episodes</strong></td>
+            <td>If <strong>Any</strong> subing group has released a new episode for a series in your collection, this condition will show that series as missing an episode. For example if <strong>Fansub Group A</strong> had released episode 13 of Bleach and you only had up to episode 12 from <strong>Fansub Group B</strong>, this condition would take effect. </td>
+          </tr>
+          <tr>
+            <td><strong>Missing Episodes (Collecting)</strong></td>
+            <td>This is the same condition as <strong>Missing Episodes</strong> with one difference, it will only look for releases from fansub groups you are collecting. For example if <strong>Fansub Group A</strong> had released episode 13 of Bleach and you only had up to episode 12 from <strong>Fansub Group B</strong>, this condition would not take effect as <strong>Fansub Group B </strong>had not released episode 13. However this condition will take effect if you are collecting from multiple fansub groups.</td>
+          </tr>
+          <tr>
+            <td><strong>Rating - AniDB</strong></td>
+            <td>This condition looks at the overall rating given by AniDB   users. You can specify a value to filter by between 0 and 10.          The actual rating value is the average value of permanent and   temporary votes combined.</td>
+          </tr>
+          <tr>
+            <td><strong>Rating - User</strong></td>
+            <td>This is the same as <strong>Rating - AniDB</strong> except that it only looks at your own votes.</td>
+          </tr>
+          <tr>
+            <td><strong>Series Added Date</strong></td>
+            <td>This looks at the date a series was added to your local   collection. It can be useful for finding what you have recently added.</td>
+          </tr>
+          <tr>
+            <td><strong>Subtitle Language</strong></td>
+            <td>Filter by the possible subtitle tracks in your collection, for example English or Japanese.</td>
+          </tr>
+          <tr>
+            <td><strong>User Voted (Perm)</strong></td>
+            <td>This is a simple condition to determine if you have voted   permanently for a series. It would usually be used in conjunction with   the <strong>Completed Series</strong> condition to determine which series are missing your votes.</td>
+          </tr>
+          <tr>
+            <td><strong>Video Quality</strong></td>
+            <td>Video quality looks at the original source of the files such as Blu-ray, DVD, HDTV and filters accordingly.</td>
+          </tr>
+        </tbody>
+      </table>
       <span class="anchor" id="operators"></span>
       <h3>Operators</h3>
       <p>Operators are used in conjunction with conditions to provide more precise filtering of your collection. Not all operators are available for all conditions. </p>
-      <p><strong>Include</strong><br>
-        Generally used on true/false conditions such as <strong>Completed Series</strong> and <strong>Missing Episodes</strong>. </p>
-      <p><strong>Exclude</strong><br>
-        Opposite of Include. </p>
-      <p><strong>Greater Than </strong><br>
-        Used for conditions which require a date input or value input such as <strong>Air Date </strong>or <strong>Rating - AniDB</strong>. </p>
-      <p><strong>Less Than </strong><br>
-        Opposite of operator<strong> Greater Than</strong>.</p>
-      <p><strong>Equals</strong><br>
-        Used <strong>ONLY</strong> in the <strong>Group</strong> condition to indicate that you want this group to always be shown. </p>
-      <p><strong>Not Equals </strong><br>
-        Opposite of operator <strong>Equals</strong>. </p>
-      <p><strong>In </strong><br>
-        For conditions where you can select more than one filter value. For example using the<strong> Category</strong> condition and selecting the categories action, mecha and school would   show any series that at least have one of these as a category. </p>
-      <p><strong>Not In </strong><br>
-        Opposite of operator <strong>IN</strong>.</p>
-      <p><strong>In (All Episodes) </strong><br>
-        Same as operator <strong>In</strong> but will only evaluate to true if   all episodes/files in a series match the criteria. This can only be used   on conditions where this would make sense, such as <strong>Video Quality</strong>. </p>
-      <p><strong>Not In (All Episodes)</strong> <strong><br>
-        </strong>Opposite of operator <strong>In (All Episodes)</strong>.</p>
-      <p><strong>Last 'X' Days </strong><br>
-        Used for conditions which are dates, and is evaluated relative to the current date. For example you can specify an <strong>Air Date</strong> of the <strong>Last '30' Days</strong>, which means it will only show you series which have started airing in the last 30 days </p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td width="17%">Operator Type</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Include</strong></td>
+            <td>Generally used on true/false conditions such as <strong>Completed Series</strong> and <strong>Missing Episodes</strong>. </td>
+          </tr>
+          <tr>
+            <td><strong>Exclude</strong></td>
+            <td>Opposite of Include. </td>
+          </tr>
+          <tr>
+            <td><strong>Greater Than </strong></td>
+            <td>Used for conditions which require a date input or value input such as <strong>Air Date </strong>or <strong>Rating - AniDB</strong>. </td>
+          </tr>
+          <tr>
+            <td><strong>Less Than </strong></td>
+            <td>Opposite of operator<strong> Greater Than</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>Equals</strong></td>
+            <td>Used <strong>ONLY</strong> in the <strong>Group</strong> condition to indicate that you want this group to always be shown. </td>
+          </tr>
+          <tr>
+            <td><strong>Not Equals </strong></td>
+            <td>Opposite of operator <strong>Equals</strong>. </td>
+          </tr>
+          <tr>
+            <td><strong>In </strong></td>
+            <td>For conditions where you can select more than one filter value. For example using the<strong> Category</strong> condition and selecting the categories action, mecha and school would   show any series that at least have one of these as a category. </td>
+          </tr>
+          <tr>
+            <td><strong>Not In</strong></td>
+            <td>Opposite of operator <strong>IN</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>In (All Episodes) </strong></td>
+            <td>Same as operator <strong>In</strong> but will only evaluate to true if   all episodes/files in a series match the criteria. This can only be used   on conditions where this would make sense, such as <strong>Video Quality</strong>. </td>
+          </tr>
+          <tr>
+            <td><strong>Not In (All Episodes)</strong></td>
+            <td>Opposite of operator <strong>In (All Episodes)</strong>.</td>
+          </tr>
+          <tr>
+            <td><strong>Last 'X' Days </strong></td>
+            <td>Used for conditions which are dates, and is evaluated relative to the current date. For example you can specify an <strong>Air Date</strong> of the <strong>Last '30' Days</strong>, which means it will only show you series which have started airing in the last 30 days </td>
+          </tr>
+        </tbody>
+      </table>
       <span class="anchor" id="collection-overview"></span>
       <h3>Collection Overview</h3>
       <p>After selecting your filter, you'll be presented with an overview of your collection divided into two panels. The left panel is the <strong>Filter Panel</strong> and displays the results of the selected filter while the right panel is the <strong>Series/Group Panel</strong> which displays in one of two formats depending on the selected item in the <strong>Filter Panel</strong>. You'll either see the series overview with information on that series or the group overview which lists some basic information on the initial series in that group in addition to listing every series in the group, below is an example of the group overview. </p>
       <p><a href="../images/jmmdesktop/collection-group-overview.png" data-lightbox="collection-group-overview" data-title="JMM Desktop - Group Overview"><img src="../images/jmmdesktop/collection-group-overview.png" alt="JMM Desktop - Group Overview"/></a></p>
-      <p>Double-clicking on a series in a group will open that group  showing only series in that group. Clicking the <strong>Back</strong> button on the navigation bar below the tab bar will take you back to your selected filter's results. </p>
-      <span class="anchor" id="series-info-tab"></span>
-      <h3>Series Info Tab</h3>
-      <p>The <strong>Series Info </strong>tab is the first thing you'll see when viewing a series  and is broken down into four different sections, <strong>Series Info</strong>, <strong>Next Episode Preview</strong>, <strong>Overview</strong> and <strong>More Information</strong>.</p>
-      <p><a href="../images/jmmdesktop/collection-series-info.png" data-lightbox="collection-series-info" data-title="JMM Desktop - Series Info"><img src="../images/jmmdesktop/collection-series-info.png" alt="JMM Desktop - Series Info"/></a></p>
-      <span class="anchor" id="series-info"></span>
-      <h3>Series Info</h3>
-      <p>Like the name suggests, the <strong>Series Info</strong> section contains the main information on the displayed series. In addition you have various options that allow you to edit the series information to tailor it to your liking. </p>
-      <a href="../images/jmmdesktop/series-info-main-info.png" data-lightbox="series-info-main-info" data-title="JMM Desktop - Series Info - Main Info"><img src="../images/jmmdesktop/series-info-main-info.png" alt="JMM Desktop - Series Info - Main Info"/></a><br>
-      <p>Below the <strong>Series Info</strong> tab you have the information bar which contains links and options to edit various information for the selected series. </p>
-      <p><strong>AniDB Series Number</strong></p>
-      <p>This is the series number for the selected series as indexed on AniDB. Clicking on it will take you to the AniDB page for that series. </p>
-      <p><strong>Pin Button</strong></p>
-      <p>Clicking this will pin the series and take you to the <strong>Pinned Tab</strong>. Please note that pinned series are not permanent and will be unpinned when JMM is closed. </p>
-      <p><strong>Refresh Button</strong></p>
-      <p>This will refresh the displayed data and image, useful if the series data was updated on TvDB or you want to change the displayed series image.</p>
-      <p><strong>Playlists Button</strong></p>
-      <p>This will allow you to either add the series, all episodes or all unwatched episodes to a playlist. For information on setting up playlists, <a href="playlists.html">click here</a>.</p>
-      <p><strong>Edit Button</strong></p>
-      <p>Clicking the edit button will allow you to edit the selected series <strong>Displayed Image</strong> and the series <strong>Title</strong>. </p>
-      <p>Clicking the<strong> Green Plus</strong> or the <strong>Red Minus</strong> next to the <strong>Displayed Image</strong> will allow you to make it bigger or smaller. Note this is a global setting and will change the size for every series <strong>Displayed Image</strong>. The displayed image is pulled from either download <strong>fanart</strong> or <strong>posters</strong> and can be changed in the <strong>Display Section</strong> in the <strong>Settings Tab</strong>.</p>
-      <p>The series <strong>Title</strong> can either be manually changed or replaced with an alternative title from AniDB. To do this click the<strong> Override</strong> button next to the series title and either input the title in the box on the right or select the <strong>Green Crossed Arrows</strong> to select one of the alternative names from AniDB. </p>
-      <p><strong>Move Series Button</strong></p>
-      <p>This will allow you to move the series into a new group, you can either chose an existing group or create a new group. Useful for moving series that have multiple movies or OVA's into one group. </p>
-      <p><strong>Group Button</strong></p>
-      <p>Clicking the group button will show the group the series is currently. You can click on the group name to be taken to the group listing showing every series in that group.</p>
-      <p><strong>Update AniDB Info Button</strong></p>
-      <p>This will update all the AniDB information for the selected series. Note that this does not happen instantaneously, it will be added to the AniDB commands and executed in the order it which it was received. You can see the profess of the AniDB commands by hovering your mouse <strong>AniDB Commands In Queue</strong> which is the third item on the menu bar at the bottom. Once it's down you'll need to refresh the series to see the results.</p>
-      <p><strong>Delete Series Button</strong></p>
-      <p>This will allow you to delete the series from your collection. When click you'll be presented with two options, <strong>Delete any parent groups if they are empty</strong> and <strong>Also delete all physical files</strong>. The first option will also remove the group the series is in provided there are no other series in that group and the second option will remove all files associated with that series from it's physical location. </p>
-      <p><strong>Random Episode Button </strong></p>
-      <p>Refer to the <a href="#random-episode">Random Episode</a> section above.</p>
-      <p>Below the information bar the basic information about the series is shown. </p>
-      <p><strong>Favorite Button</strong></p>
-      <p>Located to the left of the series name, clicking this will favorite the series. </p>
-      <p><strong>Series Name</strong></p>
-      <p>By default it's the name of the series displayed in the first language you've selected under <strong>Language Preferences</strong> in the <strong>AniDB</strong> section in the <strong>Settings Tan</strong>.</p>
-      <p><strong>Air Date</strong></p>
-      <p>The air date of the series pulled from AniDB. </p>
-      <p><strong>Rating </strong></p>
-      <p>The series overall rating from ANIDB. You can add your own rating and mark it either temporary or permanent. Temporary ratings are used to indicate how you feel about the series as you're watching it while the permanent rating, and the one that gets added to the average on AniDB is for your overall rating on the series. </p>
-      <p><strong>Total Episode Count</strong></p>
-      <p>Show how many episodes and specials there are for the selected series. This does not count things like openings or endings or any other listing on AniDB that is not considered an episode or special. </p>
-      <p><strong>Watched/Unwatched Count</strong></p>
-      <p>Show how many episodes you've watched and how many you have left to watch. </p>
-      <p>At the bottom of the<strong> Series Info</strong> section you have the external links bar. Any external links for the selected series such as AniDB, TvDB, MAL or Trakt.tv will be shown here. However the links will only show up if you have linked it's corresponding account up in JMM Desktop. </p>
-      <span class="anchor" id="series-next-episode-preview"></span>
-      <h3>Next Episode Preview</h3>
-      <p>The next episode preview will show the next episode for you to watch based on your watched/unwatched data. The reason for the duplicate watched/unwatched and play button is for those who collect multiple releases from different groups. The top watched/unwatched and play button will play the next episode using the default group. The bottom watched/unwatched and play button allows you to select the next episode to watch by group, it will show every version of that episode you have and list the technical details for that file. </p>
-      <a href="../images/jmmdesktop/series-info-next-episode.png" data-lightbox="series-info-next-episode" data-title="JMM Desktop - Series Info - Next Episode"><img src="../images/jmmdesktop/series-info-next-episode.png" alt="JMM Desktop - Series Info - Next Episode"/></a><br>
-      <span class="anchor" id="series-overview"></span>
-      <h3>Overview</h3>
-      <p>The overview is the synopsis of the series, it's pulled directly from AniDB which has a strict policy of no spoilers in the synopsis unless the show is a sequel or movie. For longer synopses, you can click anywhere in the overview box to display the full synopsis </p>
-      <a href="../images/jmmdesktop/series-info-overview.png" data-lightbox="series-info-main-info" data-title="JMM Desktop - Series Info - Overview"><img src="../images/jmmdesktop/series-info-overview.png" alt="JMM Desktop - Series Info - Overview"/></a><br>
-      <span class="anchor" id="series-more-information"></span>
-      <h3>More Information</h3>
-      <p>The more information section contains alternative titles and tags for the series, all external links and a file summary of the files in the selected series.</p>
-      <p><a href="../images/jmmdesktop/series-info-more-info.png" data-lightbox="series-info-more-information" data-title="JMM Desktop - Series Info - Main Information"><img src="../images/jmmdesktop/series-info-more-info.png" alt="JMM Desktop - Series Info - More Information"/></a></p>
-      <p><strong>Titles</strong></p>
-      <p>These are the alternative titles pulled from AniDB, this data is also used when selecting a title from the list when changing the series name. </p>
-      <p><strong>Tags</strong></p>
-      <p>These are the tags that have been applied to the series on AniDB. Hovering over a tag will give you a quick description of the tag and clicking a tag will filter your collection showing only series that have that tag. </p>
-      <p><strong>TvDB and Other Non AniDB Links</strong></p>
-      <p>JMM supports linking to other sites for importing and exporting data. As previously mentioned JMM uses AniDB for almost all anime related data but also uses TvDB for images and episode information. Additionally a Trakt.TV  and/or a My Anime List account can be linked to sync watch status and rating. The Movie DB is also used for pulling information for Movies but is not fully supported at this time. </p>
-      <p>By default, if you've enabled importing/exporting of your data with one of the external sites like Trakt.TV or My Anime List, each series will have it's corresponding link auto linked. However, the system is not perfect and relies on users to fix any mistakes or create the link if it does not exist. By clicking the <strong>Search</strong> button you can create the link. </p>
-      <p><a href="../images/jmmdesktop/collection-tvdb-link.png" data-lightbox="collection-tvdb-link" data-title="JMM Desktop - Series Info - Linking Series"><img src="../images/jmmdesktop/collection-tvdb-link.png" alt="JMM Desktop - Series Info - Linking Series"/></a></p>
-      <p>You'll see a screen similar to this depending on which site you're creating the link for. The series name will auto-populate for you so just click the <strong>Search</strong> button. Most of the time you'll see a box called <strong>Community Recommendation</strong>, this means the series already has an approved link, click the <strong>Use This</strong> button to use that link. Now if there is not a <strong>Community Recommendation</strong> that means no one has submitted a link for that series, the good news is that if you select a link from the list, JMM will automatically submit that link and if approved, will automatically be used.</p>
-      <p>Something to keep in mind, only link a series using an English link. Most of these sites are only in English aways so this shouldn't be a problem but you'll notice in the above example there are links for the series in different languages. While they all go to the same page, click the one with the <strong>British</strong> flag to use as the link even if English is not your first language. </p>
-      <p><a href="../general/faq.html#what-are-community-recommendations">Click Here</a> for more information on Community Recommendations.      </p>
-      <p><strong>File Summary</strong></p>
-      <p>The file summary section shows the file information for the files in the selected series. The file listing is separated by fansub group and within a fansub group by the technical details of the files. Meaning if you started collecting <strong>HD</strong> releases of a show by <strong>Fansub Group A</strong> and then started collecting DVD releases by the same group, JMM Desktop will show two entries for <strong>Fansub Group A</strong>. You can sort this list by <strong>Quality Ranking</strong> or <strong>Release Group</strong>, the default is <strong>Quality Ranking</strong>. The summary type can also be changed from the default <strong>Quality/Release Group Details</strong> to <strong>Release Group Summary</strong> which will just show the files just by fansub group without the technical breakdown. </p>
-      <p><strong>Custom Tags</strong></p>
-      <p>Custom tags give you the ability to add personal tags such as a list of favorite series or series that need updating. The custom tag name is displayed in the middle with the add button on the right side. If you want to create a custom tag, click the <strong>Gear</strong> on the right side of the custom tag name. From here you can add the <strong>Tag Name</strong> and <strong>Tag Description</strong> as well as manage your custom tags. </p>
-      <h3>Episodes</h3>
-      <p>The episode section contains a list of all the episodes, credits, specials and trailers for the series based off the information imported from AniDB. You'll see a listing for the item even if it's not in your collection. Additionally, the item image and description is pulled from TvDB as AniDB does not support this type of data. </p>
-      <p>Right below the section title, you have three different listing options, <strong>Type</strong>, <strong>Availability</strong> and <strong>Watched State</strong>. The Type <strong>listing</strong> allows you to select the type of item you want to view, you can select either <strong>Episodes</strong>, <strong>Specials</strong>, <strong>Credits</strong> or <strong>Trailers</strong>. The <strong>Availability</strong> listing allows you to select what items to show, you can switch from <strong>All Episodes</strong> which will showing everything regardless if it's in your collection, <strong>Available Files Only</strong> which will only show items that are in your collection and <strong>No Files Available</strong> which will show any item in the series that you don't have a file for. The last listing, <strong>Watched State</strong> allows you to specify the watched state by selecting either <strong>All</strong>, <strong>Unwatched</strong> or <strong>Watched</strong>. </p>
-      <p><a href="../images/jmmdesktop/collection-series-episodes.png" data-lightbox="collection-series-episodes" data-title="JMM Desktop - Episode Listing"><img src="../images/jmmdesktop/collection-series-episodes.png" alt="JMM Desktop - Episode Listing"/></a></p>
-      <p>As previously mentioned above, each item has its own listing with each listing having its own image, description set of options. Starting with the buttons to the right of the name we have the <strong>Watched State</strong> which you can manually toggle a <strong>Dark Eye</strong> means the file is unwatched and a <strong>Bright Eye</strong> means the file has been watched. The <strong>Play</strong> button will play the selected item while the <strong>Green Download</strong> button will take you to the <strong>Search Torrents</strong> section in the <strong>Downloads</strong> tab and display the available downloads for the item you selected. The <strong>Playlist</strong> button will allow you to add the selected item to a playlist. The <strong>Arrow Circle</strong> button will allow you to override the TvDB link for the item, this is handy for example if a link is off due to a special being labeled as an episode on AniDB and a special on TvDB. </p>
-      <p><a href="../images/jmmdesktop/collection-override-tvdb-link.png" data-lightbox="collection-override-tvdb-link" data-title="JMM Desktop - Override TvDB Link"><img src="../images/jmmdesktop/collection-override-tvdb-link.png" alt="JMM Desktop - Override TvDB Link"/></a></p>
-      <p>You can select the season the correct item is in, once down click the <strong>Use This</strong> button and it will override the auto linked item with your selection. If you have the setting enabled to send data, this link will be sent to JMM and if approved will be automatically done for other users in the future. Note, this information is from TvDB so if you're looking to override a special or movie link, it will be in what's labeled as <strong>Season 0</strong>. Last we have the <strong>Force AniDB Update</strong> button which will queue the series to have its information updated to match AniDB.</p>
-      <p>Each item has it's own file properties which can be viewed by clicking the <strong>Plus</strong> button to the right of the item's name. You'll be presented with a few more options and some basic information on the file, if you happen to have multiple files for the same listing, they will all show up. Like in the above menu, you have the <strong>Watched State</strong> button and <strong>Play</strong> button, the <strong>Open</strong> Folder button will open a window showing the files. The <strong>Delete</strong> button will delete the selected file so be careful while the Is Variation button will allow you to mark a file as a variation which will stop it from being reported as a duplicate or multiple file. The <strong>More Info</strong> button will open up a sub-menu showing the <strong>Hash</strong>, <strong>CRC32</strong>, <strong>SHA1</strong>, and <strong>MD5</strong> values if available. The <strong>MyList</strong> button will forcefully add the file to your My List on AniDB, the Update Info button will download the file information only for the selected item from AniDB and the <strong>Rehash</strong> button will rehash the file for comparison. The <strong>AniDB</strong> button is a link that will show the file information on AniDB.</p>
-      <p><span class="anchor" id="series-images"></span>      </p>
-      <h3>Images</h3>
-      <p>The images section shows you an overview of every poster, fanart and banner downloaded for the selected series. The image source is shown above the image but most of the images shown were downloaded from TvDB. You can view a bigger version of the image by hovering your cursor over it. Each image have three options, <strong>View</strong>, <strong>Enable/Disable</strong> and <strong>Favorite</strong>, the <strong>View</strong> button will open the image in your default image viewing program, the <strong>Enable/Disable</strong> button toggles the image for display during the random rotation. The <strong>Favorite</strong> button will make the selected image the default for that series overruling the random image display. </p>
-      <p><a href="../images/jmmdesktop/collection-series-images.png" data-lightbox="collection-series-images" data-title="JMM Desktop - Series Images"><img src="../images/jmmdesktop/collection-series-images.png" alt="JMM Desktop - Series Images"/></a><span class="anchor" id="series-related&similar"></span>      </p>
-      <h3>Related And Similar</h3>
-      <p>The Related And Similar section will show additional series that are connected to the selected series as well as any series that share similar concepts as reported on AniDB. If you don't have the series already in your collection, you'll notice the image missing, clicking the<strong> Get Missing Data Now</strong> button will download the missing images. How a series is related to the selected series is shown below the <strong>Related Anime</strong> title, for <strong>Similar Anime</strong> you'll see an <strong>Approval Rating</strong> instead that's calculated when someone makes a recommendation, and other people up-vote those recommendations. </p>
-      <p>You also have a couple options available to you for each listed series which should look familiar. The <strong>AniDB Link</strong> will take you to the AniDB page for that series, the <strong>Pin</strong> button will pin the series, the <strong>Bookmark</strong> button will bookmark the series and the <strong>Download</strong> button will take you to the <strong>Search Torrents</strong> section in the <strong>Downloads</strong> tab and display the available downloads for the item you selected.</p>
-      <p><a href="../images/jmmdesktop/collection-series-related-similar.png" data-lightbox="collection-series-related-similar" data-title="JMM Desktop - Series Related And Similar"><img src="../images/jmmdesktop/collection-series-related-similar.png" alt="JMM Desktop - Series Related And Similar"/></a></p>
-      <span class="anchor" id="series-comments"></span>
-      <h3>Comments From Users</h3>
-      <p>The comments section will show comments pulled from AniDB for that series. Trakt.TV users will also see comments from there and also have the ability to leave a comment on the series in JMM Desktop. Please use the <strong>Spoiler</strong> button if your comment has any spoilers so you don't accidentally ruin the series for other users. </p>
+      <p>Double-clicking on a series in a group will open that group  showing only series in that group. Clicking the <strong>Back</strong> button on the navigation bar below the tab bar will take you back to your selected filter's results.      </p>
+      <span class="anchor" id="series-information"></span>
+      <div id="tab-02">
+        <ul>
+          <li><a href="#series-info">Series Info</a></li>
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#related-similar">Related And Similar</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul>
+        <div id="series-info">
+          <p>The <strong>Series Info </strong>tab is the first thing you'll see when viewing a series  and is broken down into four different sections, <strong>Snapshot</strong>, <strong>Next Episode Preview</strong>, <strong>Overview</strong> and <strong>More Information</strong> which is detailed below.</p>
+          <p><a href="../images/jmmdesktop/collection-series-info.png" data-lightbox="collection-series-info" data-title="JMM Desktop - Series Info"><img src="../images/jmmdesktop/collection-series-info.png" alt="JMM Desktop - Series Info"/></a></p>
+          <div id="tab-03">
+        <ul>
+          <li><a href="#snapshot">Snapshot</a></li>
+          <li><a href="#next-episode">Next Episode</a></li>
+          <li><a href="#overview">Overview</a></li>      
+          <li><a href="#more-information">More Information</a></li>
+        </ul>
+        <div id="snapshot">
+          <p>The <strong>Snapshot</strong> section contains the main information on the displayed series. In addition you have various options that allow you to edit the series information to tailor it to your liking. </p>
+          <a href="../images/jmmdesktop/series-info-main-info.png" data-lightbox="series-info-main-info" data-title="JMM Desktop - Series Info - Main Info"><img src="../images/jmmdesktop/series-info-main-info.png" alt="JMM Desktop - Series Info - Main Info"/></a><br>
+          <p>Below the <strong>Series Info</strong> tab you have the information bar which contains links and options to edit various information for the selected series. </p>
+          <p><strong>AniDB Series Number</strong></p>
+          <p>This is the series number for the selected series as indexed on AniDB. Clicking on it will take you to the AniDB page for that series. </p>
+          <p><strong>Pin Button</strong></p>
+          <p>Clicking this will pin the series and take you to the <strong>Pinned Tab</strong>. Please note that pinned series are not permanent and will be unpinned when JMM is closed. </p>
+          <p><strong>Refresh Button</strong></p>
+          <p>This will refresh the displayed data and image, useful if the series data was updated on TvDB or you want to change the displayed series image.</p>
+          <p><strong>Playlists Button</strong></p>
+          <p>This will allow you to either add the series, all episodes or all unwatched episodes to a playlist. For information on setting up playlists, <a href="playlists.html">click here</a>.</p>
+          <p><strong>Edit Button</strong></p>
+          <p>Clicking the edit button will allow you to edit the selected series <strong>Displayed Image</strong> and the series <strong>Title</strong>. </p>
+          <p>Clicking the<strong> Green Plus</strong> or the <strong>Red Minus</strong> next to the <strong>Displayed Image</strong> will allow you to make it bigger or smaller. Note this is a global setting and will change the size for every series <strong>Displayed Image</strong>. The displayed image is pulled from either download <strong>fanart</strong> or <strong>posters</strong> and can be changed in the <strong>Display Section</strong> in the <strong>Settings Tab</strong>.</p>
+          <p>The series <strong>Title</strong> can either be manually changed or replaced with an alternative title from AniDB. To do this click the<strong> Override</strong> button next to the series title and either input the title in the box on the right or select the <strong>Green Crossed Arrows</strong> to select one of the alternative names from AniDB. </p>
+          <p><strong>Move Series Button</strong></p>
+          <p>This will allow you to move the series into a new group, you can either chose an existing group or create a new group. Useful for moving series that have multiple movies or OVA's into one group. </p>
+          <p><strong>Group Button</strong></p>
+          <p>Clicking the group button will show the group the series is currently. You can click on the group name to be taken to the group listing showing every series in that group.</p>
+          <p><strong>Update AniDB Info Button</strong></p>
+          <p>This will update all the AniDB information for the selected series. Note that this does not happen instantaneously, it will be added to the AniDB commands and executed in the order it which it was received. You can see the profess of the AniDB commands by hovering your mouse <strong>AniDB Commands In Queue</strong> which is the third item on the menu bar at the bottom. Once it's down you'll need to refresh the series to see the results.</p>
+          <p><strong>Delete Series Button</strong></p>
+          <p>This will allow you to delete the series from your collection. When click you'll be presented with two options, <strong>Delete any parent groups if they are empty</strong> and <strong>Also delete all physical files</strong>. The first option will also remove the group the series is in provided there are no other series in that group and the second option will remove all files associated with that series from it's physical location. </p>
+          <p><strong>Random Episode Button </strong></p>
+          <p>Refer to the <a href="#random-episode">Random Episode</a> section above.</p>
+          <p>Below the information bar the basic information about the series is shown. </p>
+          <p><strong>Favorite Button</strong></p>
+          <p>Located to the left of the series name, clicking this will favorite the series. </p>
+          <p><strong>Series Name</strong></p>
+          <p>By default it's the name of the series displayed in the first language you've selected under <strong>Language Preferences</strong> in the <strong>AniDB</strong> section in the <strong>Settings Tan</strong>.</p>
+          <p><strong>Air Date</strong></p>
+          <p>The air date of the series pulled from AniDB. </p>
+          <p><strong>Rating </strong></p>
+          <p>The series overall rating from ANIDB. You can add your own rating and mark it either temporary or permanent. Temporary ratings are used to indicate how you feel about the series as you're watching it while the permanent rating, and the one that gets added to the average on AniDB is for your overall rating on the series. </p>
+          <p><strong>Total Episode Count</strong></p>
+          <p>Show how many episodes and specials there are for the selected series. This does not count things like openings or endings or any other listing on AniDB that is not considered an episode or special. </p>
+          <p><strong>Watched/Unwatched Count</strong></p>
+          <p>Show how many episodes you've watched and how many you have left to watch. </p>
+          <p>At the bottom of the<strong> Series Info</strong> section you have the external links bar. Any external links for the selected series such as AniDB, TvDB, MAL or Trakt.tv will be shown here. However the links will only show up if you have linked it's corresponding account up in JMM Desktop. </p>
+        </div>
+        <div id="next-episode">
+          <h3>Next Episode Preview</h3>
+          <p>The next episode preview will show the next episode for you to watch based on your watched/unwatched data. The reason for the duplicate watched/unwatched and play button is for those who collect multiple releases from different groups. The top watched/unwatched and play button will play the next episode using the default group. The bottom watched/unwatched and play button allows you to select the next episode to watch by group, it will show every version of that episode you have and list the technical details for that file. </p>
+          <a href="../images/jmmdesktop/series-info-next-episode.png" data-lightbox="series-info-next-episode" data-title="JMM Desktop - Series Info - Next Episode"><img src="../images/jmmdesktop/series-info-next-episode.png" alt="JMM Desktop - Series Info - Next Episode"/></a>
+          <p>&nbsp;</p>
+        </div>
+        <div id="overview">
+          <h3>Overview</h3>
+          <p>The overview is the synopsis of the series, it's pulled directly from AniDB which has a strict policy of no spoilers in the synopsis unless the show is a sequel or movie. For longer synopses, you can click anywhere in the overview box to display the full synopsis </p>
+          <a href="../images/jmmdesktop/series-info-overview.png" data-lightbox="series-info-main-info" data-title="JMM Desktop - Series Info - Overview"><img src="../images/jmmdesktop/series-info-overview.png" alt="JMM Desktop - Series Info - Overview"/></a>
+          <p>&nbsp;</p>
+        </div>
+        <div id="more-information">
+          <h3>More Information</h3>
+          <p>The more information section contains alternative titles and tags for the series, all external links and a file summary of the files in the selected series.</p>
+          <p><a href="../images/jmmdesktop/series-info-more-info.png" data-lightbox="series-info-more-information" data-title="JMM Desktop - Series Info - Main Information"><img src="../images/jmmdesktop/series-info-more-info.png" alt="JMM Desktop - Series Info - More Information"/></a></p>
+          <p><strong>Titles</strong></p>
+          <p>These are the alternative titles pulled from AniDB, this data is also used when selecting a title from the list when changing the series name. </p>
+          <p><strong>Tags</strong></p>
+          <p>These are the tags that have been applied to the series on AniDB. Hovering over a tag will give you a quick description of the tag and clicking a tag will filter your collection showing only series that have that tag. </p>
+          <p><strong>TvDB and Other Non AniDB Links</strong></p>
+          <p>JMM supports linking to other sites for importing and exporting data. As previously mentioned JMM uses AniDB for almost all anime related data but also uses TvDB for images and episode information. Additionally a Trakt.TV  and/or a MyAnimeList account can be linked to sync watch status and rating. The Movie DB is also used for pulling information for Movies but is not fully supported at this time. </p>
+          <p>By default, if you've enabled importing/exporting of your data with one of the external sites like Trakt.TV or MyAnimeList, each series will have it's corresponding link auto linked. However, the system is not perfect and relies on users to fix any mistakes or create the link if it does not exist. By clicking the <strong>Search</strong> button you can create the link. </p>
+          <p><a href="../images/jmmdesktop/collection-tvdb-link.png" data-lightbox="collection-tvdb-link" data-title="JMM Desktop - Series Info - Linking Series"><img src="../images/jmmdesktop/collection-tvdb-link.png" alt="JMM Desktop - Series Info - Linking Series"/></a></p>
+          <p>You'll see a screen similar to this depending on which site you're creating the link for. The series name will auto-populate for you so just click the <strong>Search</strong> button. Most of the time you'll see a box called <strong>Community Recommendation</strong>, this means the series already has an approved link, click the <strong>Use This</strong> button to use that link. Now if there is not a <strong>Community Recommendation</strong> that means no one has submitted a link for that series, the good news is that if you select a link from the list, JMM will automatically submit that link and if approved, will automatically be used.</p>
+          <p>Something to keep in mind, only link a series using an English link. Most of these sites are only in English aways so this shouldn't be a problem but you'll notice in the above example there are links for the series in different languages. While they all go to the same page, click the one with the <strong>British</strong> flag to use as the link even if English is not your first language. </p>
+          <p><a href="../general/faq.html#what-are-community-recommendations">Click Here</a> for more information on Community Recommendations. </p>
+          <p><strong>File Summary</strong></p>
+          <p>The file summary section shows the file information for the files in the selected series. The file listing is separated by fansub group and within a fansub group by the technical details of the files. Meaning if you started collecting <strong>HD</strong> releases of a show by <strong>Fansub Group A</strong> and then started collecting DVD releases by the same group, JMM Desktop will show two entries for <strong>Fansub Group A</strong>. You can sort this list by <strong>Quality Ranking</strong> or <strong>Release Group</strong>, the default is <strong>Quality Ranking</strong>. The summary type can also be changed from the default <strong>Quality/Release Group Details</strong> to <strong>Release Group Summary</strong> which will just show the files just by fansub group without the technical breakdown. </p>
+          <p><strong>Custom Tags</strong></p>
+          <p>Custom tags give you the ability to add personal tags such as a list of favorite series or series that need updating. The custom tag name is displayed in the middle with the add button on the right side. If you want to create a custom tag, click the <strong>Gear</strong> on the right side of the custom tag name. From here you can add the <strong>Tag Name</strong> and <strong>Tag Description</strong> as well as manage your custom tags. </p>
+          <p>&nbsp;</p>
+        </div>
+          </div>
+        </div>
+        <div id="episodes">
+          <p>The episode section contains a list of all the episodes, credits, specials and trailers for the series based off the information imported from AniDB. You'll see a listing for the item even if it's not in your collection. Additionally, the item image and description is pulled from TvDB as AniDB does not support this type of data. </p>
+          <p>Right below the section title, you have three different listing options, <strong>Type</strong>, <strong>Availability</strong> and <strong>Watched State</strong>. The Type <strong>listing</strong> allows you to select the type of item you want to view, you can select either <strong>Episodes</strong>, <strong>Specials</strong>, <strong>Credits</strong> or <strong>Trailers</strong>. The <strong>Availability</strong> listing allows you to select what items to show, you can switch from <strong>All Episodes</strong> which will showing everything regardless if it's in your collection, <strong>Available Files Only</strong> which will only show items that are in your collection and <strong>No Files Available</strong> which will show any item in the series that you don't have a file for. The last listing, <strong>Watched State</strong> allows you to specify the watched state by selecting either <strong>All</strong>, <strong>Unwatched</strong> or <strong>Watched</strong>. </p>
+          <p><a href="../images/jmmdesktop/collection-series-episodes.png" data-lightbox="collection-series-episodes" data-title="JMM Desktop - Episode Listing"><img src="../images/jmmdesktop/collection-series-episodes.png" alt="JMM Desktop - Episode Listing"/></a></p>
+          <p>As previously mentioned above, each item has its own listing with each listing having its own image, description set of options. Starting with the buttons to the right of the name we have the <strong>Watched State</strong> which you can manually toggle a <strong>Dark Eye</strong> means the file is unwatched and a <strong>Bright Eye</strong> means the file has been watched. The <strong>Play</strong> button will play the selected item while the <strong>Green Download</strong> button will take you to the <strong>Search Torrents</strong> section in the <strong>Downloads</strong> tab and display the available downloads for the item you selected. The <strong>Playlist</strong> button will allow you to add the selected item to a playlist. The <strong>Arrow Circle</strong> button will allow you to override the TvDB link for the item, this is handy for example if a link is off due to a special being labeled as an episode on AniDB and a special on TvDB. </p>
+          <p><a href="../images/jmmdesktop/collection-override-tvdb-link.png" data-lightbox="collection-override-tvdb-link" data-title="JMM Desktop - Override TvDB Link"><img src="../images/jmmdesktop/collection-override-tvdb-link.png" alt="JMM Desktop - Override TvDB Link"/></a></p>
+          <p>You can select the season the correct item is in, once down click the <strong>Use This</strong> button and it will override the auto linked item with your selection. If you have the setting enabled to send data, this link will be sent to JMM and if approved will be automatically done for other users in the future. Note, this information is from TvDB so if you're looking to override a special or movie link, it will be in what's labeled as <strong>Season 0</strong>. Last we have the <strong>Force AniDB Update</strong> button which will queue the series to have its information updated to match AniDB.</p>
+          <p>Each item has it's own file properties which can be viewed by clicking the <strong>Plus</strong> button to the right of the item's name. You'll be presented with a few more options and some basic information on the file, if you happen to have multiple files for the same listing, they will all show up. Like in the above menu, you have the <strong>Watched State</strong> button and <strong>Play</strong> button, the <strong>Open</strong> Folder button will open a window showing the files. The <strong>Delete</strong> button will delete the selected file so be careful while the Is Variation button will allow you to mark a file as a variation which will stop it from being reported as a duplicate or multiple file. The <strong>More Info</strong> button will open up a sub-menu showing the <strong>Hash</strong>, <strong>CRC32</strong>, <strong>SHA1</strong>, and <strong>MD5</strong> values if available. The <strong>MyList</strong> button will forcefully add the file to your My List on AniDB, the Update Info button will download the file information only for the selected item from AniDB and the <strong>Rehash</strong> button will rehash the file for comparison. The <strong>AniDB</strong> button is a link that will show the file information on AniDB.</p>
+        </div>
+        <div id="images">
+          <p>The images section shows you an overview of every poster, fanart and banner downloaded for the selected series. The image source is shown above the image but most of the images shown were downloaded from TvDB. You can view a bigger version of the image by hovering your cursor over it. Each image have three options, <strong>View</strong>, <strong>Enable/Disable</strong> and <strong>Favorite</strong>, the <strong>View</strong> button will open the image in your default image viewing program, the <strong>Enable/Disable</strong> button toggles the image for display during the random rotation. The <strong>Favorite</strong> button will make the selected image the default for that series overruling the random image display. </p>
+          <p><a href="../images/jmmdesktop/collection-series-images.png" data-lightbox="collection-series-images" data-title="JMM Desktop - Series Images"><img src="../images/jmmdesktop/collection-series-images.png" alt="JMM Desktop - Series Images"/></a><span class="anchor" id="series-related&amp;similar"></span></p>
+        </div>
+        <div id="related-similar">
+          <p>The Related And Similar section will show additional series that are connected to the selected series as well as any series that share similar concepts as reported on AniDB. If you don't have the series already in your collection, you'll notice the image missing, clicking the<strong> Get Missing Data Now</strong> button will download the missing images. How a series is related to the selected series is shown below the <strong>Related Anime</strong> title, for <strong>Similar Anime</strong> you'll see an <strong>Approval Rating</strong> instead that's calculated when someone makes a recommendation, and other people up-vote those recommendations. </p>
+          <p>You also have a couple options available to you for each listed series which should look familiar. The <strong>AniDB Link</strong> will take you to the AniDB page for that series, the <strong>Pin</strong> button will pin the series, the <strong>Bookmark</strong> button will bookmark the series and the <strong>Download</strong> button will take you to the <strong>Search Torrents</strong> section in the <strong>Downloads</strong> tab and display the available downloads for the item you selected.</p>
+          <p><a href="../images/jmmdesktop/collection-series-related-similar.png" data-lightbox="collection-series-related-similar" data-title="JMM Desktop - Series Related And Similar"><img src="../images/jmmdesktop/collection-series-related-similar.png" alt="JMM Desktop - Series Related And Similar"/></a></p>
+        </div>
+        <div id="comments">
+          <p>Comments are pulled from AniDB's recommendations section, so if the series does not have any comments then it's not been recommended on AniDB. Additionally, Trakt users will see comments from Trakt and also have the ability to leave a comment for the series. Please use the <strong>Spoiler</strong> button if your comment has any spoilers so you don't accidentally ruin the series for other users. </p>
+          <p><a href="../images/jmmdesktop/collection-series-comments.png" data-lightbox="collection-series-comments" data-title="JMM Desktop - Series Comments"><img src="../images/jmmdesktop/collection-series-comments.png" alt="JMM Desktop - Series Comments"/></a></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

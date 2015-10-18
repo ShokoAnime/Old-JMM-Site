@@ -22,13 +22,13 @@
     <div id="menu">
       <ul class="toplinks">
         <li><a href="../about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="../downloads.html">Downloads</a></li>
         <li><a href="../documentation.html">Documentation</a></li>
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -45,13 +45,9 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Installation and Setup</strong></li>
-      <li><a href="jmmserver.html">Installing JMM Server</a></li>
-      <li><a href="jmmdesktop.html">Installing JMM Desktop</a></li>
-      <li><a href="myanime3.html">Installing My Anime 3</a></li>
-      <li><a href="plex.html">Installing Plex Plugin</a></li>
-      <li><a href="animebuddy.html">Installing Anime Buddy</a></li>
-      <li><a href="mysql.html">Installing MySQL</a></li>
-      <li><a href="sqlserver.html">Installing SQL Server</a></li>
+      <li><a href="../downloads.html#stable-releases">Download Plex Plugin</a></li>
+      <li><a href="#installing-plex-plugin">Installing Plex Plugin</a></li>
+      <li><a href="#setting-up-plex-plugin">Setting Up Plex Plugin</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -60,26 +56,41 @@
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
     <div class="docs-content">
-      <h2 id="jmm-server-install">Installing and Setting Up Plex Plugin</h2>
-      <p>Installing the Plex plugin is pretty simple, copy <strong>MyAnime.bundle</strong> to your Plex plugins folder and you're done. You can do this by right clicking on the Plex server tray icon, and selecting <strong>Open Plug-ins folder</strong>.</p>
+      <h2 id="plex-plugin-install">Installing and Setting Up Plex Plugin</h2>
+      <span class="anchor" id="installing-plex-plugin"></span>
+      <p>Installing the Plex plugin is pretty simple, copy <strong>MyAnime.bundle</strong> to your Plex plugins folder and you're done. You can do this by right-clicking on the Plex server tray icon, and selecting <strong>Open Plug-ins folder</strong>.</p>
       <p><a href="../images/plex/plex-setup-01.jpg" data-lightbox="plex-setup-01" data-title="Plex - Setup 01"><img src="../images/plex/plex-setup-01.jpg" alt="Plex - Setup 01"></a></p>
       <p>It will open the plugins folder allowing you to copy <strong>MyAnime.bundle</strong> into it. If asked to over-write or if Windows' UAC pops up click OK. </p>
       <p><a href="../images/plex/plex-setup-02.jpg" data-lightbox="plex-setup-02" data-title="Plex - Setup 02"><img src="../images/plex/plex-setup-02.jpg" alt="Plex - Setup 02"></a></p>
-      <p>Once done the Plex plugin will be installed and will appear under <strong>Channels</strong> as <strong>My Anime</strong>.</p>
+      <p>Once you've copied the plug-in over, you'll need to restart Plex so it can load the plug-in. </p>
+      <p><a href="../images/plex/plex-taskbar-exit.png" data-lightbox="plex-taskbar-exit" data-title="Plex - Taskbar Exit"><img src="../images/plex/plex-taskbar-exit.png" alt="Plex - Taskbar Exit"></a></p>
+      <p>Click on the <strong>taskmenu</strong> and select <strong>Exit</strong>, this will close Plex winch then will allow you to restart it.      </p>
+      <p>The Plex plugin has been installed and will  appear under <strong>Channels</strong> as <strong>My Anime</strong>.</p>
       <p><a href="../images/plex/plex-setup-03.jpg" data-lightbox="plex-setup-03" data-title="Plex - Setup 03"><img src="../images/plex/plex-setup-03.jpg" alt="Plex - Setup 03"></a></p>
       <p>Clicking the <strong>My Anime</strong> channel will show your collection allowing you to view series, episode and character details in addition to streaming your collections files. </p>
       <p><a href="../images/plex/plex-setup-04.jpg" data-lightbox="plex-setup-04" data-title="Plex - Setup 04"><img src="../images/plex/plex-setup-04.jpg" alt="Plex - Setup 04"></a></p>
       <p><a href="../images/plex/plex-setup-05.jpg" data-lightbox="plex-setup-05" data-title="Plex - Setup 05"><img src="../images/plex/plex-setup-05.jpg" alt="Plex - Setup 05"></a></p>
       <p>The Plex plugin is now installed! </p>
+      <span class="anchor" id="setting-up-plex-plugin"></span>
+      <p>If you need to change any of the settings the Plex Plugin uses to connect to JMM Server. Open the plug-in<strong> Settings</strong> by pressing the cog in the top-right or  the cog on the plug-in logo in the channel menu. This will bring up the following window. </p>
+      <p><a href="../images/plex/plex-edit-server-settings.png" data-lightbox="plex-edit-server-settings" data-title="Plex - Edit Server Settings"><img src="../images/plex/plex-edit-server-settings.png" alt="Plex - Edit Server Settings"></a></p>
+      <p>Here's a breakdown of the available options.</p>
+      <ul>
+        <li><strong>Server IP</strong> - The IP Address of the computer JMM Server is on. </li>
+        <li><strong>Port</strong> - The Port JMM Server is using. </li>
+        <li><strong>JMM User</strong> - The account to use when connecting. </li>
+        <li><strong>Search Limit</strong> - The max amount of items to display when searching.</li>
+      </ul>
+      <p>If Plex and JMM Server are on the same computer, you can use <strong>localhost</strong> or <strong>127.0.0.1</strong> as the Server IP.  If you're trying to connect to JMM Server that's on another computer either on your network or over the internet, the <a href="../animebuddy/playback.html#same-network">following instructions</a> provide detail information for setting everything up as well as solutions to the most common problems.</p>
     </div>
   </div>
 </section>

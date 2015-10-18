@@ -22,13 +22,13 @@
     <div id="menu">
       <ul class="toplinks">
         <li><a href="../about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="../downloads.html">Downloads</a></li>
         <li><a href="../documentation.html">Documentation</a></li>
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -49,7 +49,7 @@
       <li><a href="#download">Download</a></li>
       <li><a href="#mysql-install">Installing MySQL</a></li>
       <li><a href="#mysql-config">Configuring MySQL</a></li>
-      <li><a href="#jmm-server-config">Configuring JMM Server</a></li>
+      <li><a href="jmmserver.html#configure-database">Configuring JMM Server</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -58,10 +58,10 @@
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
@@ -84,7 +84,7 @@
       <span class="anchor" id="mysql-install"></span>
       <h3>Installing MySQL Community Server</h3>
       <div class="alert-box warning"><span>warning: </span><br>
-      There is a known error with MySQL Community Server that will prevent you from updating during the install process. If there is a space in your <strong>Windows Account Name</strong> you'll be unable to update MySQL Community Server. The fix can be found <a href="https://bugs.mysql.com/bug.php?id=77965" target="new">here</a> in the following post: <strong>[7 Aug 9:13]     Jonathan Meier</strong>. </div>
+      There is a known error with MySQL Community Server that will prevent you from updating during the install process. If there is a space in your <strong>Windows Account Name</strong> you'll be unable to update MySQL Community Server. The fix can be found <a href="https://bugs.mysql.com/bug.php?id=77965" target="_blank">here</a> in the following post: <strong>[7 Aug 9:13]     Jonathan Meier</strong>. </div>
       <p>The following instructions were written using MySQL Community Server Version <strong>5.6.20.0</strong>. While newer versions should not differ too much, make sure the items you're installing match up with the items in the following images. </p>
       <p>Start the installer and if prompted download any available updates. Once done select the<strong> Custom </strong>install option. </p>
       <p><a href="../images/jmmserver/mysql/mysql-install-01.jpg" data-lightbox="mysql-instal-01" data-title="MySQL Install 01"><img src="../images/jmmserver/mysql/mysql-install-01.jpg" alt="MySQL Install 01"></a></p>
@@ -108,20 +108,7 @@
       <p><a href="../images/jmmserver/mysql/mysql-install-10.jpg" data-lightbox="mysql-instal-10" data-title="MySQL Install 10"><img src="../images/jmmserver/mysql/mysql-install-10.jpg" alt="MySQL Install 10"></a></p>
       <p><a href="../images/jmmserver/mysql/mysql-install-11.jpg" data-lightbox="mysql-instal-10" data-title="MySQL Install 11"><img src="../images/jmmserver/mysql/mysql-install-11.jpg" alt="MySQL Install 11"></a></p>
       <p><a href="../images/jmmserver/mysql/mysql-install-12.jpg" data-lightbox="mysql-instal-12" data-title="MySQL Install 12"><img src="../images/jmmserver/mysql/mysql-install-12.jpg" alt="MySQL Install 12"></a></p>
-      <p>With that you've successfully installed MySQL Community Server! Now you need to setup JMM Server to use it. </p>
-      <span class="anchor" id="jmm-server-config"></span>
-      <h3>Configuring JMM Server</h3>
-      <p>If you're running JMM Server for the <strong>first time</strong> you'll be prompted to select a database type, select <strong>MySQL</strong>.</p>
-      <p>If you're <strong>changing the database type</strong> to MySQL click the <strong>Setup</strong> tab and select <strong>MySQL</strong>. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-13.jpg" data-lightbox="mysql-instal-13" data-title="MySQL Install 13"><img src="../images/jmmserver/mysql/mysql-install-13.jpg" alt="MySQL Install 13"></a></p>
-      <p>You'll be asked to input the following settings.</p>
-      <p><br>
-        <strong>Server Address</strong> - Only change if connection to a database on a different computer. Default: <strong>Localhost</strong><br>
-        <strong>Database Name</strong> - Only change if created a custom database for JMM. Default: <strong>JMMServer</strong><br>
-        <strong>Username</strong> - If you created an account  for JMM, use that username. Default: <strong>root</strong><br>
-        <strong>Password</strong> - If you created an account  for JMM, use that username, otherwise it's the root password you inputted. </p>
-      <p>If successful JMM Server will connect, create the database (initial connect only) and populate it. </p>
-      <p>You've successfully configured JMM Server with MySQL!</p>
+      <p>Congratulations! MySQL Server has been successfully installed! If you've paused your <a href="jmmserver.html#configure-database">JMM Setup</a>, you can now continue with the install. </p>
     </div>
   </div>
 </section>

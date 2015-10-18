@@ -47,8 +47,8 @@ body {
 	background-color: #f5f5f5;
 	list-style: none;
 	margin: 0 0 0 0;
-	padding: 15px 20px;
-	font-size: 0.90em;
+	padding: 10px 20px;
+	font-size: 0.88em;
 	position: absolute;
 	width: 245px;
 	-webkit-transition: top linear 50ms;
@@ -64,8 +64,8 @@ body {
 }
 .docs-nav a {
 	display: block;
-	margin: 0 -20px;
-	padding: 0 20px;
+	margin: 5px -20px;
+	padding: 0px 20px;
 	text-decoration: none;
 	border-right: 2px solid transparent;
 }
@@ -305,7 +305,6 @@ nav #menu {
 section {
 	text-align: left;
 }
-
 /* Slide Menu Theme Selector */
 
 .sidr-class-light-theme {
@@ -321,7 +320,6 @@ nav #existing-content-menu {
 	display: none !important;
 }
 }
-
 /* Custom Additions */
 
 /* Changelog Tags */
@@ -341,7 +339,6 @@ nav #existing-content-menu {
 .ma3 {
 	font-weight: bold;
 }
-
 /* Alerts */
 
 .alert-box {
@@ -372,13 +369,11 @@ nav #existing-content-menu {
 	background: #e3f7fc url('../images/site/notice.png') no-repeat 10px 50%;
 	border: 1px solid #8ed9f6;
 }
-
 /* Style.CSS Switcher */
 
 .light-theme {
 	display: none;
 }
-
 /* Sticky Menu */
 
 nav.sticky.stuckMenu.isStuck {
@@ -388,7 +383,6 @@ nav.sticky.stuckMenu.isStuck {
 sticky.ul#menu-left.docs-nav {
 	background-color: #000;
 }
-
 /* Discord */
 
 .discord {
@@ -401,7 +395,6 @@ img.sidr-class-discord {
 	height: 24px;
 	margin: -5px 5px;
 }
-
 /* Workaround for ScollTo & Sticky Header Problem */
 
 .anchor {
@@ -411,7 +404,6 @@ img.sidr-class-discord {
 	margin-top: -103px; /*same height as header*/
 	visibility: hidden;
 }
-
 /* Drop-Down Menu */
 
 .click-nav {
@@ -436,7 +428,6 @@ a.clicker:after {
 clicker {
 	display: block;
 }
-
 /* Fallbacks */
 
 .click-nav .no-js ul {
@@ -445,7 +436,6 @@ clicker {
 .click-nav .no-js:hover ul {
 	display: block;
 }
-
 /* Tabs */
 
 .r-tabs {
@@ -500,4 +490,60 @@ clicker {
 	border-right: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	margin-bottom: 0;
+}
+
+/* Custom Table */
+
+.BlueTable {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #000000;
+}
+.BlueTable table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.BlueTable td {
+	vertical-align: middle;
+	border: 1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	text-align: left;
+	padding: 7px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000000;
+}
+.BlueTable tr:last-child td {
+	border-width: 0px 1px 0px 0px;
+}
+.BlueTable tr td:last-child {
+	border-width: 0px 0px 1px 0px;
+}
+.BlueTable tr:last-child td:last-child {
+	border-width: 0px 0px 0px 0px;
+}
+.BlueTable tr:first-child td {
+	background: -o-linear-gradient(bottom, #26abe2 5%, #26abe2 100%);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #26abe2), color-stop(1, #26abe2) );
+	background: -moz-linear-gradient( center top, #26abe2 5%, #26abe2 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#26abe2", endColorstr="#26abe2");
+	background: -o-linear-gradient(top, #26abe2, 26abe2);
+	background-color: #26abe2;
+	border: 0px solid #000000;
+	text-align: center;
+	border-width: 0px 0px 1px 1px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.BlueTable tr:first-child td:first-child {
+	border-width: 0px 0px 1px 0px;
+}
+.BlueTable tr:first-child td:last-child {
+	border-width: 0px 0px 1px 1px;
 }

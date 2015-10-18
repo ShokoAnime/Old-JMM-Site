@@ -10,6 +10,22 @@
   border: 2px solid;
   overflow:auto!important;
 }
+.code {
+  color: #FFF;
+  background-color: #2D2D2D;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
+  display: block;
+  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  white-space: pre-wrap;
+  border-radius: 25px;
+  border: 2px solid;
+}
 
 pre.prettyprint {
     white-space: pre-wrap;

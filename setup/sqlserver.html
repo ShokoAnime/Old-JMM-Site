@@ -22,13 +22,13 @@
     <div id="menu">
       <ul class="toplinks">
         <li><a href="../about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="../downloads.html">Downloads</a></li>
         <li><a href="../documentation.html">Documentation</a></li>
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </ul>
@@ -49,7 +49,8 @@
       <li><a href="#download">Download</a></li>
       <li><a href="#sql-server-install">Installing SQL Server</a></li>
       <li><a href="#sql-server-config">Configuring SQL Server</a></li>
-      <li><a href="#jmm-server-config">Configuring JMM Server</a></li>
+      <li><a href="jmmserver.html#configure-database">Configuring JMM Server</a></li>
+      <li><a href="../general/sqlserverfaq">Frequently Asked Questions </a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -58,17 +59,17 @@
         <li><a href="../changelog.html">Changelog</a></li>
         <li><a href="../support.html">Support</a></li>
         <li><a href="../contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="new">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
         <li class="separator"></li>
         <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="new">Github Repo</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
         <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
     <div class="docs-content">
       <h2 id="installing-mysql">Installing and Setting Up SQL Server </h2>
-      <p>JMM supports Microsoft SQL Server 2008, and we   recommend it (or   MySQL) for users who have large collections or just   want the fastest   possible performance. SQL Server should only be used by advanced users, we recommend <a href="mysql.html" target="new"><strong>MySQL</strong></a> for users looks for a performance boost without a complicated setup. </p>
+      <p>JMM supports Microsoft SQL Server 2008, and we   recommend it (or   MySQL) for users who have large collections or just   want the fastest   possible performance. SQL Server should only be used by advanced users, we recommend <a href="mysql.html" target="_blank"><strong>MySQL</strong></a> for users looks for a performance boost without a complicated setup. </p>
       <span class="anchor" id="why-sql-server"></span>
       <h3>Why SQL Server Over SQLite </h3>
       <p>If your collection contains more than 200 series, performance wise your better off using SQL Server. While SQLite is a one   click setup single file, it's not designed to handle a database that   size and it will show it's limitations as your collection continues to grow by causing slowdowns when accessed by JMM.</p>
@@ -98,20 +99,7 @@
       <p>In the <strong>Database Engine Configuration</strong> you'll have the option of setting the <strong>Administrator</strong> password. If you   already know how to set up users in SQL Server you can skip this step, otherwise select <strong>Mixed Mode</strong> and enter a password. The username for this password is <strong>sa </strong>as this is the Username and Password for JMM Server setup. Make sure you press the <strong>Add Current Use</strong>r button.</p>
       <p><a href="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" data-lightbox="sql-server-setup-07" data-title="SQL Server - Setup 07"><img src="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" alt="" title="SQL Server - Setup 07"></a></p>
       <p>From here you can click through on the <strong>Next</strong> button to finish the installation.</p>
-      <span class="anchor" id="jmm-server-config"></span>
-      <h3>Configuring JMM Server</h3>
-      <p>If you're running JMM Server for the <strong>first time</strong> you'll be prompted to select a database type, select <strong>SQL Server</strong>.</p>
-      <p>If you're <strong>changing the database type</strong> to SQL Server click the <strong>Setup</strong> tab and select <strong>SQL Server</strong>. </p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-08.jpg" data-lightbox="sql-server-setup-08" data-title="SQL Server - Setup 08"><img src="../images/jmmserver/sqlserver/sql-server-setup-08.jpg" alt="" title="SQL Server - Setup 08"></a></p>
-      <p>You'll be asked to input the following settings.<br>
-        <strong>Server Address</strong> - Only change if connection to a database on a different computer. Default: <strong>Localhost</strong><br>
-        <strong>Database Name</strong> - Only change if created a custom database for JMM. Default: <strong>JMMServer</strong><br>
-        <strong>Username</strong> - If you created an account  for JMM, use that username. Default: <strong>root</strong><br>
-        <strong>Password</strong> - If you created an account  for JMM, use that username, otherwise it's the root password you inputted.</p>
-      <p>Pressing the <strong>Refresh </strong>button will get a list of computers running SQL Server on your local network.</p>
-      <p>If successful JMM Server will connect, create the database (initial connect only) and populate it. </p>
-      <p>You've successfully configured JMM Server with SQL Server!</p>
-      <p>[<a href="http://japanesemediamanager.github.io/wiki_usermanual_sqlserver.html">SQL Server FAQ</a>]</p>
+      <p>Congratulations! SQL Server has been successfully installed! If you've paused your <a href="jmmserver.html#configure-database">JMM Setup</a>, you can now continue with the install. </p>
     </div>
   </div>
 </section>
