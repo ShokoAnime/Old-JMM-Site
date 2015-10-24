@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -64,29 +64,62 @@
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
+    <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Desktop</a><span class="divider">>></span></li>
+          <li><a href="bookmarks.html">Bookmarks Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
     <div class="docs-content"> <span class="anchor" id="bookmarks-overview"></span>
       <h2>Bookmarks Tab</h2>
       <p>Bookmarks are a great way to keep track of shows you find interesting and want to download at a later date. <br>
       </p>
       <p>If you've enabled uTorrent integration your bookmarked series can be queued for download with JMM Desktop doing all the work for you.</p>
-      <p><a href="../images/jmmdesktop/bookmarks-overview.png" data-lightbox="bookmarks-overview" data-title="JMM Desktop - Bookmarks Overview"><img src="../images/jmmdesktop/bookmarks-overview.png" alt="JMM Desktop - Bookmarks Overview"></a><br>
+      <p><a href="../images/jmmdesktop/bookmarks-overview.png" class="colorbox" title="JMM Desktop - Bookmarks Overview"><img src="../images/jmmdesktop/bookmarks-overview.png" alt="JMM Desktop - Bookmarks Overview"></a><br>
       </p>
       <span class="anchor" id="adding-bookmarks"></span>
       <h2>Adding Bookmarks</h2>
       <p>At this time JMM Desktop only supports adding bookmarks by viewing the <strong>Related and Similar</strong> section of a series that's currently in your collection. </p>
       
-      <p><a href="../images/jmmdesktop/bookmarks-adding.png" data-lightbox="adding-bookmarks" data-title="JMM Desktop - Adding Bookmarks"><img src="../images/jmmdesktop/bookmarks-adding.png" alt="JMM Desktop - Adding Bookmarks"></a></p>
+      <p><a href="../images/jmmdesktop/bookmarks-adding.png" class="colorbox" title="JMM Desktop - Adding Bookmarks"><img src="../images/jmmdesktop/bookmarks-adding.png" alt="JMM Desktop - Adding Bookmarks"></a></p>
       <p>To add a bookmark, click on the <strong>Bookmark</strong> icon   that's to the right of the <strong>Pinned</strong> icon. There is no confirmation   message when you add a bookmark, you'll only get a message if you try to bookmark a series   you already have bookmarked. Once you've bookmarked a series click the <strong>Bookmarks</strong> tab at the top, this will allow you to manage your bookmarks. </p>
       <span class="anchor" id="managing-bookmarks"></span>
       <h2></a>Managing Bookmarks</h2>
-      <p><a href="../images/jmmdesktop/bookmarks-managing.png" data-lightbox="managing-bookmarks" data-title="JMM Desktop - Managing Bookmarks"><img src="../images/jmmdesktop/bookmarks-managing.png" alt="JMM Desktop - Managing Bookmarks"></a></p>
+      <p><a href="../images/jmmdesktop/bookmarks-managing.png" class="colorbox" title="JMM Desktop - Managing Bookmarks"><img src="../images/jmmdesktop/bookmarks-managing.png" alt="JMM Desktop - Managing Bookmarks"></a></p>
       <p>Currently there's two different types of bookmarks lists, <strong>Downloading</strong> and <strong>Not Downloading</strong>. For the most part you do not need to sort your bookmarks into one of the two categories and instead can leave them in their default category of <strong>Not Downloading</strong>. </p>
       <p>You can make changes to each bookmarked series using the options explained below. </p>
-      <p><strong>Red X</strong> - Located to the right of the series name, clicking this button will delete the bookmark.<br>
-        <strong>Download Now</strong> - If clicked this button will bring you to the <strong>Search Torrent</strong> section under <strong>Downloads</strong> allowing you to download the bookmarked series. Keep in mind this will   search based off the series name so a series with multiple movies or   OVA's will have everything show up. <br>
-        <strong>Not Downloading </strong>- This is the state of the   bookmarked series and is more for your benefit of keeping track of what   bookmarks you've downloaded or haven't downloaded. <br>
-        <strong>Priority</strong> - Changing this number will change your bookmarked series order. Once you've changed the priorities click the <strong>Refresh</strong> button to see your changes. By default the priority is set to <strong>1</strong> and your list is sorted by which the bookmarks were added. <br>
-        <strong>Edit Notes</strong> - Allows you to input notes for the   bookmarked series. For example what fansub group to download or release   date for the next OVA or Movie. </p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td width="17%">Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Red X</strong></td>
+            <td>Located to the right of the series name, clicking this button will delete the bookmark.</td>
+          </tr>
+          <tr>
+            <td><strong>Download Now</strong></td>
+            <td>If clicked this button will bring you to the <strong>Search Torrent</strong> section under <strong>Downloads</strong> allowing you to download the bookmarked series. Keep in mind this will   search based off the series name so a series with multiple movies or   OVA's will have everything show up. </td>
+          </tr>
+          <tr>
+            <td><strong>Not Downloading</strong></td>
+            <td>This is the state of the   bookmarked series and is more for your benefit of keeping track of what   bookmarks you've downloaded or haven't downloaded. </td>
+          </tr>
+          <tr>
+            <td><strong>Priority</strong></td>
+            <td>Changing this number will change your bookmarked series order. Once you've changed the priorities click the <strong>Refresh</strong> button to see your changes. By default the priority is set to <strong>1</strong> and your list is sorted by which the bookmarks were added. </td>
+          </tr>
+          <tr>
+            <td><strong>Edit Notes</strong></td>
+            <td>Allows you to input notes for the   bookmarked series. For example what fansub group to download or release   date for the next OVA or Movie. </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -103,13 +136,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

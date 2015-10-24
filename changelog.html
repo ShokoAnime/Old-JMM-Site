@@ -11,9 +11,8 @@
 <link rel="stylesheet" title="light" href="css/style.css">
 <link rel="alternate stylesheet" title="dark" href="css/style2.css">
 <link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/jquery.sidr.dark.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -76,6 +75,14 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="changelog.html">Changelog</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="changelog">Changelog</h2>
 	  <span class="anchor" id="3-4-5-3"></span>
       <h3>Version 3.4.5.3 (Unreleased)</h3>
@@ -120,7 +127,7 @@
         <li><span class="jmmserver">JMM Server</span> - Maintain watched date and collected date on Trakt to match JMM dates</li>
         <li><span class="jmmserver">JMM Server</span> - Fix scheduled task which checks for JMM Server updates</li>
       </ul>
-      <a href="/changelog/3.4.4.html">See more details and screenshots</a> <span class="anchor" id="3-4-3-1"></span>
+      <a href="/changes/3.4.4.html">See more details and screenshots</a> <span class="anchor" id="3-4-3-1"></span>
       <h3>Version 3.4.3.1 (4th May 2015)</h3>
       <ul>
         <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/129">#129</a> - Limit the length of anime titles to 30 characters on the Pinned tab</li>
@@ -314,14 +321,15 @@
   </div>
 </footer>
 <script src="js/styleswitch.js"></script> 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.responsiveTabs.js"></script> 
-<script src="js/stickUp.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/responsiveTabs.js"></script>
+<script src="js/rcrumbs.js"></script>
+<script src="js/stickUp.js"></script>
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script>
-<script src="js/jquery.sidr.min.js"></script> 
-<script src="js/jquery.localscroll.js"></script> 
-<script src="js/jquery.scrollTo.js"></script> 
-<script src="js/lightbox.js"></script>
+<script src="js/sidr.min.js"></script> 
+<script src="js/localscroll.js"></script> 
+<script src="js/scrollTo.js"></script> 
+<script src="js/colorbox.js"></script>
 </body>
 </html>

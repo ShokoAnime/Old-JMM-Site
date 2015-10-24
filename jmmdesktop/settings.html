@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -70,6 +70,16 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Desktop</a><span class="divider">>></span></li>
+          <li><a href="settings.html">Settings Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="latest-downloads">Settings Tab</h2>
       <p>&nbsp;</p>
       <span class="anchor" id="essential"></span>
@@ -81,7 +91,7 @@
       <span class="anchor" id="community-sites"></span>
       <h3>Community Sites</h3>
       <p>JMM supports linking to other sites for importing and exporting data. By design, JMM uses AniDB for almost all anime related data but also uses TvDB for images and episode information. Additionally a Trakt.TV and/or a MyAnimeList account can be linked to sync watch status and rating among other things. The Movie DB is also used for pulling information for Movies but is not fully supported at this time. </p>
-      <p><a href="../images/jmmdesktop/settings-community-sites.png" data-lightbox="settings-community-sites" data-title="JMM Desktop - Settings - Community Sites"><img src="../images/jmmdesktop/settings-community-sites.png" alt="JMM Desktop - Settings - Community Sites"/></a></p>
+      <p><a href="../images/jmmdesktop/settings-community-sites.png" class="colorbox" title="JMM Desktop - Settings - Community Sites"><img src="../images/jmmdesktop/settings-community-sites.png" alt="JMM Desktop - Settings - Community Sites"/></a></p>
       <div id="tab-01">
         <ul>
           <li><a href="#tvdb">The TvDB</a></li>
@@ -123,7 +133,7 @@
         <li>Automatically mark episodes watched when a certain % is watched</li>
       </ul>
       <p>Depending on your version of MPC, you should enable the following options.</p>
-      <p><a href="../images/general/mpc-01.jpg" data-lightbox="mpc-01" data-title="Media Player Classic - 01"><img src="../images/general/mpc-01.jpg" alt="Media Player Classic - 01"></a></p>
+      <p><a href="../images/general/mpc-01.jpg" class="colorbox" title="Media Player Classic - 01"><img src="../images/general/mpc-01.jpg" alt="Media Player Classic - 01"></a></p>
       <span class="anchor" id="pot-player"></span>
       <h3>Pot Player</h3>
       <h4>Functionality Supported</h4>
@@ -133,8 +143,8 @@
         <li>Automatically mark episodes watched when a certain % is watched</li>
       </ul>
       <p>You should enable the following settings.</p>
-      <p><a href="../images/general/pot-player-01.jpg" data-lightbox="pot-player-01" data-title="Pot Player - 01"><img src="../images/general/pot-player-01.jpg" alt="Pot Player - 01"></a></p>
-      <p><a href="../images/general/pot-player-02.jpg" data-lightbox="pot-player-02" data-title="Pot Player - 02"><img src="../images/general/pot-player-02.jpg" alt="Pot Player - 02"></a></p>
+      <p><a href="../images/general/pot-player-01.jpg" class="colorbox" title="Pot Player - 01"><img src="../images/general/pot-player-01.jpg" alt="Pot Player - 01"></a></p>
+      <p><a href="../images/general/pot-player-02.jpg" class="colorbox" title="Pot Player - 02"><img src="../images/general/pot-player-02.jpg" alt="Pot Player - 02"></a></p>
       <span class="anchor" id="vlc"></span>
       <h3>VLC</h3>
       <h4>Functionality Supported</h4>
@@ -144,7 +154,7 @@
         <li>Automatically mark episodes watched when a certain % is watched (VLC 2.2+)</li>
       </ul>
       <p>Depending on your version of VLC, you should check the following options (No changes needed - default as shown).</p>
-      <p><a href="../images/general/vlc-01.png" data-lightbox="vlc-01" data-title="VLC - 01"><img src="../images/general/vlc-01.png" alt="VLC - 01"></a></p>
+      <p><a href="../images/general/vlc-01.png" class="colorbox" title="VLC - 01"><img src="../images/general/vlc-01.png" alt="VLC - 01"></a></p>
       <p>&nbsp;</p>
     </div>
   </div>
@@ -162,13 +172,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

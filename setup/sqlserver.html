@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -68,6 +68,16 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">Installation and Setup</a><span class="divider">>></span></li>
+          <li><a href="sqlserver.html">Installing and Setting Up SQL Server</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="installing-mysql">Installing and Setting Up SQL Server </h2>
       <p>JMM supports Microsoft SQL Server 2008, and we   recommend it (or   MySQL) for users who have large collections or just   want the fastest   possible performance. SQL Server should only be used by advanced users, we recommend <a href="mysql.html" target="_blank"><strong>MySQL</strong></a> for users looks for a performance boost without a complicated setup. </p>
       <span class="anchor" id="why-sql-server"></span>
@@ -85,19 +95,19 @@
       <span class="anchor" id="condition-types"></span>
       <h3 id="sql-server-install">Installing SQL Server</h3>
       <p>Start the Installer and then go to the <strong>Installation</strong> section. From there click on <strong>New SQL server standalone installation</strong>.</p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" data-lightbox="sql-server-setup-01" data-title="SQL Server - Setup 01"><img src="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" alt="" title="SQL Server - Setup 01"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" class="colorbox" title="SQL Server - Setup 01"><img src="../images/jmmserver/sqlserver/sql-server-setup-01.jpg" alt="" title="SQL Server - Setup 01"></a></p>
       <p>The installer will check for setup dependencies. If you receive no errors click<strong> OK </strong>to continue, if you do receive any errors they need to be fixed before you can proceed further with the install.</p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" data-lightbox="sql-server-setup-02" data-title="SQL Server - Setup 02"><img src="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" alt="" title="SQL Server - Setup 02"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" class="colorbox" title="SQL Server - Setup 02"><img src="../images/jmmserver/sqlserver/sql-server-setup-02.jpg" alt="" title="SQL Server - Setup 02"></a></p>
       <p>Follow the instructions and proceed through the product key and license page. Click the <strong>Install</strong> button on the <strong>Setup Support Files </strong>section. </p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" data-lightbox="sql-server-setup-03" data-title="SQL Server - Setup 03"><img src="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" alt="" title="SQL Server - Setup 03"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" class="colorbox" title="SQL Server - Setup 03"><img src="../images/jmmserver/sqlserver/sql-server-setup-03.jpg" alt="" title="SQL Server - Setup 03"></a></p>
       <span class="anchor" id="sql-server-config"></span>
       <h3>Configuring SQL Server</h3>
       <p>Once complete, select the following options. </p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" data-lightbox="sql-server-setup-04" data-title="SQL Server - Setup 04"><img src="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" alt="" title="SQL Server - Setup 04"></a></p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" data-lightbox="sql-server-setup-05" data-title="SQL Server - Setup 05"><img src="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" alt="" title="SQL Server - Setup 05"></a></p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" data-lightbox="sql-server-setup-06" data-title="SQL Server - Setup 06"><img src="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" alt="" title="SQL Server - Setup 06"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" class="colorbox" title="SQL Server - Setup 04"><img src="../images/jmmserver/sqlserver/sql-server-setup-04.jpg" alt="" title="SQL Server - Setup 04"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" class="colorbox" title="SQL Server - Setup 05"><img src="../images/jmmserver/sqlserver/sql-server-setup-05.jpg" alt="" title="SQL Server - Setup 05"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" class="colorbox" title="SQL Server - Setup 06"><img src="../images/jmmserver/sqlserver/sql-server-setup-06.jpg" alt="" title="SQL Server - Setup 06"></a></p>
       <p>In the <strong>Database Engine Configuration</strong> you'll have the option of setting the <strong>Administrator</strong> password. If you   already know how to set up users in SQL Server you can skip this step, otherwise select <strong>Mixed Mode</strong> and enter a password. The username for this password is <strong>sa </strong>as this is the Username and Password for JMM Server setup. Make sure you press the <strong>Add Current Use</strong>r button.</p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" data-lightbox="sql-server-setup-07" data-title="SQL Server - Setup 07"><img src="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" alt="" title="SQL Server - Setup 07"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" class="colorbox" title="SQL Server - Setup 07"><img src="../images/jmmserver/sqlserver/sql-server-setup-07.jpg" alt="" title="SQL Server - Setup 07"></a></p>
       <p>From here you can click through on the <strong>Next</strong> button to finish the installation.</p>
       <p>Congratulations! SQL Server has been successfully installed! If you've paused your <a href="jmmserver.html#configure-database">JMM Setup</a>, you can now continue with the install. </p>
     </div>
@@ -116,13 +126,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

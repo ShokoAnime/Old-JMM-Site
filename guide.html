@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="css/style.css">
 <link rel="alternate stylesheet" title="dark" href="css/style2.css">
 <link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -45,11 +45,11 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Getting Started</strong></li>
-      <li><a href="#displaying-code">Displaying Raw Code</a></li>
+      <li><a href="#displaying-code">Displaying  Code</a></li>
       <li><a href="#internal-external-link">Creating An Internal/External Link Using ID Tags</a></li>
       <li><a href="#link-on-menu">Creating A Link On The Menu</a></li>
       <li><a href="#drop-down-menu">Creating A Drop Down Menu</a></li>
-      <li><a href="#adding-lightbox">Adding Lightbox To Images</a></li>
+      <li><a href="#adding-colorbox">Adding Colorbox To Images</a></li>
       <li><a href="#alerts">Creating Alerts</a></li>
       <li><a href="#tabs">Adding Tabs</a></li>
       <li><a href="#websites">Website References</a></li>
@@ -70,6 +70,15 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="contribute.html">Contributing To JMM</a><span class="divider">>></span></li>
+          <li><a href="guide.html">Website Guide</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="website-guide"> Website Guide</h2>
       <p>Thank you for volunteering to help out with the website, we truly appreciate it!</p>
       <p>The purpose of this guide is to make it easier for anyone that's wants to contribute to the website and provide the code for specific functions that are used on the website. With each code example you'll find detailed instructions on implamenting the code and an example to see how it looks. </p>
@@ -80,10 +89,10 @@
         <li>This guide is only meant to explain the functionality used on this site, if you're looking for information on coding, check out <a href="http://www.w3schools.com/html/html_basic.asp">W3Schools</a>.</li>
       </ul>
       <span class="anchor" id="displaying-code"></span>
-      <h3>Displaying Raw Code </h3>
+      <h3>Displaying  Code </h3>
       <p>This layout uses <a href="https://github.com/google/code-prettify">Google's Prettifier</a> that allows syntax highlighting in HTML which is useful for showing raw code. Since it's used for showing all the examples on this page, we'll cover it first. </p>
       <p><strong>Code</strong> </p>
-      <pre class="prettyprint">&lt;pre class=&quot;prettyprint&quot;&gt;Your code bit goes here&lt;/pre&gt;</pre>
+      <pre class="prettyprint">&lt;pre class=&quot;code&quot;&gt;Your code bit goes here&lt;/pre&gt;</pre>
       Simply add the above to the page and input the code you want to show by replacing the <strong>Your code bit goes here</strong> part. If your editor provides a code and design view of the page, insert the code in code view and then input the code you want to show in the design view. <span class="anchor" id="internal-external-link"></span>
       <h3>Creating An Internal/External Link Using ID Tags</h3>
       <p>Notice how when you scroll down the page, the location on the menu changes to match your current location or if you click a link to another page it takes you to an exact spot? This is done by creating a link to a specific <strong>ID</strong> tag which you can use in multiple ways. </p>
@@ -118,14 +127,15 @@
       <pre class="prettyprint">      &lt;div class=&quot;click-nav&quot;&gt;<br>        &lt;ul class=&quot;no-js&quot;&gt;<br>          &lt;li&gt; &lt;a href=&quot;#&quot; class=&quot;clicker&quot;&gt;drop down menu activator&lt;/a&gt;<br>            &lt;ul&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link1&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link2&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#link3&quot;&gt;Link 3/a&gt;&lt;/li&gt;<br>            &lt;/ul&gt;<br>          &lt;/li&gt;<br>        &lt;/ul&gt;<br>      &lt;/div&gt;</pre>
       <p>The drop down menu and its contents are contained within the<strong>&lt;div class=&quot;click-nav&quot;&gt;</strong>as shown above. The link with the<strong> clicker</strong> class is the name of drop down menu with the links in the unordered lists below it. Just place that code where you want your drop down menu and you'll all set. </p>
       <p>For a live example check the <a href="jmmdesktop/utilities.html">JMM Desktop Utilities Tab</a> page.</p>
-      <span class="anchor" id="adding-lightbox"></span>
-      <h3>Adding Lightbox To Images</h3>
-      <p>Lightbox is <strong>required</strong> for all images you display on your page, don't worry though as it's extremely easy to implament. Simpy add<strong>data-lightbox=&quot;data-name&quot;</strong> and <strong>data-title=&quot;Data Name&quot;</strong> to the image's link. Best practice is to use the image name as the data-name and link alt as the data name.</p>
-      <p>The code below is for the JMM Desktop image on the index page.</p>
+      <span class="anchor" id="adding-colorbox"></span>
+      <h3>Adding Colorbox To Images</h3>
+      <p>Using Colorbox is <strong>required</strong> for any image you're displaying on the page, don't worry though as it's extremely easy to implement. All you need to do is add a <strong>class</strong> and <strong>title</strong> to the link and Colorbox will handle the rest. </p>
+      <p>You can also have Colorbox group images together by having those images uses the class <strong>colorboxgroup1</strong>, additional groups can be added by using the following classes, <strong>colorboxgroup2</strong>, <strong>colorboxgroup3</strong>, <strong>colorboxgroup4</strong>, <strong>colorboxgroup5</strong> and <strong>colorboxgroup6</strong>.</p>
+      <p>The example below is taken from the index page and is how the image for JMM Desktop is displayed.</p>
       <p><strong>Code</strong></p>
-      <pre class="prettyprint">&lt;a href=&quot;images/jmmdesktop/metro/metro-dashboard-01.jpg&quot; data-lightbox=&quot;metro-dashboard-01&quot; data-title=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;img src=&quot;images/jmmdesktop/metro/metro-dashboard-01.jpg&quot; alt=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;/a&gt;</pre>
+      <pre class="prettyprint">&lt;a href=&quot;images/jmmdesktop/dashboard-metro.png&quot; class=&quot;colorbox&quot; title=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;img src=&quot;images/jmmdesktop/dashboard-metro.png&quot; alt=&quot;JMM Desktop - Metro Dashboard&quot;&gt;&lt;/a&gt;</pre>
       <span class="anchor" id="alerts"></span>
-      <p>You can also link images together by making <strong>data-lightbox=&quot;data-name&quot;</strong> the same for each image. </p>
+      <p>You can also link images together by making <strong>data-colorbox=&quot;data-name&quot;</strong> the same for each image. </p>
       <h3>Creating Alerts</h3>
       <p>There are four different types of alerts supported that can be displayed depending on the need. Alerts should be used sparingly as they are not meant to be used as indicators or seperators. </p>
       <p>An example can be see on the <a href="setup/mysql.html#mysql-install">Installing and Setting Up MySQL</a> page.</p>
@@ -167,7 +177,7 @@
         <li><a href="https://github.com/jellekralt/Responsive-Tabs" target="_blank">https://github.com/jellekralt/Responsive-Tabs</a> - Tab Menu</li>
         <li><a href="http://www.dynamicdrive.com/dynamicindex9/stylesheetswitcher.htm" target="_blank">http://www.dynamicdrive.com/dynamicindex9/stylesheetswitcher.htm</a> - Theme Changer</li>
         <li><a href="https://github.com/ppowalowski/stickUp2" target="_blank">https://github.com/ppowalowski/stickUp2</a> - Sticky Menu</li>
-        <li><a href="http://lokeshdhakar.com/projects/lightbox2/" target="_blank">http://lokeshdhakar.com/projects/lightbox2/</a> - Lightbox</li>
+        <li><a href="http://www.jacklmoore.com/colorbox/" target="_blank">http://www.jacklmoore.com/colorbox/</a> -Colorbox</li>
       </ul>
     </div>
   </div>
@@ -185,13 +195,14 @@
 </footer>
 <script src="js/styleswitch.js"></script> 
 <script src="js/jquery.min.js"></script> 
-<script src="js/jquery.responsiveTabs.js"></script> 
-<script src="js/stickUp.js"></script> 
+<script src="js/responsiveTabs.js"></script>
+<script src="js/rcrumbs.js"></script>
+<script src="js/stickUp.js"></script>
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script>
-<script src="js/jquery.sidr.min.js"></script> 
-<script src="js/jquery.localscroll.js"></script> 
-<script src="js/jquery.scrollTo.js"></script> 
-<script src="js/lightbox.js"></script>
+<script src="js/sidr.min.js"></script> 
+<script src="js/localscroll.js"></script> 
+<script src="js/scrollTo.js"></script> 
+<script src="js/colorbox.js"></script>
 </body>
 </html>

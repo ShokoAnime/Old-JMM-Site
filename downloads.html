@@ -11,9 +11,8 @@
 <link rel="stylesheet" title="light" href="css/style.css">
 <link rel="alternate stylesheet" title="dark" href="css/style2.css">
 <link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/jquery.sidr.dark.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -67,6 +66,14 @@
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
+    <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="downloads.html">Downloads</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
     <div class="docs-content"> <span class="anchor" id="latest-downloads"></span>
       <h2>Latest Downloads</h2>
       <p>Here you will find the latest stable versions of JMM as well as beta versions to test out new features. </p>
@@ -77,14 +84,59 @@
       </ul>
       <span class="anchor" id="stable-releases"></span>
       <h3>Stable Releases</h3>
-      <ul>
-        <li> <strong>JMM Server 3.4.4.3 (8.81 MB)</strong>- <a href="http://www.jmediamanager.org/latestdownloads/JMM_Server_Setup_3.4.4.3.exe.zip">Download</a> - <a href="https://github.com/japanesemediamanager/jmmserver" target="_blank">Source</a></li>
-        <li><strong>JMM Desktop 3.4.5 (6.80 MB)</strong> - <a href="http://www.jmediamanager.org/latestdownloads/JMM_Desktop_Setup_3.4.4.3.exe.zip">Download </a>- <a href="https://github.com/japanesemediamanager/jmmclient" target="_blank">Source</a></li>
-        <li><strong>MyAnime3</strong> - <strong>3.4.4.3</strong> - <a href="http://www.team-mediaportal.com/extensions/movies-videos/my-anime-3?lang=en">Download</a> - <a href="https://github.com/japanesemediamanager/animeplugin3" target="_blank">Source</a></li>
-        <li><strong>AnimeBuddy 1.0.0.3</strong> - <a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702" target="_blank">Download</a> (Windows Store link)</li>
-        <li><strong>Plex Plugin 3.4.4.3 (0.8 MB)</strong> - <a href="http://www.jmediamanager.org/latestdownloads/PlexMyAnimePlugin.3.4.4.3.zip">Download</a> - <a href="https://github.com/japanesemediamanager/plexplugin" target="_blank">Source</a></li>
-        <li><strong>Config Fixer</strong> - <a href="http://www.jmediamanager.org/latestdownloads/ConfigFixer.zip">Download </a></li>
-      </ul>
+      <table table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>Version</td>
+            <td>Size</td>
+            <td>Download Link</td>
+            <td>Source</td>
+          </tr>
+          <tr>
+            <td><strong>JMM Server</strong></td>
+            <td><strong>3.4.4.3</strong></td>
+            <td><strong>8.81 MB</strong></td>
+            <td><strong><a href="http://www.jmediamanager.org/latestdownloads/JMM_Server_Setup_3.4.4.3.exe.zip">Download</a></strong></td>
+            <td><strong><a href="https://github.com/japanesemediamanager/jmmserver" target="_blank">Source</a></strong></td>
+          </tr>
+          <tr>
+            <td><strong>JMM Desktop</strong></td>
+            <td><strong>3.4.5 </strong></td>
+            <td><strong>6.80 MB</strong></td>
+            <td><strong><a href="http://www.jmediamanager.org/latestdownloads/JMM_Desktop_Setup_3.4.4.3.exe.zip">Download</a></strong></td>
+            <td><strong><a href="https://github.com/japanesemediamanager/jmmclient" target="_blank">Source</a></strong></td>
+          </tr>
+          <tr>
+            <td><strong>My Anime 3</strong></td>
+            <td><strong>3.4.4.3</strong></td>
+            <td><strong>N/A</strong></td>
+            <td><strong><a href="http://www.team-mediaportal.com/extensions/movies-videos/my-anime-3?lang=en">Download</a></strong></td>
+            <td><strong><a href="https://github.com/japanesemediamanager/animeplugin3" target="_blank">Source</a></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Anime Buddy</strong></td>
+            <td><strong>1.0.0.3</strong></td>
+            <td><strong>N/A</strong></td>
+            <td><strong><a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702" target="_blank">Download</a> (Windows Store link)</strong></td>
+            <td><strong>N/A</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Plex Plugin</strong></td>
+            <td><strong>3.4.4.3</strong></td>
+            <td><strong>0.8 MB</strong></td>
+            <td><strong><a href="http://www.jmediamanager.org/latestdownloads/PlexMyAnimePlugin.3.4.4.3.zip">Download</a></strong></td>
+            <td><strong><a href="https://github.com/japanesemediamanager/plexplugin" target="_blank">Source</a></strong></td>
+          </tr>
+          <tr>
+            <td><strong>Config Fixer</strong></td>
+            <td><strong>N/A</strong></td>
+            <td><strong>25KB</strong></td>
+            <td><strong><a href="http://www.jmediamanager.org/latestdownloads/ConfigFixer.zip">Download</a></strong></td>
+            <td><strong>N/A</strong></td>
+          </tr>
+        </tbody>
+      </table>
       <span class="anchor" id="manual-update"></span>
       <h3>Manual Update</h3>
       <p>If for some reason the automatic update is not working correctly for you or you simply want to upgrade JMM to a specific version, you can do that by using the links below. There's two things you need to pay close attention to when manually updating, the current version you have (also known as the base version) and the version you want to upgrade to. Additionally at the bottom of the list you'll see generic update all files that can be used to update your version of JMM to a specif version, in this instance the base version does not matter.</p>
@@ -112,13 +164,14 @@
 </footer>
 <script src="js/styleswitch.js"></script> 
 <script src="js/jquery.min.js"></script> 
-<script src="js/jquery.responsiveTabs.js"></script> 
-<script src="js/stickUp.js"></script> 
+<script src="js/responsiveTabs.js"></script>
+<script src="js/rcrumbs.js"></script>
+<script src="js/stickUp.js"></script>
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script> 
-<script src="js/jquery.sidr.min.js"></script> 
-<script src="js/jquery.localscroll.js"></script> 
-<script src="js/jquery.scrollTo.js"></script> 
-<script src="js/lightbox.js"></script>
+<script src="js/sidr.min.js"></script> 
+<script src="js/localscroll.js"></script> 
+<script src="js/scrollTo.js"></script> 
+<script src="js/colorbox.js"></script>
 </body>
 </html>

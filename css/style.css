@@ -157,7 +157,7 @@ img {
 	height: auto;
 }
 img, iframe {
-	max-width: 90%;
+	max-width: 60%;
 }
 input {
 	display: block;
@@ -326,19 +326,29 @@ nav #existing-content-menu {
 
 .jmmdesktop {
 	color: #008080;
-	font-weight: bold;
+	font-weight: 600;
 }
 .jmmserver {
 	color: #003366;
-	font-weight: bold;
+	font-weight: 600;
 }
 .plex {
 	color: #880000;
-	font-weight: bold;
+	font-weight: 600;
 }
 .ma3 {
-	font-weight: bold;
+	font-weight: 600;
 }
+
+/* To-Do Tags */
+
+.in-progress {
+	font-weight:600;
+}
+.done {
+	text-decoration: line-through;
+}
+
 /* Alerts */
 
 .alert-box {
@@ -492,12 +502,40 @@ clicker {
 	margin-bottom: 0;
 }
 
+/* Breadcrumbs */
+
+.rcrumbs {
+  line-height: 18px;
+  white-space: nowrap;
+}
+.rcrumbs > ul {
+  padding: 0;
+  height: 10px;
+  list-style: none;
+}
+.rcrumbs > ul > li {
+  overflow: hidden;
+  display: none;
+}
+.rcrumbs > ul > li.show {
+  display: inline-block;
+}
+.rcrumbs > ul > li.ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rcrumbs .divider {
+  color: #222;
+  padding: 0 5px;
+}
+
 /* Custom Table */
 
 .BlueTable {
 	margin: 0px;
 	padding: 0px;
-	width: 100%;
+	max-width: 90%;
 	border: 1px solid #222;
 }
 .BlueTable table {

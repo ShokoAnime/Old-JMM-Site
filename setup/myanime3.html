@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -65,16 +65,26 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">Installation and Setup</a><span class="divider">>></span></li>
+          <li><a href="myanime3.html">Installing and Setting Up My Anime 3</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="my-anime-3-install">Installing and Setting Up My Anime 3</h2>
       <span class="anchor" id="installing-my-anime-3"></span>
       <p>Once you've downloaded My Anime 3, you'll need to install the plugin. We're going to skip over instructing you on how to install the plugin as the MediaPortal team as written a very detailed guide on <a href="http://wiki.team-mediaportal.com/1_MEDIAPORTAL_1/13_Setup_Guides/Plugins" target="_blank">installing plugins</a> which we recommend you use instead to install My Anime 3. </p>
       <span class="anchor" id="setting-up-my-anime-3"></span>
       <p>After you've finished installed My Anime 3, you'll need input your settings so it will work properly. To do this run the <strong>MediaPortal Configuration</strong> and select <strong>Plugins</strong> from the list of options.</p>
-      <p><a href="../images/myanime3/install-01.jpg" data-lightbox="myanime3-install-01" data-title="My Anime 3 - Install 01"><img src="../images/myanime3/install-01.jpg" alt="My Anime 3 - Install 02"></a></p>
+      <p><a href="../images/myanime3/install-01.jpg" class="colorbox" title="My Anime 3 - Install 01"><img src="../images/myanime3/install-01.jpg" alt="My Anime 3 - Install 02"></a></p>
       <p>You'll see a list of your installed plugins, right-click on My Anime 3 and select <strong>Configuration</strong>, this will open up the settings menu. Additionally, you can add My Anime 3 to your home screen by selecting <strong>Listed in Home</strong> from the list of options. </p>
-      <p><a href="../images/myanime3/install-02.jpg" data-lightbox="myanime3-install-02" data-title="My Anime 3 - Install 02"><img src="../images/myanime3/install-02.jpg" alt="My Anime 3 - Install 02"></a></p>
+      <p><a href="../images/myanime3/install-02.jpg" class="colorbox" title="My Anime 3 - Install 02"><img src="../images/myanime3/install-02.jpg" alt="My Anime 3 - Install 02"></a></p>
       <p>If JMM Server and MediaPortal are on the <strong>same computer</strong> then the default settings should work. However if JMM Server and MediaPortal are on <strong>separate computers</strong>, you'll need to change the <strong>Server Address</strong> and <strong>Port</strong> to match the computer JMM Server is on.  If you're trying to connect to JMM Server that's on another computer either on your network or over the internet, the <a href="../animebuddy/playback.html#same-network">following instructions</a> provide detail information for setting everything up as well as solutions to the most common problems.</p>
-      <p><a href="../images/myanime3/install-03.jpg" data-lightbox="myanime3-install-03" data-title="My Anime 3 - Install 03"><img src="../images/myanime3/install-03.jpg" alt="My Anime 3 - Install 03"></a></p>
+      <p><a href="../images/myanime3/install-03.jpg" class="colorbox" title="My Anime 3 - Install 03"><img src="../images/myanime3/install-03.jpg" alt="My Anime 3 - Install 03"></a></p>
       <p>With that done, you've successfully setup and installed My Anime 3! You don't need to change any of the other settings as they are imported from JMM Server. However we recommend you take a look around at the other settings to better familiarize yourself with My Anime 3. </p>
     </div>
   </div>
@@ -92,13 +102,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

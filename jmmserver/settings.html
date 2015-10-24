@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -63,10 +63,20 @@
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
+    <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Server</a><span class="divider">>></span></li>
+          <li><a href="settings.html">Settings Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
     <div class="docs-content"> <span class="anchor" id="settings"></span>
       <h2>Settings Tab      </h2>
       <p>The <strong>Settings</strong> tab allows you to configure certain settings for JMM Server.</p>
-      <p><a href="../images/jmmserver/jmm-server-settings.png" data-lightbox="jmmserver_settings" data-title="JMM Server - Settings Tab"><img src="../images/jmmserver/jmm-server-settings.png" alt="JMM Server - Settings Tab"></a></p>
+      <p><a href="../images/jmmserver/jmm-server-settings.png" class="colorbox" title="JMM Server - Settings Tab"><img src="../images/jmmserver/jmm-server-settings.png" alt="JMM Server - Settings Tab"></a></p>
       <p><strong>Server Port</strong> - This is the port JMM Server will use, by default it's set to <strong>8111</strong>.<br>
         <strong>Images Path</strong> - The path for any images download by JMM Server. <br>
         <strong>Minimize On Startup</strong> - If selected, will start JMM Server minimized.<br>
@@ -104,13 +114,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

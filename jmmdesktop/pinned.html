@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -45,7 +45,8 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Settings Tab</strong></li>
-      <li><a href="#managing-jmm-server">Adding A Pinned Series</a></li>
+      <li><a href="#pinned-overview">Pinned Series Overview</a></li>
+      <li><a href="#pinning-series">Pinning A Series</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -63,7 +64,22 @@
       </div>
     </ul>
     <div class="docs-content">
-      <h2 id="latest-downloads">Pinned Tab    </h2>
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Desktop</a><span class="divider">>></span></li>
+          <li><a href="pinned.html">Pinned Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content"> <span class="anchor" id="pinned-overview"></span>
+      <h2>Pinned Tab</h2>
+      <p>Pinned series are temporary that last until your end your current JMM Desktop session. This is by design as they are not intended to remain forever pinned, instead think of a pinned series as a task you need to complete before closing JMM Desktop. With this in mind you should only pin series that need to be modified, changing watched status or updating community links are a few reasons why you might pin a series. </p>
+      <p><a href="../images/jmmdesktop/pinned-overview.png" class="group1" title="JMM Desktop - Pinned Overview"><img src="../images/jmmdesktop/pinned-overview.png" alt="JMM Desktop - Pinned Overview"/></a><span class="anchor" id="pinning-series"></span> </p>
+      <h3>Pinning A Series</h3>
+      <p>It's extremely easy to pin a series, simply click on the <strong>Pin</strong> button which looks like three windows stacked on each other and the series will be added to your pinned list. You can't pin a group so if you want multiple pinned items from the same group you'll need to pin each series in the group. Pinned series are displayed in the order that you've added them, not alphabetically. Additionally, any series with a long name will have the name cutoff to prevent the name from stretching the left pane across the entire window. </p>
+      <p>Just like in the <strong>Collection</strong> tab, you have access to the <strong>Series Information</strong> and all its options which will help you with making your desired changes. Information on the different options available can be found on the <a href="collection.html#series-information">Collection Tab page</a>. </p>
     </div>
   </div>
 </section>
@@ -80,13 +96,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script> 
 <script src="../js/stickUp.js"></script> 
+<script src="../js/colorbox.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script>
 </body>
 </html>

@@ -331,18 +331,27 @@ nav #menu-toggle {
 
 .jmmdesktop {
 	color: #008080;
-	font-weight: bold;
+	font-weight: 600;
 }
 .jmmserver {
 	color: #3385D7;
-	font-weight: bold;
+	font-weight: 600;
 }
 .plex {
 	color: #DB2F2F;
-	font-weight: bold;
+	font-weight: 600;
 }
 .ma3 {
-	font-weight: bold;
+	font-weight: 600;
+}
+
+/* To-Do Tags */
+
+.in-progress {
+	font-weight:600;
+}
+.done {
+	text-decoration: line-through;
 }
 
 /* Alerts */
@@ -497,6 +506,36 @@ clicker {
 	border-left: 1px solid #ccc;
 	margin-bottom: 0;
 }
+
+/* Breadcrumbs */
+
+.rcrumbs {
+  line-height: 18px;
+  white-space: nowrap;
+}
+.rcrumbs > ul {
+  padding: 0;
+  height: 10px;
+  list-style: none;
+}
+.rcrumbs > ul > li {
+  overflow: hidden;
+  display: none;
+}
+.rcrumbs > ul > li.show {
+  display: inline-block;
+}
+.rcrumbs > ul > li.ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rcrumbs .divider {
+  color: #FFF;
+  padding: 0 5px;
+}
+
+
 /* Custom Table */
 
 .BlueTable {

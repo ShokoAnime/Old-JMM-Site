@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -65,12 +65,22 @@
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
+    <div class="docs-content">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">Installation and Setup</a><span class="divider">>></span></li>
+          <li><a href="animebuddy.html">Installing and Setting Up Anime Buddy</a><span class="divider"></span></li>
+        </ul>
+      </div>
+    </div>
     <div class="docs-content"> <span class="anchor" id="anime-buddy-install"></span>
       <h2>Installing and Setting Up Anime Buddy</h2>
       <p>Open up the Windows Store and search for Anime Buddy. </p>
-      <p><a href="../images/animebuddy/windows-store.png" data-lightbox="windows-store" data-title="Anime Buddy - Searching Windows Store"><img src="../images/animebuddy/windows-store.png" alt="Anime Buddy - Searching Windows Store"></a></p>
+      <p><a href="../images/animebuddy/windows-store.png" class="colorbox" title="Anime Buddy - Searching Windows Store"><img src="../images/animebuddy/windows-store.png" alt="Anime Buddy - Searching Windows Store"></a></p>
       Once you've found it, click the <strong>Install</strong> button. Once it's done installing start Anime Buddy. <span class="anchor" id="initial-startup"></span>
-      <p><a href="../images/animebuddy/calendar-overview.png" data-lightbox="collection-calendar-overview" data-title="Anime Buddy - Calendar Overview"><img src="../images/animebuddy/calendar-overview.png" alt="Anime Buddy - Setup 02"></a></p>
+      <p><a href="../images/animebuddy/calendar-overview.png" class="colorbox" title="Anime Buddy - Calendar Overview"><img src="../images/animebuddy/calendar-overview.png" alt="Anime Buddy - Setup 02"></a></p>
       <span class="anchor" id="jmm-server-connect"></span>
       <p>By default, Anime Buddy will only show you a calendar of upcoming TV Shows, Movies, OVA's and Adult Titles.  To have it show files from your collection you'll need to <a href="../animebuddy/playback.html">connect Anime Buddy to JMM Server</a>, this will also allow you locally and remotely playback files in your collection. Make sure to check out the <a href="../animebuddy/faq.html">Frequently Asked Questions</a> page for solutions to common problems first time users of Anime Buddy run into. </p>
       <p>If you like Anime Buddy, please consider reviewing in on the Windows App Store!</p>
@@ -90,13 +100,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>
