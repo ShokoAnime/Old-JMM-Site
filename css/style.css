@@ -291,6 +291,16 @@ body {
 .docs-nav {
 	display: none;
 }
+
+/* Breadcrumbs Sticky  */
+
+div.sticky.stuckElement.isStuck {
+	display: none !important;
+}
+div.sticky.stuckElement.isStuck a {
+	display: none !important;
+}
+
 nav #existing-content-menu {
 	position: absolute;
 	right: 0px;
@@ -305,6 +315,7 @@ nav #menu {
 section {
 	text-align: left;
 }
+
 /* Slide Menu Theme Selector */
 
 .sidr-class-light-theme {
@@ -393,6 +404,19 @@ nav.sticky.stuckMenu.isStuck {
 sticky.ul#menu-left.docs-nav {
 	background-color: #222;
 }
+div.sticky.stuckElement.isStuck {
+	z-index: 99;
+	background: rgb(19, 85, 113) none repeat scroll 0% 0%;
+	width: 100% !important;
+	top: 60px !important;
+	left: 0px;
+	padding: 0px 50px;
+}
+div.sticky.stuckElement.isStuck a {
+	color: #FFF;
+	font-size: 1.4em;
+}
+
 /* Discord */
 
 .discord {
@@ -519,6 +543,7 @@ clicker {
 }
 .rcrumbs > ul > li.show {
   display: inline-block;
+  height: 25px;
 }
 .rcrumbs > ul > li.ellipsis {
   text-overflow: ellipsis;
