@@ -564,10 +564,9 @@ clicker {
   overflow: hidden;
 }
 .rcrumbs .divider {
-  color: #FFF;
-  padding: 0 5px;
+  font-weight: 600;
+  padding: 0 10px;
 }
-
 
 /* Custom Table */
 
