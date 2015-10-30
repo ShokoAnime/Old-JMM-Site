@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -65,24 +65,36 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">Installation and Setup</a><span class="divider">>></span></li>
+          <li><a href="plex.html">Installing and Setting Up Plex Plugin</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="plex-plugin-install">Installing and Setting Up Plex Plugin</h2>
       <span class="anchor" id="installing-plex-plugin"></span>
       <p>Installing the Plex plugin is pretty simple, copy <strong>MyAnime.bundle</strong> to your Plex plugins folder and you're done. You can do this by right-clicking on the Plex server tray icon, and selecting <strong>Open Plug-ins folder</strong>.</p>
-      <p><a href="../images/plex/plex-setup-01.jpg" data-lightbox="plex-setup-01" data-title="Plex - Setup 01"><img src="../images/plex/plex-setup-01.jpg" alt="Plex - Setup 01"></a></p>
+      <p><a href="../images/plex/plex-setup-01.jpg" class="colorbox" title="Plex - Setup 01"><img src="../images/plex/plex-setup-01.jpg" alt="Plex - Setup 01"></a></p>
       <p>It will open the plugins folder allowing you to copy <strong>MyAnime.bundle</strong> into it. If asked to over-write or if Windows' UAC pops up click OK. </p>
-      <p><a href="../images/plex/plex-setup-02.jpg" data-lightbox="plex-setup-02" data-title="Plex - Setup 02"><img src="../images/plex/plex-setup-02.jpg" alt="Plex - Setup 02"></a></p>
+      <p><a href="../images/plex/plex-setup-02.jpg" class="colorbox" title="Plex - Setup 02"><img src="../images/plex/plex-setup-02.jpg" alt="Plex - Setup 02"></a></p>
       <p>Once you've copied the plug-in over, you'll need to restart Plex so it can load the plug-in. </p>
-      <p><a href="../images/plex/plex-taskbar-exit.png" data-lightbox="plex-taskbar-exit" data-title="Plex - Taskbar Exit"><img src="../images/plex/plex-taskbar-exit.png" alt="Plex - Taskbar Exit"></a></p>
+      <p><a href="../images/plex/plex-taskbar-exit.png" class="colorbox" title="Plex - Taskbar Exit"><img src="../images/plex/plex-taskbar-exit.png" alt="Plex - Taskbar Exit"></a></p>
       <p>Click on the <strong>taskmenu</strong> and select <strong>Exit</strong>, this will close Plex winch then will allow you to restart it.      </p>
       <p>The Plex plugin has been installed and will  appear under <strong>Channels</strong> as <strong>My Anime</strong>.</p>
-      <p><a href="../images/plex/plex-setup-03.jpg" data-lightbox="plex-setup-03" data-title="Plex - Setup 03"><img src="../images/plex/plex-setup-03.jpg" alt="Plex - Setup 03"></a></p>
+      <p><a href="../images/plex/plex-setup-03.jpg" class="colorbox" title="Plex - Setup 03"><img src="../images/plex/plex-setup-03.jpg" alt="Plex - Setup 03"></a></p>
       <p>Clicking the <strong>My Anime</strong> channel will show your collection allowing you to view series, episode and character details in addition to streaming your collections files. </p>
-      <p><a href="../images/plex/plex-setup-04.jpg" data-lightbox="plex-setup-04" data-title="Plex - Setup 04"><img src="../images/plex/plex-setup-04.jpg" alt="Plex - Setup 04"></a></p>
-      <p><a href="../images/plex/plex-setup-05.jpg" data-lightbox="plex-setup-05" data-title="Plex - Setup 05"><img src="../images/plex/plex-setup-05.jpg" alt="Plex - Setup 05"></a></p>
+      <p><a href="../images/plex/plex-setup-04.jpg" class="colorbox" title="Plex - Setup 04"><img src="../images/plex/plex-setup-04.jpg" alt="Plex - Setup 04"></a></p>
+      <p><a href="../images/plex/plex-setup-05.jpg" class="colorbox" title="Plex - Setup 05"><img src="../images/plex/plex-setup-05.jpg" alt="Plex - Setup 05"></a></p>
       <p>The Plex plugin is now installed! </p>
       <span class="anchor" id="setting-up-plex-plugin"></span>
       <p>If you need to change any of the settings the Plex Plugin uses to connect to JMM Server. Open the plug-in<strong> Settings</strong> by pressing the cog in the top-right or  the cog on the plug-in logo in the channel menu. This will bring up the following window. </p>
-      <p><a href="../images/plex/plex-edit-server-settings.png" data-lightbox="plex-edit-server-settings" data-title="Plex - Edit Server Settings"><img src="../images/plex/plex-edit-server-settings.png" alt="Plex - Edit Server Settings"></a></p>
+      <p><a href="../images/plex/plex-edit-server-settings.png" class="colorbox" title="Plex - Edit Server Settings"><img src="../images/plex/plex-edit-server-settings.png" alt="Plex - Edit Server Settings"></a></p>
       <p>Here's a breakdown of the available options.</p>
       <ul>
         <li><strong>Server IP</strong> - The IP Address of the computer JMM Server is on. </li>
@@ -107,13 +119,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

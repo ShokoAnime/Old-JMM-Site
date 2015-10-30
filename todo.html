@@ -11,9 +11,8 @@
 <link rel="stylesheet" title="light" href="css/style.css">
 <link rel="alternate stylesheet" title="dark" href="css/style2.css">
 <link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/jquery.sidr.dark.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -70,21 +69,37 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="contribute.html">Contributing To JMM</a><span class="divider">>></span></li>
+          <li><a href="todo.html">Website To-Do List</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="to-do-list"> Website To-Do List</h2>
-      <p>Below you'll find a a list of pages that need updating and/or pages that are missing. Items on the to-do list have been placed in their respective categories for easier navigation, a crossed out item means it's already been completed. To avoid duplicates, edit the item on this page you are working on. For additional help and templates check the <a href="guide.html">JMM Website Guide</a> page. </p>
-      <p>We truly appreciate the help! </p>
-      <p>In order to facilitate work on the website, we've placed tasks into different stages. </p>
+      <p>Below we've outlined a list of pages that either need updating or still need to be added. Each item on the to-do list has been placed in it's respective category for easier navigation, a crossed out item means it's already been completed. To avoid multiple people working on the same page, please edit the item on this page you are working on. We've also created a <a href="guide.html">Website Guide</a> to help implament the different functions that are used on the website.      </p>
+      <p>We truly appreciate anyone that helps out!      </p>
+      <p>In order to faciliate work on the website, we've created different stages with corresponding tasks. </p>
       <p>Stage 1: Redesign website making it more user friendly and responsive.<br>
         Stage 2: Finish remaining pages, design is not important and instead focus  on content. <br>
         Stage 3: 
-      Rework designs making long pages or pages with a lot of information easier to read and navigate.</p>
+      Rework page design making pages easier to read and navigate. </p>
       <p>Current Stage: <strong>Stage 2</strong><br>
-        Last Updated: <strong>October 12th, 2015</strong>        <br>
+        Last Updated: <strong>October 24th, 2015</strong>        <br>
       </p>
       <h3>General</h3>
       <ul>
-        <li> Look into adding an image carousel. [Elemental Crisis]</li>
-        <li style="text-decoration:line-through">Sticky Main Menu [Elemental Crisis]</li>
+        <li class="in-progress"> Look into adding an image carousel. [Elemental Crisis]</li>
+        <li class="done">Sticky Main Menu. [Elemental Crisis]</li>
+        <li class="done">Add Lightbox. [Elemental Crisis]</li>
+        <li class="done">Add  Tabs. [Elemental Crisis]</li>
+        <li class="done">Replace Mobile Menu. [Elemental Crisis]</li>
+        <li class="done">Add Breadcrumbs.[Elemental Crisis]</li>
+        <li class="done">Replace Lightbox with Colorbox.  [Elemental Crisis]</li>
         <li><strong>Update Page</strong>: Information on Port Forwarding for remote viewng (/general/faq.html)</li>
       </ul>
       <span class="anchor" id="jmm-server"></span>
@@ -97,9 +112,9 @@
       <ul>
         <li><strong>Write Page:</strong> Frequently Asked Questions (/jmmdesktop/faq.html)</li>
         <li><strong>Write Page:</strong> Dashboard Tab (/jmmdesktop/dashboard.html)</li>
-        <li><span style="text-decoration:line-through"><strong>Write Page:</strong> Collection Tab (/jmmdesktop/collection.html) [Elemental Crisis]</span></li>
+        <li class="done"><strong>Write Page:</strong> Collection Tab (/jmmdesktop/collection.html) [Elemental Crisis]</li>
         <li><strong>Write Page:</strong> Downloads Tab (/jmmdesktop/downloads.html)</li>
-        <li><strong>Write Page:</strong> Pinned Tab (/jmmdesktop/pinned.html)</li>
+        <li class="done"><strong>Write Page:</strong> Pinned Tab (/jmmdesktop/pinned.html) [Elemental Crisis]</li>
         <li><strong>Write Page:</strong> Playlists Tab (/jmmdesktop/playlists.html)</li>
         <li><strong>Write Page:</strong> Search Tab (/jmmdesktop/search.html)</li>
         <li><strong>Write Page:</strong> Server Tab (/jmmdesktop/server.html)</li>
@@ -113,21 +128,20 @@
       <span class="anchor" id="plex"></span>
       <h3>Plex</h3>
       <ul>
-        <li><strong>Update Page</strong>: Add detailed information (/plex/index.html)</li>
         <li><strong>Write Page:</strong> Frequently Asked Questions (/plex/faq.html)</li>
       </ul>
       <span class="anchor" id="anime-buddy"></span>
       <h3>Anime Buddy </h3>
       <ul>
-        <li><strong>Write Page:</strong> Setting Up Local Playback (/animebuddy/local.html)</li>
-        <li><strong>Write Page:</strong> Setting Up Remote Playback (/animebuddy/remote.html)</li>
+        <li class="done"><strong>Write Page:</strong> Setting Up  Playback (/animebuddy/playback.html) [Elemental Crisis]</li>
         <li><strong>Update Page: </strong>Frequently Asked Questions (/animebuddy/faq.html)</li>
       </ul>
       <span class="anchor" id="known-bugs"></span>
       <h3>Known Bugs</h3>
       <ul>
-        <li style="text-decoration:line-through">Sticky Menu hides the section title on initial click. [Elemental Crisis]</li>
+        <li class="done">Sticky Menu hides the section title on initial click. [Elemental Crisis]</li>
         <li>Drop-Down Menu arrows all activate at the same time. </li>
+        <li class="done">Lightbox scales images incorrectly on smaller resolutions. [Elemental Crisis]</li>
       </ul>
     </div>
   </div>
@@ -144,14 +158,15 @@
   </div>
 </footer>
 <script src="js/styleswitch.js"></script> 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.responsiveTabs.js"></script> 
-<script src="js/stickUp.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/responsiveTabs.js"></script>
+<script src="js/rcrumbs.js"></script>
+<script src="js/stickUp.js"></script>
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script>
-<script src="js/jquery.sidr.min.js"></script> 
-<script src="js/jquery.localscroll.js"></script> 
-<script src="js/jquery.scrollTo.js"></script> 
-<script src="js/lightbox.js"></script>
+<script src="js/sidr.min.js"></script> 
+<script src="js/localscroll.js"></script> 
+<script src="js/scrollTo.js"></script> 
+<script src="js/colorbox.js"></script>
 </body>
 </html>

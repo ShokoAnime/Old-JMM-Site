@@ -158,7 +158,7 @@ img {
 	height: auto;
 }
 img, iframe {
-	max-width: 90%;
+	max-width: 60%;
 }
 input {
 	display: block;
@@ -292,6 +292,16 @@ body {
 .docs-nav {
 	display: none;
 }
+
+/* Breadcrumbs Sticky  */
+
+div.sticky.stuckElement.isStuck {
+	display: none !important;
+}
+div.sticky.stuckElement.isStuck a {
+	display: none !important;
+}
+
 nav #existing-content-menu {
 	position: absolute;
 	right: 0;
@@ -331,18 +341,27 @@ nav #menu-toggle {
 
 .jmmdesktop {
 	color: #008080;
-	font-weight: bold;
+	font-weight: 600;
 }
 .jmmserver {
 	color: #3385D7;
-	font-weight: bold;
+	font-weight: 600;
 }
 .plex {
 	color: #DB2F2F;
-	font-weight: bold;
+	font-weight: 600;
 }
 .ma3 {
-	font-weight: bold;
+	font-weight: 600;
+}
+
+/* To-Do Tags */
+
+.in-progress {
+	font-weight:600;
+}
+.done {
+	text-decoration: line-through;
 }
 
 /* Alerts */
@@ -374,6 +393,28 @@ nav #menu-toggle {
 .notice {
 	background: #e3f7fc url('../images/site/notice.png') no-repeat 10px 50%;
 	border: 1px solid #8ed9f6;
+}
+
+/* Sticky Menu */
+
+nav.sticky.stuckMenu.isStuck {
+	z-index: 15;
+	width: 100%;
+}
+sticky.ul#menu-left.docs-nav {
+	background-color: #222;
+}
+div.sticky.stuckElement.isStuck {
+	z-index: 99;
+	background: rgb(19, 85, 113) none repeat scroll 0% 0%;
+	width: 100% !important;
+	top: 60px !important;
+	left: 0px;
+	padding: 0px 50px;
+}
+div.sticky.stuckElement.isStuck a {
+	color: #FFF;
+	font-size: 1.4em;
 }
 
 /* Discord */
@@ -497,6 +538,36 @@ clicker {
 	border-left: 1px solid #ccc;
 	margin-bottom: 0;
 }
+
+/* Breadcrumbs */
+
+.rcrumbs {
+  line-height: 18px;
+  white-space: nowrap;
+}
+.rcrumbs > ul {
+  padding: 0;
+  height: 10px;
+  list-style: none;
+}
+.rcrumbs > ul > li {
+  overflow: hidden;
+  display: none;
+}
+.rcrumbs > ul > li.show {
+  display: inline-block;
+  height: 25px;
+}
+.rcrumbs > ul > li.ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rcrumbs .divider {
+  font-weight: 600;
+  padding: 0 10px;
+}
+
 /* Custom Table */
 
 .BlueTable {
