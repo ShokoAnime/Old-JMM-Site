@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -68,15 +68,27 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Desktop</a><span class="divider">>></span></li>
+          <li><a href="downloads.html">Downloads Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2 id="downloads-tab">Downloads Tab</h2>
       <p>The downloads tab allows you to expand your anime collection by downloading new series and missing episodes using the built-in search and browse feature. In addition, JMM Desktop supports uTorrent integration allowing you to add new torrents and manage existing torrent even if they are a different computer.</p>
       <p>At this time, <strong>uTorrent</strong> is the only supported client.</p>
       <span class="anchor" id="utorrent"></span>
       <h3>uTorrent</h3>
       <p>For uTorrent integration to work you must first enable the Web UI in  uTorrent, it should look something like the following.</p>
-      <p><a href="../images/general/utorrent-settings.jpg" data-lightbox="utorrent-settings" data-title="uTorrent Settings"><img src="../images/general/utorrent-settings.jpg" alt="uTorrent Settings"></a></p>
+      <p><a href="../images/general/utorrent-settings.jpg" class="colorbox" title="uTorrent Settings"><img src="../images/general/utorrent-settings.jpg" alt="uTorrent Settings"></a></p>
       <p>Once down, click the <strong>Settings</strong> section and input the <strong>Username</strong>, <strong>Password</strong> and <strong>Port</strong> you inputted in uTorrent. For the Server, input your <strong>Computer's Name</strong> or the <strong>IP Address</strong>. </p>
-      <p><a href="../images/jmmdesktop/downloads-settings.png" data-lightbox="downloads-settings" data-title="JMM Desktop - Downloads Tab - Settings"><img src="../images/jmmdesktop/downloads-settings.png" alt="JMM Desktop - Downloads Tab - Settings"></a></p>
+      <p><a href="../images/jmmdesktop/downloads-settings.png" class="colorbox" title="JMM Desktop - Downloads Tab - Settings"><img src="../images/jmmdesktop/downloads-settings.png" alt="JMM Desktop - Downloads Tab - Settings"></a></p>
       <span class="anchor" id="search-torrents"></span>
       <h3>Search Torrents</h3>
       <p>&nbsp;</p>
@@ -108,13 +120,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

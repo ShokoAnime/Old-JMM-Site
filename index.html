@@ -11,9 +11,8 @@
 <link rel="stylesheet" title="light" href="css/style.css">
 <link rel="alternate stylesheet" title="dark" href="css/style2.css">
 <link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/lightbox.css">
-<link rel="stylesheet" href="css/jquery.sidr.dark.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/sidr.dark.css">
 <link rel="stylesheet" href="css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -71,7 +70,8 @@
     </ul>
     <div class="docs-content">
       <div class="alert-box notice"><span>notice: </span><br>
-        We're looking for volunteers to help with the website! <a href="contribute.html">Click Here</a> for more information. </div>
+        We're looking for volunteers to help with JMM! <a href="contribute.html">Click Here</a> for more information. 
+      </div>
     </div>
     <div class="docs-content"> <span class="anchor" id="what-is-jmm"></span>
       <h2>What Is JMM</h2>
@@ -111,24 +111,24 @@
       <p><a href="jmmserver/index.html">Learn more about JMM Server</a></p>
       <span class="anchor" id="jmm-desktop"></span>
       <h2>JMM Desktop</h2>
-      <p><a href="images/jmmdesktop/dashboard-metro.png" data-lightbox="dashboard-metro" data-title="JMM Desktop - Metro Dashboard"><img src="images/jmmdesktop/dashboard-metro.png" alt="JMM Desktop - Metro Dashboard"></a></p>
+      <p><a href="images/jmmdesktop/dashboard-metro.png" class="colorbox" title="JMM Desktop - Metro Dashboard"><img src="images/jmmdesktop/dashboard-metro.png" alt="JMM Desktop - Metro Dashboard"></a></p>
       <p>JMM Desktop is a windows based program built with .NET for managing your anime collection. </p>
       <p>While JMM Server automatically processes your collection, JMM Desktop is considered the front-end of JMM Server providing you with the ability to further fine tune your collection with a wide array of tools to make sure your collection is setup the way you want it to be. With JMM Desktop you can also view your entire collection however you'd like as well as  view detailed information about the various series and files within it. <span class="anchor" id="my-anime3"></span></p>
       <p><strong><a href="jmmdesktop/index.html">Learn more about JMM Desktop</a></strong></p>
       <h2>My Anime 3</h2>
-      <p><a href="images/myanime3/avalon/facade-list-fanart.jpg" data-lightbox="facade-list-fanart" data-title="My Anime 3 - Avalon Theme"><img src="images/myanime3/avalon/facade-list-fanart.jpg" alt="My Anime 3 - Avalon Theme"></a></p>
+      <p><a href="images/myanime3/avalon/facade-list-fanart.jpg" class="colorbox" title="My Anime 3 - Avalon Theme"><img src="images/myanime3/avalon/facade-list-fanart.jpg" alt="My Anime 3 - Avalon Theme"></a></p>
       <p>My Anime 3 is a plugin designed for use with <strong><a href="http://www.team-mediaportal.com/" target="_blank">MediaPortal</a></strong> </p>
       <p>My Anime 3 displays detailed information not only about your collection, but the different anime series within your collection as well and automatically downloads Fanart, DVD Covers, posters, and banners giving you a pleasing look to your anime collection. In addition,each series is listed in full detail showing each episode summary, preview picture and air date and more!</p>
       <p><a href="myanime3/index.html">Learn more about My Anime 3</a></p>
       <span class="anchor" id="plex"></span>
       <h2>Plex Plugin</h2>
-      <p><a href="images/plex/continue-watching-overview-01.jpg" data-lightbox="continue-watching-overview-0" data-title="Plex - Continue Watching"><img src="images/plex/continue-watching-overview-01.jpg" alt="Plex - Continue Watching"></a></p>
+      <p><a href="images/plex/continue-watching-overview-01.jpg" class="colorbox" title="Plex - Continue Watching"><img src="images/plex/continue-watching-overview-01.jpg" alt="Plex - Continue Watching"></a></p>
       <p>Plex Plugin is a plugin designed for use with <a href="https://plex.tv/" target="_blank">Plex</a>.</p>
       <p>With Plex Plugin, you can stream your anime collection to any device that supports Plex allowing you to always have access to your collection no matter where you go. Like the My Anime 3 plugin for MediaPortal, Plex Plugin is capable of displaying your collection data, including images in a detailed and easy to navigate layout providing you the best experience possible.</p>
       <p><a href="plex/index.html">Learn more about Plex Plugin</a></p>
       <span class="anchor" id="anime-buddy"></span>
       <h2>Anime Buddy</h2>
-      <p><a href="images/animebuddy/collection-mix-overview.png" data-lightbox="collection-mix-overview" data-title="Anime Buddy - Collection & Calendar Overview"><img src="images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
+      <p><a href="images/animebuddy/collection-mix-overview.png" class="colorbox" title="Anime Buddy - Collection & Calendar Overview"><img src="images/animebuddy/collection-mix-overview.png" alt="Anime Buddy - Collection & Calendar Overview"></a></p>
       <p>Anime Buddy is a Windows Store app available on Windows 8/8.1/10 that when connected to JMM Server gives you the ability to stream your anime collection or play it locally. It pulls all relevant information from JMM Server allowing you to continue watching where you left off and provides detailed information about any show you select providing you with a fantastic experience.</p>
       <p><a href="animebuddy/index.html">Learn more about Anime Buddy</a></p>
     </div>
@@ -147,13 +147,14 @@
 </footer>
 <script src="js/styleswitch.js"></script> 
 <script src="js/jquery.min.js"></script> 
-<script src="js/jquery.responsiveTabs.js"></script> 
-<script src="js/stickUp.js"></script> 
+<script src="js/responsiveTabs.js"></script>
+<script src="js/rcrumbs.js"></script>
+<script src="js/stickUp.js"></script>
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script> 
-<script src="js/jquery.sidr.min.js"></script> 
-<script src="js/jquery.localscroll.js"></script> 
-<script src="js/jquery.scrollTo.js"></script> 
-<script src="js/lightbox.js"></script>
+<script src="js/sidr.min.js"></script> 
+<script src="js/localscroll.js"></script> 
+<script src="js/scrollTo.js"></script> 
+<script src="js/colorbox.js"></script>
 </body>
 </html>

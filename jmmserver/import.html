@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -55,12 +55,24 @@
         <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
       </div>
     </ul>
+    <div class="docs-content">
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Server</a><span class="divider">>></span></li>
+          <li><a href="import.html">Import Folders Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
     <div class="docs-content"> <span class="anchor" id="import-folders"></span>
       <h2>Import Folders Tab      </h2>
       <p>The <strong>Import Folders</strong> tab is where you'll manage all your import locations for your files. At least one folder is   required before you can start using any JMM program or plugin. </p>
-      <p><a href="../images/jmmserver/jmm-server-import-folders.png" data-lightbox="jmm-server-import-folders" data-title="JMM Server - Import Folders Tab"><img src="../images/jmmserver/jmm-server-import-folders.png" alt="JMM Server - Import Folders Tab"></a></p>
+      <p><a href="../images/jmmserver/jmm-server-import-folders.png" class="colorbox" title="JMM Server - Import Folders Tab"><img src="../images/jmmserver/jmm-server-import-folders.png" alt="JMM Server - Import Folders Tab"></a></p>
       <p>Click<strong> New Folder</strong> to add a import folder for your collection. </p>
-      <p><a href="../images/jmmserver/jmm-server-import-folders-select.png" data-lightbox="jmm-server-import-folders-select" data-title="JMM Server - Import Folders - Select Folders"><img src="../images/jmmserver/jmm-server-import-folders-select.png" alt="JMM Server - Import Folders - Select Folders"></a></p>
+      <p><a href="../images/jmmserver/jmm-server-import-folders-select.png" class="colorbox" title="JMM Server - Import Folders - Select Folders"><img src="../images/jmmserver/jmm-server-import-folders-select.png" alt="JMM Server - Import Folders - Select Folders"></a></p>
       <p>A new window will open allowing you to input the location of your files, this can either be the physical location or a networked location. We recommend clicking the folder icon to select the location to avoid any mistakes from manually typing the location in, especially if you're mapping a networked location. Additionally, if anything changes on your network, you'll need to update the location of any import folders that use a networked location or you'll be presented with errors. </p>
       <p>You'll also be presented with three different options that will tell JMM Server what to do with this import folder. </p>
       <ul>
@@ -103,13 +115,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

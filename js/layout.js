@@ -20,6 +20,10 @@ $(document).ready(function () {
   });
 });
 
+jQuery(document).ready(function() {
+            $("#breadcrumbs").rcrumbs();
+        });
+
 $(document).ready(function() {
     $('#existing-content-menu').sidr({
       name: 'sidr-existing-content',

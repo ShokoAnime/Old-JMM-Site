@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -67,7 +67,19 @@
       </div>
     </ul>
     <div class="docs-content">
-      <h2 id="installing-mysql">Installing and Setting Up MySQL </h2>
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">Installation and Setup</a><span class="divider">>></span></li>
+          <li><a href="mysql.html">Installing and Setting Up MySQL</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
+      <h2>Installing and Setting Up MySQL </h2>
       <p>MySQL is the recommend database type for use with JMM Server for users   with a large collection, who intend to build a large collection or   simply for any user that wants better and faster performance with the JMM suite. </p>
       <span class="anchor" id="why-mysql"></span>
       <h3>Why MySQL over SQLite</h3>
@@ -87,27 +99,27 @@
       There is a known error with MySQL Community Server that will prevent you from updating during the install process. If there is a space in your <strong>Windows Account Name</strong> you'll be unable to update MySQL Community Server. The fix can be found <a href="https://bugs.mysql.com/bug.php?id=77965" target="_blank">here</a> in the following post: <strong>[7 Aug 9:13]     Jonathan Meier</strong>. </div>
       <p>The following instructions were written using MySQL Community Server Version <strong>5.6.20.0</strong>. While newer versions should not differ too much, make sure the items you're installing match up with the items in the following images. </p>
       <p>Start the installer and if prompted download any available updates. Once done select the<strong> Custom </strong>install option. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-01.jpg" data-lightbox="mysql-instal-01" data-title="MySQL Install 01"><img src="../images/jmmserver/mysql/mysql-install-01.jpg" alt="MySQL Install 01"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-01.jpg" class="colorbox" title="MySQL Install 01"><img src="../images/jmmserver/mysql/mysql-install-01.jpg" alt="MySQL Install 01"></a></p>
       <p>Some versions of the MySQL Community Server do not allow you to change the install and data path so don't worry if those options are not present.</p>
       <p>Follow the following pictures selecting the same options. If presented with both 32-bit and 64-bit options, install the one that corresponds with your computer setup or both if you don't know your computer setup. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-02.jpg" data-lightbox="mysql-instal-02" data-title="MySQL Install 02"><img src="../images/jmmserver/mysql/mysql-install-02.jpg" alt="MySQL Install 02"></a></p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-03.jpg" data-lightbox="mysql-instal-03" data-title="MySQL Install 03"><img src="../images/jmmserver/mysql/mysql-install-03.jpg" alt="MySQL Install 03"></a></p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-04.jpg" data-lightbox="mysql-instal-04" data-title="MySQL Install 04"><img src="../images/jmmserver/mysql/mysql-install-04.jpg" alt="MySQL Install 04"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-02.jpg" class="colorbox" title="MySQL Install 02"><img src="../images/jmmserver/mysql/mysql-install-02.jpg" alt="MySQL Install 02"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-03.jpg" class="colorbox" title="MySQL Install 03"><img src="../images/jmmserver/mysql/mysql-install-03.jpg" alt="MySQL Install 03"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-04.jpg" class="colorbox" title="MySQL Install 04"><img src="../images/jmmserver/mysql/mysql-install-04.jpg" alt="MySQL Install 04"></a></p>
       <p>The install will check to make sure you have all prerequisites installed that are required to run MySQL Community Server. Once all prerequisites have finished downloading and have been install click the <strong>Next</strong> button. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-05.jpg" data-lightbox="mysql-instal-05" data-title="MySQL Install 05"><img src="../images/jmmserver/mysql/mysql-install-05.jpg" alt="MySQL Install 05"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-05.jpg" class="colorbox" title="MySQL Install 05"><img src="../images/jmmserver/mysql/mysql-install-05.jpg" alt="MySQL Install 05"></a></p>
       <p>The installer automatically downloads and installs all selected products, depending on your connection speed this could take some time. If anything fails when downloading or installing don't worry, just keep clicking the retry button until it succeeds. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-06.jpg" data-lightbox="mysql-instal-06" data-title="MySQL Install 06"><img src="../images/jmmserver/mysql/mysql-install-06.jpg" alt="MySQL Install 06"></a>
+      <p><a href="../images/jmmserver/mysql/mysql-install-06.jpg" class="colorbox" title="MySQL Install 06"><img src="../images/jmmserver/mysql/mysql-install-06.jpg" alt="MySQL Install 06"></a>
       <h3 id="mysql-config">Configuring MySQL Community Server </h3>
       <p>Now that MySQL Community Server has been downloaded and installed successfully it's now time to configure it for use.</p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-07.jpg" data-lightbox="mysql-instal-07" data-title="MySQL Install 07"><img src="../images/jmmserver/mysql/mysql-install-07.jpg" alt="MySQL Install 07"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-07.jpg" class="colorbox" title="MySQL Install 07"><img src="../images/jmmserver/mysql/mysql-install-07.jpg" alt="MySQL Install 07"></a></p>
       <p>Development Machine is the recommended <strong>Server Configuration Type</strong> though advanced users might want to check out some of the other options.</p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-08.jpg" data-lightbox="mysql-instal-08" data-title="MySQL Install 08"><img src="../images/jmmserver/mysql/mysql-install-08.jpg" alt="MySQL Install 08"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-08.jpg" class="colorbox" title="MySQL Install 08"><img src="../images/jmmserver/mysql/mysql-install-08.jpg" alt="MySQL Install 08"></a></p>
       <p>You'll now be prompted to set the <strong>Root Account Password</strong>, how easy or hard you make it is up to you but make sure to write it down. You'll need to it for JMM Server to create and connect to your database. By default JMM Server uses <strong>root</strong> as the default username and the password you inputted. However you can create a MySQL user specifically for JMM Server if you plan to use MySQL with additional applications.</p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-09.jpg" data-lightbox="mysql-instal-09" data-title="MySQL Install 09"><img src="../images/jmmserver/mysql/mysql-install-09.jpg" alt="MySQL Install 09"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-09.jpg" class="colorbox" title="MySQL Install 09"><img src="../images/jmmserver/mysql/mysql-install-09.jpg" alt="MySQL Install 09"></a></p>
       <p>It's recommended you have MySQL Server start with Windows. Otherwise you will need to manually run it each time you want to use any JMM product. </p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-10.jpg" data-lightbox="mysql-instal-10" data-title="MySQL Install 10"><img src="../images/jmmserver/mysql/mysql-install-10.jpg" alt="MySQL Install 10"></a></p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-11.jpg" data-lightbox="mysql-instal-10" data-title="MySQL Install 11"><img src="../images/jmmserver/mysql/mysql-install-11.jpg" alt="MySQL Install 11"></a></p>
-      <p><a href="../images/jmmserver/mysql/mysql-install-12.jpg" data-lightbox="mysql-instal-12" data-title="MySQL Install 12"><img src="../images/jmmserver/mysql/mysql-install-12.jpg" alt="MySQL Install 12"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-10.jpg" class="colorbox" title="MySQL Install 10"><img src="../images/jmmserver/mysql/mysql-install-10.jpg" alt="MySQL Install 10"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-11.jpg" class="colorbox" title="MySQL Install 11"><img src="../images/jmmserver/mysql/mysql-install-11.jpg" alt="MySQL Install 11"></a></p>
+      <p><a href="../images/jmmserver/mysql/mysql-install-12.jpg" class="colorbox" title="MySQL Install 12"><img src="../images/jmmserver/mysql/mysql-install-12.jpg" alt="MySQL Install 12"></a></p>
       <p>Congratulations! MySQL Server has been successfully installed! If you've paused your <a href="jmmserver.html#configure-database">JMM Setup</a>, you can now continue with the install. </p>
     </div>
   </div>
@@ -125,13 +137,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

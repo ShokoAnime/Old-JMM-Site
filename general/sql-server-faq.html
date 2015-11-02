@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
@@ -66,35 +66,48 @@
       </div>
     </ul>
     <div class="docs-content">
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span>
+          <li><a href="index.html">General Information</a><span class="divider">>></span></li>
+          <li><a href="sql-server-faq.html">SQL Server Frequently Asked Questions</a>
+
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
       <h2> SQL Server Frequently Asked Questions </h2>
       <span class="anchor" id="creating-database-backup"></span>
       <h3>Creating A Database Backup</h3>
       <p>If you ever need to create a backup of your SQL Server, it can be a little tricky. Luckily for you we've created this guide to help you do just that.</p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-01.jpg" data-lightbox="sql-server-backup-01" data-title="SQL Server Backup - 01"><img src="../images/jmmserver/sqlserver/sql-server-backup-01.jpg" alt="SQL Server Backup - 01"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-01.jpg" class="colorbox" title="SQL Server Backup - 01"><img src="../images/jmmserver/sqlserver/sql-server-backup-01.jpg" alt="SQL Server Backup - 01"></a></p>
       <p>First you'll need to close JMM Server, you can't create a database backup if JMM Server is running. Next open SQL Server Management Studio and expand the database list. Right-click on your database and select <strong>Tasks</strong> and then <strong>Back Up</strong>... </p>
       <p>Select the name and location of the backup and then press the <strong>OK</strong> button.</p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-02.jpg" data-lightbox="sql-server-backup-02" data-title="SQL Server Backup - 02"><img src="../images/jmmserver/sqlserver/sql-server-backup-02.jpg" alt="SQL Server Backup - 02"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-02.jpg" class="colorbox" title="SQL Server Backup - 02"><img src="../images/jmmserver/sqlserver/sql-server-backup-02.jpg" alt="SQL Server Backup - 02"></a></p>
       <p>That's it! You've created a backup of your SQL Server database. Keep reading to learn how to restore a backup.</p>
       <span class="anchor" id="restoring-database-backup"></span>
       <h3>Restoring A Database Backup</h3>
       <p>The easiest way to restore a database backup is by deleting any  existing database that you want to overwrite. You can do this by right-clicking on the database and selecting the delete option.      </p>
       <p>Once down, right-click on your database and select <strong>Restore Files and Filegroups...</strong> to restore from your backup.      </p>
       <p> </p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-03.jpg" data-lightbox="sql-server-backup-03" data-title="SQL Server Backup - 03"><img src="../images/jmmserver/sqlserver/sql-server-backup-03.jpg" alt="SQL Server Backup - 03"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-03.jpg" class="colorbox" title="SQL Server Backup - 03"><img src="../images/jmmserver/sqlserver/sql-server-backup-03.jpg" alt="SQL Server Backup - 03"></a>
       <p>If you want, you can change the database name, it does not have to be the same as before. On  <strong>Source for Restore</strong>, select <strong>From Device</strong> and select the backup you created earlier. </p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-04.jpg" data-lightbox="sql-server-backup-04" data-title="SQL Server Backup - 04"><img src="../images/jmmserver/sqlserver/sql-server-backup-04.jpg" alt="SQL Server Backup - 04"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-04.jpg" class="colorbox" title="SQL Server Backup - 04"><img src="../images/jmmserver/sqlserver/sql-server-backup-04.jpg" alt="SQL Server Backup - 04"></a>
       <p>Press the <strong>OK</strong> button to begin the restoring process. You'll be notified when it's complete.</p>
       <span class="anchor" id="migrating-group-filters"></span>
       <h3>Migrating Group Filters from one database to another</h3>
       <p>If you've created a new SQL Server database and want to keep your previously created Group Filters, follow the following steps.      </p>
       <p>First you'll need to close JMM Server, you can't create a database backup if JMM Server is running. Next open SQL Server Management Studio and expand the database list. You'll want to create a backup of<strong> BOTH</strong> databases before making any changes. </p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-05.jpg" data-lightbox="sql-server-backup-05" data-title="SQL Server Backup - 05"><img src="../images/jmmserver/sqlserver/sql-server-backup-05.jpg" alt="SQL Server Backup - 05"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-05.jpg" class="colorbox" title="SQL Server Backup - 05"><img src="../images/jmmserver/sqlserver/sql-server-backup-05.jpg" alt="SQL Server Backup - 05"></a>
       <p>In your <strong>NEW</strong> database, the one you will be using, expand the tables view and delete all the records from the following 2 tables</p>
       <ul>
         <li>GroupFilter</li>
         <li>GroupFilterCondition</li>
       </ul>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-06.jpg" data-lightbox="sql-server-backup-06" data-title="SQL Server Backup - 06"><img src="../images/jmmserver/sqlserver/sql-server-backup-06.jpg" alt="SQL Server Backup - 06"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-06.jpg" class="colorbox" title="SQL Server Backup - 06"><img src="../images/jmmserver/sqlserver/sql-server-backup-06.jpg" alt="SQL Server Backup - 06"></a>
       <p>This will create a SQL script which looks something like the following</p>
       <pre class="code">USE [JMMServerToWatch_Temp]
 GO
@@ -111,15 +124,15 @@ GO</pre>
       <p>Press <strong>F5</strong> to execute the script and delete all the   rows from table. Repeat for GroupFilterCondition table (or directly   change the name of the table in the script)</p>
       <p>Now we can move onto migrating the data from the OLD database to the new database</p>
       <p>For your <strong>OLD</strong> database, right click on the name and select Tasks -&gt; Generate scripts</p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-07.jpg" data-lightbox="sql-server-backup-07" data-title="SQL Server Backup - 07"><img src="../images/jmmserver/sqlserver/sql-server-backup-07.jpg" alt="SQL Server Backup - 07"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-07.jpg" class="colorbox" title="SQL Server Backup - 07"><img src="../images/jmmserver/sqlserver/sql-server-backup-07.jpg" alt="SQL Server Backup - 07"></a>
       <p>Select the options shown below and click the Next Button</p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-08.jpg" data-lightbox="sql-server-backup-08" data-title="SQL Server Backup - 08"><img src="../images/jmmserver/sqlserver/sql-server-backup-08.jpg" alt="SQL Server Backup - 08"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-08.jpg" class="colorbox" title="SQL Server Backup - 08"><img src="../images/jmmserver/sqlserver/sql-server-backup-08.jpg" alt="SQL Server Backup - 08"></a>
       <p>Select the options shown below and click the <strong>Advanced</strong> Button</p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-09.jpg" data-lightbox="sql-server-backup-09" data-title="SQL Server Backup - 09"><img src="../images/jmmserver/sqlserver/sql-server-backup-09.jpg" alt="SQL Server Backup - 09"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-09.jpg" class="colorbox" title="SQL Server Backup - 09"><img src="../images/jmmserver/sqlserver/sql-server-backup-09.jpg" alt="SQL Server Backup - 09"></a>
       <p>Change only the following option <strong>Types of Data to script</strong> to <strong>Data Only</strong></p>
-      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-10.jpg" data-lightbox="sql-server-backup-10" data-title="SQL Server Backup - 10"><img src="../images/jmmserver/sqlserver/sql-server-backup-10.jpg" alt="SQL Server Backup - 10"></a></p>
+      <p><a href="../images/jmmserver/sqlserver/sql-server-backup-10.jpg" class="colorbox" title="SQL Server Backup - 10"><img src="../images/jmmserver/sqlserver/sql-server-backup-10.jpg" alt="SQL Server Backup - 10"></a></p>
       <p>You should then see the following screen after pressing Next</p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-11.jpg" data-lightbox="sql-server-backup-11" data-title="SQL Server Backup - 11"><img src="../images/jmmserver/sqlserver/sql-server-backup-11.jpg" alt="SQL Server Backup - 11"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-11.jpg" class="colorbox" title="SQL Server Backup - 11"><img src="../images/jmmserver/sqlserver/sql-server-backup-11.jpg" alt="SQL Server Backup - 11"></a>
       <p>Pressing finish should open a new query windows, where the script looks like something along the following lines</p>
       <p>Delete the <strong>WHERE</strong> line, so it now looks like the following</p>
       <pre class="code">USE [JMMServerToWatch]
@@ -152,7 +165,7 @@ GO</pre>
       <pre class="code">USE [JMMServerToWatch]  
 GO  </pre>
       <p>Then change the database in the toolbar, to point to the <strong>NEW</strong> database</p>
-      <a href="../images/jmmserver/sqlserver/sql-server-backup-12.jpg" data-lightbox="sql-server-backup-12" data-title="SQL Server Backup - 12"><img src="../images/jmmserver/sqlserver/sql-server-backup-12.jpg" alt="SQL Server Backup - 12"></a>
+      <a href="../images/jmmserver/sqlserver/sql-server-backup-12.jpg" class="colorbox" title="SQL Server Backup - 12"><img src="../images/jmmserver/sqlserver/sql-server-backup-12.jpg" alt="SQL Server Backup - 12"></a>
       <p>Press <strong>F5</strong> to execute the script and you should now have your old group filters in the new database. Start up JMM Server and test it out </p>
     </div>
   </div>
@@ -170,13 +183,14 @@ GO  </pre>
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>

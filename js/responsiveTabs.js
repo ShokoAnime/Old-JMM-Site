@@ -13,7 +13,10 @@ $(function() {
 			$('#tab-01').responsiveTabs({});
 			$('#tab-02').responsiveTabs({});
 			$('#tab-03').responsiveTabs({});
-			$('#tab-04').responsiveTabs({});	
+			$('#tab-04').responsiveTabs({});
+			$('#tab-05').responsiveTabs({});	
+			$('#tab-06').responsiveTabs({});	
+			$('#tab-07').responsiveTabs({});		
 		});
 
 ;(function ( $, window, undefined ) {

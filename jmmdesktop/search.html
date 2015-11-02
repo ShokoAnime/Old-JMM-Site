@@ -11,8 +11,8 @@
 <link rel="stylesheet" title="light" href="../css/style.css">
 <link rel="alternate stylesheet" title="dark" href="../css/style2.css">
 <link rel="stylesheet" href="../css/prettify.css">
-<link rel="stylesheet" href="../css/lightbox.css">
-<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<link rel="stylesheet" href="../css/colorbox.css">
+<link rel="stylesheet" href="../css/sidr.dark.css">
 <link rel="stylesheet" href="../css/responsive-tabs.css">
 </head>
 <body style="margin-top:45px">
@@ -45,7 +45,8 @@
   <div class="container">
     <ul class="docs-nav" id="menu-left">
       <li><strong>Search Tab</strong></li>
-      <li><a href="#managing-jmm-server">Searching Through Your Collections</a></li>
+      <li><a href="#search-tab">Searching Your Collection</a></li>
+      <li><a href="#search-filters">Search Filters</a></li>
       <div class="mobile-only-links">
         <li class="separator"></li>
         <li><strong>Links</strong></li>
@@ -63,8 +64,40 @@
       </div>
     </ul>
     <div class="docs-content">
-      <h2 id="latest-downloads">Search Tab</h2>
-      <p>&nbsp; </p>
+      <div class="sticky">
+      <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+          <li><a href="../documentation.html">Documentation</a><span class="divider">>></span></li>
+          <li><a href="index.html">JMM Desktop</a><span class="divider">>></span></li>
+          <li><a href="search.html">Search Tab</a><span class="divider"></span></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="docs-content">
+    <span class="anchor" id="search-tab"></span>
+      <h2>Search Tab</h2>
+      <p>The <strong>Search</strong> tab is an expanded version of the search function that's available for use in the <strong>Collection</strong> tab. However like the search function on the <strong>Collection</strong> tab, it's limited to single word searching. </p>
+      <p><a href="../images/jmmdesktop/search-overview.png" class="colorbox" title="JMM Desktop - Search Tab"><img src="../images/jmmdesktop/search-overview.png" alt="JMM Desktop - Metro Dashboard"></a></p>
+      <span class="anchor" id="search-filters"></span>
+      <p>You have two different search filters you can use, <strong>Everything</strong> and <strong>Title Only</strong>. </p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Everything</strong></td>
+            <td>Using this filter will return results with your search term from group name, series name, tags and custom tags</td>
+          </tr>
+          <tr>
+            <td><strong>Title Only</strong></td>
+            <td>Using this filter will return results that have your search term only in the series name. </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -81,13 +114,14 @@
 </footer>
 <script src="../js/styleswitch.js"></script> 
 <script src="../js/jquery.min.js"></script> 
-<script src="../js/jquery.responsiveTabs.js"></script> 
+<script src="../js/responsiveTabs.js"></script> 
+<script src="../js/rcrumbs.js"></script>  
 <script src="../js/stickUp.js"></script> 
 <script src="../js/layout.js"></script> 
 <script src="../js/prettify.js"></script> 
-<script src="../js/jquery.sidr.min.js"></script> 
-<script src="../js/jquery.localscroll.js"></script> 
-<script src="../js/jquery.scrollTo.js"></script> 
-<script src="../js/lightbox.js"></script>
+<script src="../js/sidr.min.js"></script> 
+<script src="../js/localscroll.js"></script> 
+<script src="../js/scrollTo.js"></script> 
+<script src="../js/colorbox.js"></script>
 </body>
 </html>
