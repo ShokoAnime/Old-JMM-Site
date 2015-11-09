@@ -48,6 +48,7 @@
       <li><a href="#latest-downloads">Latest Downloads</a></li>
       <li><a href="#stable-releases">Stable Releases</a></li>
       <li><a href="#manual-update">Manual Update</a></li>
+      <li><a href="#older-version-upgrading">Upgrading JMM Ver. 3.3 Or Older</a></li>
       <li><a href="#beta-release">Beta Release</a></li>
       <li><a href="changelog.html">Changelog</a></li>
       <div class="mobile-only-links">
@@ -68,22 +69,19 @@
     </ul>
     <div class="docs-content">
       <div class="sticky">
-      <div class="rcrumbs" id="breadcrumbs">
-        <ul>
-          <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
-          <li><a href="downloads.html">Downloads</a><span class="divider"></span></li>
-        </ul>
-      </div>
+        <div class="rcrumbs" id="breadcrumbs">
+          <ul>
+            <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
+            <li><a href="downloads.html">Downloads</a><span class="divider"></span></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="docs-content"> <span class="anchor" id="latest-downloads"></span>
       <h2>Latest Downloads</h2>
-      <p>Here you will find the latest stable versions of JMM as well as beta versions to test out new features. </p>
-      <h3 id="important-information">Important Information</h3>
-      <ul>
-        <li>.NET Framework 4.5 is  required, first time users and those upgrading from an older version will need to first download and upgrade .NET Framework before installing the latest version of JMM. You can <a href="https://www.microsoft.com/en-au/download/details.aspx?id=42643" target="_blank">Download .NET Framework 4.5 from Microsoft</a>.</li>
-        <li>If you are upgrading from version 3.3 or lower, you'll be unable to run JMM Server after upgrading due to changes in the config file. To fix this download <strong>Config Fixer</strong> and run it. </li>
-      </ul>
+      <p>Here you will find the latest stable versions of JMM, beta versions to test out new features and information on manually updating JMM and update.</p>
+      <div class="alert-box notice"><span>notice: </span><br>
+        <strong>.NET Framework 4.5</strong> is required to use JMM Server and JMM Desktop. First time users and those upgrading from an older version will need to first download and upgrade .NET Framework before installing the latest version of JMM. You can <a href="https://www.microsoft.com/en-au/download/details.aspx?id=42643" target="_blank">Download .NET Framework 4.5 from Microsoft</a>. </div>
       <span class="anchor" id="stable-releases"></span>
       <h3>Stable Releases</h3>
       <table table class="BlueTable">
@@ -112,14 +110,14 @@
           <tr>
             <td><strong>My Anime 3</strong></td>
             <td><strong>3.4.4.3</strong></td>
-            <td><strong>N/A</strong></td>
+            <td><strong>8.8 MB</strong></td>
             <td><strong><a href="http://www.team-mediaportal.com/extensions/movies-videos/my-anime-3?lang=en">Download</a></strong></td>
             <td><strong><a href="https://github.com/japanesemediamanager/animeplugin3" target="_blank">Source</a></strong></td>
           </tr>
           <tr>
             <td><strong>Anime Buddy</strong></td>
             <td><strong>1.0.0.3</strong></td>
-            <td><strong>N/A</strong></td>
+            <td><strong>2.5 MB</strong></td>
             <td><strong><a href="http://apps.microsoft.com/webpdp/en-US/app/anime-buddy/323894e2-3410-4ca5-b4a1-20e1a7d55702" target="_blank">Download</a> (Windows Store link)</strong></td>
             <td><strong>N/A</strong></td>
           </tr>
@@ -130,23 +128,18 @@
             <td><strong><a href="http://www.jmediamanager.org/latestdownloads/PlexMyAnimePlugin.3.4.4.3.zip">Download</a></strong></td>
             <td><strong><a href="https://github.com/japanesemediamanager/plexplugin" target="_blank">Source</a></strong></td>
           </tr>
-          <tr>
-            <td><strong>Config Fixer</strong></td>
-            <td><strong>N/A</strong></td>
-            <td><strong>25KB</strong></td>
-            <td><strong><a href="http://www.jmediamanager.org/latestdownloads/ConfigFixer.zip">Download</a></strong></td>
-            <td><strong>N/A</strong></td>
-          </tr>
         </tbody>
       </table>
       <span class="anchor" id="manual-update"></span>
       <h3>Manual Update</h3>
-      <p>If for some reason the automatic update is not working correctly for you or you simply want to upgrade JMM to a specific version, you can do that by using the links below. There's two things you need to pay close attention to when manually updating, the current version you have (also known as the base version) and the version you want to upgrade to. Additionally at the bottom of the list you'll see generic update all files that can be used to update your version of JMM to a specif version, in this instance the base version does not matter.</p>
+      <p>If for some reason the automatic update is not working correctly for you or you simply want to upgrade JMM to a specific version, you can do that by using the links below. There's two things you need to pay close attention to when manually updating, the current version you have (also known as the base version) and the version you want to upgrade to. Additionally at the bottom of the list you'll see generic update all files that can be used to update your version of JMM to a specific version, in this instance the base version does not matter.</p>
       <ul>
         <li><a href="http://www.jmediamanager.org/jmmserver/" target="_blank">Manually Update JMM Server</a></li>
         <li><a href="http://www.jmediamanager.org/jmmdesktop/" target="_blank">Manually Update JMM Desktop</a></li>
       </ul>
-      <span class="anchor" id="beta-release"></span>
+      <span class="anchor" id="older-version-upgrading"></span>
+      <h3>Upgrading JMM Version 3.3 Or Older</h3>
+      If you're using JMM Version 3.3 or older you'll be unable to run JMM Desktop or JMM Server after upgrading to JMM Version 3.4 or newer due to changes made in the config files used by JMM Server and JMM Desktop. This can easily be fixed by running <a href="http://www.jmediamanager.org/latestdownloads/ConfigFixer.zip" target="_blank">Config Fixer</a> which will update your config files for use in JMM Version 3.4 and newer without losing your settings.
       <h3>Beta Release</h3>
       <p>The available beta is updated semi-regularly to include all the latest changes from the GitHub source.  This means there will be times, especially when a new version is released that the current available beta is either an older build of the current stable release or even an outdated build.</p>
       <p><strong>No Beta Release is available at this time.</strong></p>
@@ -166,9 +159,9 @@
 </footer>
 <script src="js/styleswitch.js"></script> 
 <script src="js/jquery.min.js"></script> 
-<script src="js/responsiveTabs.js"></script>
-<script src="js/rcrumbs.js"></script>
-<script src="js/stickUp.js"></script>
+<script src="js/responsiveTabs.js"></script> 
+<script src="js/rcrumbs.js"></script> 
+<script src="js/stickUp.js"></script> 
 <script src="js/layout.js"></script> 
 <script src="js/prettify.js"></script> 
 <script src="js/sidr.min.js"></script> 
