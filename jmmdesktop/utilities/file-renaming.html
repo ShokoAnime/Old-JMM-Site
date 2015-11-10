@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../../css/style2.css">
+<link rel="stylesheet" href="../../css/prettify.css">
+<link rel="stylesheet" href="../../css/colorbox.css">
+<link rel="stylesheet" href="../../css/sidr.dark.css">
+<link rel="stylesheet" href="../../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>File Renaming</strong> </li>
+      <li><a href="#renaming-overview">File Renaming Overview</a></li>
+      <li><a href="#scripting">Scripting</a></li>
+      <li><a href="#scripting-tests">Testing Your Renaming Script</a></li>
+      <li><a href="#scripting-tags">Using Tags For Renaming</a></li>
+      <li><a href="#scripting-examples">Scripting Examples</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <div class="sticky">
+        <div class="rcrumbs" id="breadcrumbs">
+          <ul>
+            <li><a href="../../index.html">JMM</a><span class="divider">>></span></li>
+            <li><a href="../../documentation.html">Documentation</a><span class="divider">>></span></li>
+            <li><a href="../index.html">JMM Desktop</a><span class="divider">>></span></li>
+            <li><a href="../utilities.html">Utilities Tab</a><span class="divider">>></span></li>
+            <li><a href="file-renaming.html">File Renaming</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="docs-content">
+      <h2 id="what-is-jmm">JMM Desktop - Utilities Tab - File Renaming</h2>
+      <span class="anchor" id="renaming-overview"></span>
+      <h3>File Renaming</h3>
+      <p>The file renaming tab is an optional but powerful renaming   utility that allows to to setup a profile to automatically rename your   files as they are imported into your collection. Additionally it also   supports the ability to rename files already in your collection if you   decide to change your filename format later on. The file renaming   functionality is based off <strong><a href="http://wiki.anidb.info/w/WebAOM" target="_blank">WebAOM</a></strong> and modified for JMM Desktop. The process works by taking the meta-data   provided by AniDB and combining it with your renaming scripts to rename   the files in your collection.</p>
+      <span class="anchor" id="scripting"></span>
+      <h3>Scripting</h3>
+      <p>You will need to create a script which contains a series of rules,   tests and replacement tags which determines how your files will be   renamed</p>
+      <p>Use the tests to create a string of tags and other text which will be used to rename the file.</p>
+      <span class="anchor" id="scripting-tests"></span>
+      <h3>Tests</h3>
+      <p>For most tests you can insert a'<strong>!</strong>' inside the brackets to indicate <strong>NOT</strong></p>
+      <p>For example </p>
+      <pre class="code">IF A(69) 
+DO FAIL 
+// If the anime id is 69 (Naruto) then don't rename the file  
+
+IF A(!69) 
+DO FAIL 
+// If the anime id is NOT 69 (Naruto) then don't rename the file</pre>
+      <p>Some tests  will also allow the following operators. These will be referred to as numerical operators below</p>
+      <pre class="code">&gt; 
+// Greater Than 
+ 
+&gt;= 
+// Greater Than or Equal To  
+
+&lt; 
+// Less Than  
+
+&lt;= 
+// Less Than or Equal To</pre>
+      <p>You can have multiple tests on one line by using the <strong>AND</strong> and <strong>OR</strong> operators<br>
+        However you cannot have both an <strong>AND</strong> and an <strong>OR</strong> on the same line</p>
+      <pre class="code">, 
+// OR  
+
+; 
+// AND  
+
+IF A(69),A(1),A(2) 
+DO FAIL 
+// If Anime ID is 69 or 1 or 2, do not rename the file  IF I(epn);I(!epr) 
+
+DO ADD '%epn' 
+//If the episode has an romaji title but not an English title add the romaji episode title</pre>
+      <br>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Test</td>
+            <td>Example</td>
+            <td>Explanation</td>
+          </tr>
+          <tr>
+            <td><strong>A</strong></td>
+            <td>A(69)</td>
+            <td>Test if the anime for the file has the specified Anime ID</td>
+          </tr>
+          <tr>
+            <td><strong>G</strong></td>
+            <td>G(1012)</td>
+            <td>Group id or 'unknown'</td>
+          </tr>
+          <tr>
+            <td><strong>E</strong></td>
+            <td>E(67987)</td>
+            <td>Episode number</td>
+          </tr>
+          <tr>
+            <td><strong>H</strong></td>
+            <td>H(S)</td>
+            <td>Episode Type [E=episode, S=special, T=trailer, C=credit, P=parody, O=other]</td>
+          </tr>
+          <tr>
+            <td><strong>X</strong></td>
+            <td>X(13)</td>
+            <td>X(&lt;100)	Total number of episodes, Numerical operators allowed, only for normal episodes not specials, credits etc</td>
+          </tr>
+          <tr>
+            <td><strong>R</strong></td>
+            <td>R(DVD)</td>
+            <td>Rip source [Blu-ray, unknown, camcorder, TV, DTV, VHS, VCD, SVCD, LD, DVD, HKDVD, WWW]</td>
+          </tr>
+          <tr>
+            <td><strong>T</strong></td>
+            <td>T(TV)</td>
+            <td>Type [unknown, TV, OVA, Movie, Other, web]</td>
+          </tr>
+          <tr>
+            <td><strong>Y</strong></td>
+            <td>Y(2008)</td>
+            <td>Year first aired, Numerical operators allowed</td>
+          </tr>
+          <tr>
+            <td><strong>D</strong></td>
+            <td>D(English)</td>
+            <td>Dub language (one of the audio tracks) [Japanese, English, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>S</strong></td>
+            <td>S(English)</td>
+            <td>Sub language (one of the subtitle tracks) [Japanese, English, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>I</strong></td>
+            <td>I(ann)</td>
+            <td>Tag is defined. Do not use %, i.e. I(eng) [eng, kan, rom, ann, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>C</strong></td>
+            <td>C(H264/AVC)</td>
+            <td>Video Codec (one of the video tracks) [H264/AVC, DivX5?/6, unknown, VP Other, WMV9 (also WMV3), XviD, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>J</strong></td>
+            <td>J(FLAC)</td>
+            <td>Audio Codec (one of the audio tracks) [AC3, FLAC, MP3 CBR, MP3 VBR, Other, unknown, Vorbis (Ogg Vorbis) ...]</td>
+          </tr>
+          <tr>
+            <td><strong>Z</strong></td>
+            <td>Z(10)</td>
+            <td>Video Bit Depth, Numerical operators allowed [8,10]</td>
+          </tr>
+          <tr>
+            <td><strong>W</strong></td>
+            <td>W(&gt;=1280)</td>
+            <td>Video Resolution Width, Numerical operators allowed, [720, 1280, 1920, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>U</strong></td>
+            <td>U(&gt;=1080)</td>
+            <td>Video Resolution Height, Numerical operators allowed, [576, 720, 1080, ...]</td>
+          </tr>
+          <tr>
+            <td><strong>M</strong></td>
+            <td>M() or M(!)</td>
+            <td>Test if the file is manually linked</td>
+          </tr>
+          <tr>
+            <td><strong>N</strong></td>
+            <td>N() or N(!)</td>
+            <td>Test if the file has any episodes attached (for check if unrecognized)</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="anchor" id="scripting-tags"></span>
+      <h3>Tags</h3>
+      <p>Tags are always inside single quotes, preceded by a <strong>%</strong> and three letters long. Tags will be replaced with the meta-data from AniDB</p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Tag</td>
+            <td>Replaced With</td>
+          </tr>
+          <tr>
+            <td><strong>%ann</strong></td>
+            <td>Anime Name - Romaji</td>
+          </tr>
+          <tr>
+            <td><strong>%kan</strong></td>
+            <td>Anime Name - Kanji</td>
+          </tr>
+          <tr>
+            <td><strong>%eng</strong></td>
+            <td>Anime Name - English</td>
+          </tr>
+          <tr>
+            <td><strong>%epn</strong></td>
+            <td>Episode Name - Romaji</td>
+          </tr>
+          <tr>
+            <td><strong>%epr</strong></td>
+            <td>Episode Name - English</td>
+          </tr>
+          <tr>
+            <td><strong>%enr</strong></td>
+            <td>Episode Number</td>
+          </tr>
+          <tr>
+            <td><strong>%grp</strong></td>
+            <td>Group Name - Short</td>
+          </tr>
+          <tr>
+            <td><strong>%grl</strong></td>
+            <td>Group Name - Long</td>
+          </tr>
+          <tr>
+            <td><strong>%ed2/%ED2</strong></td>
+            <td>ED2K - Lower/Upper</td>
+          </tr>
+          <tr>
+            <td><strong>%crc/%CRC</strong></td>
+            <td>CRC - Lower/Upper</td>
+          </tr>
+          <tr>
+            <td><strong>%ver</strong></td>
+            <td>File Version</td>
+          </tr>
+          <tr>
+            <td><strong>%qua</strong></td>
+            <td>Video Quality</td>
+          </tr>
+          <tr>
+            <td><strong>%src</strong></td>
+            <td>Video Source</td>
+          </tr>
+          <tr>
+            <td><strong>%res</strong></td>
+            <td>Video Resolution</td>
+          </tr>
+          <tr>
+            <td><strong>%yea</strong></td>
+            <td>Year</td>
+          </tr>
+          <tr>
+            <td><strong>%eps</strong></td>
+            <td>Episode Count</td>
+          </tr>
+          <tr>
+            <td><strong>%typ</strong></td>
+            <td>Anime Type // [unknown, TV Series, OVA, Movie, TV Special, Other, web]</td>
+          </tr>
+          <tr>
+            <td><strong>%fid</strong></td>
+            <td>File ID</td>
+          </tr>
+          <tr>
+            <td><strong>%aid</strong></td>
+            <td>Anime ID</td>
+          </tr>
+          <tr>
+            <td><strong>%eid</strong></td>
+            <td>Episode ID</td>
+          </tr>
+          <tr>
+            <td><strong>%gid</strong></td>
+            <td>Group ID</td>
+          </tr>
+          <tr>
+            <td><strong>%dub</strong></td>
+            <td>Dub Language</td>
+          </tr>
+          <tr>
+            <td><strong>%sub</strong></td>
+            <td>Sub Language</td>
+          </tr>
+          <tr>
+            <td><strong>%vid</strong></td>
+            <td>Video codec (tracks separated with ')</td>
+          </tr>
+          <tr>
+            <td><strong>%aud</strong></td>
+            <td>Audio codec (tracks separated with ')</td>
+          </tr>
+          <tr>
+            <td><strong>%bit</strong></td>
+            <td>Video Bit Depth (8bit, 10bit)</td>
+          </tr>
+          <tr>
+            <td><strong>%sna</strong></td>
+            <td>The original file name as specified by the sub group</td>
+          </tr>
+          <tr>
+            <td><strong>%cen</strong></td>
+            <td>Censored</td>
+          </tr>
+          <tr>
+            <td><strong>%dep</strong></td>
+            <td>Deprecated</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="anchor" id="scripting-examples"></span>
+      <h3>Scripting Basics</h3>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Syntax</td>
+            <td>Example</td>
+            <td>Explanation</td>
+          </tr>
+          <tr>
+            <td><strong>//</strong></td>
+            <td>//</td>
+            <td>This is a comment	This is used to indicate a comment, and everything after this will be ignored</td>
+          </tr>
+          <tr>
+            <td><strong>' '</strong></td>
+            <td>'Version_%ver'</td>
+            <td>Everything inside the single quotes will be added to the file name including spaces.</td>
+          </tr>
+          <tr>
+            <td><strong>%tag</strong></td>
+            <td>%ann</td>
+            <td>Tags are preceded by a % and will be replaced with the meta-data.</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="anchor" id="scripting-rules"></span>
+      <h3>Scripting Rules</h3>
+      <ul>
+        <li>Scripts are not validated so you must make sure they conform to the rules</li>
+        <li>You can only have one action DO ADD per line</li>
+      </ul>
+      <span class="anchor" id="sample-scripts"></span>
+      <h3>Sample Scripts</h3>
+      <span class="anchor" id="sample-scripts-general example"></span>
+      <h3>General Example</h3>
+      <pre class="code">IF A(69) 
+DO FAIL 
+//Do not rename file if it is Naruto  
+
+// Sub groups  
+DO ADD '[%grp] ' 
+//sub group name short  
+
+// Anime Name  
+IF I(eng) DO ADD '%eng - ' 
+// if the anime has an official/main title English add it to the string  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann - ' 
+//If the anime has a romaji title but not an English title add the romaji anime title  
+
+// Episode number  
+DO ADD '%enr - ' 
+//Add the Episode number, same for all files  
+
+// Episode name  
+IF I(epr) 
+DO ADD '%epr' 
+//If the episode has an English title add to string  
+
+IF I(epn);I(!epr) 
+DO ADD '%epn' 
+//If the episode has an romaji title but not an English title add the romaji episode title  
+
+// Audio and subtitle languages  
+IF I(sub) 
+DO ADD ' (SUB:%sub)'  
+
+IF I(dub) 
+DO ADD ' (LAN:%dub)' 
+ 
+// FILE Version  
+IF F(!1) 
+DO ADD ' [v%ver]' 
+//If the file is not version 1, add the file version</pre>
+      <span class="anchor" id="sample-scripts-sample-1"></span>
+      <h3>Sample 1</h3>
+      <p><strong>Output:</strong> [Coalgirls]_Highschool_of_the_Dead_-_01_(1920x1080_Blu-ray_H264)_[90CC6DC1].mkv</p>
+      <pre class="code">// Sub group name  
+DO ADD '[%grp] '  
+// Anime Name, use English name if it exists, otherwise use the Romaji name  
+
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+// Episode Number, don't use episode number for movies  
+
+IF T(!Movie) 
+DO ADD '- %enr'  
+// If the file version is v2 or higher add it here  
+
+IF F(!1) 
+DO ADD 'v%ver'  
+
+// Video Resolution  
+DO ADD ' (%res'  
+
+// Video Source (only if blu-ray or DVD)  
+IF R(DVD),R(Blu-ray) 
+DO ADD ' %src' 
+ 
+// Video Codec  
+DO ADD ' %vid'  
+
+// Video Bit Depth (only if 10bit)  
+IF Z(10) 
+DO ADD ' %bitbit'  
+DO ADD ') '  
+DO ADD '[%CRC]'  
+  
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replacement rules (codecs)  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE 'DivX5/6' 'DivX'  
+DO REPLACE 'WMV9' 'WMV9'    
+DO REPLACE 'MP3 CBR' 'MP3'  
+DO REPLACE 'MP3 VBR' 'MP3'  
+DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'  
+  
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('   
+DO REPLACE '&gt;' ')'   
+DO REPLACE ':' ';'   
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'   
+DO REPLACE '|' '_'   
+DO REPLACE '?' '_'   
+DO REPLACE '*' '_'</pre>
+      <span class="anchor" id="sample-scripts-sample-2"></span>
+      <h3>Sample 2 - Video format instead of resolution</h3>
+      <p><strong>Output:</strong> [Coalgirls]_Highschool_of_the_Dead_-_01_(1080p_Blu-ray_H264)_[90CC6DC1].mkv</p>
+      <pre class="code">// Sub group name  
+DO ADD '[%grp] '  
+
+// Anime Name, use English name if it exists, otherwise use the Romaji name  
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+
+// Episode Number, don't use episode number for movies  
+IF T(!Movie) DO ADD '- %enr'  
+
+// If the file version is v2 or higher add it here  
+IF F(!1) DO ADD 'v%ver'  
+
+// Video Format  
+IF W(&gt;=1920) 
+DO ADD ' (1080p'  IF W(&gt;=1280);W(&lt;1920) 
+DO ADD ' (720p'  IF W(&lt;1280) 
+DO ADD ' (SD'  
+
+// Video Source (only if blu-ray or DVD)  
+IF R(DVD),R(Blu-ray) 
+DO ADD ' %src'  
+
+// Video Codec  
+DO ADD ' %vid'  
+
+// Video Bit Depth (only if 10bit)  
+IF Z(10) 
+DO ADD ' %bitbit'  
+DO ADD ') ' 
+DO ADD '[%CRC]'    
+
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('  
+DO REPLACE '&gt;' ')'  
+DO REPLACE ':' '-'  
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'  
+DO REPLACE '|' '_'  
+DO REPLACE '?' '_'  
+DO REPLACE '*' '_'</pre>
+      <span class="anchor" id="sample-scripts-sample-3"></span>
+      <h3>Sample 3</h3>
+      <p><strong>Output:</strong> Highschool of the Dead - 01 [1920x1080] [Coalgirls].mkv</p>
+      <pre class="code">// Anime Name, use English name if it exists, otherwise use the Romaji name  
+IF I(eng) 
+DO ADD '%eng '  
+
+IF I(ann);I(!eng) 
+DO ADD '%ann '  
+
+// Episode Number, don't use episode number for movies  
+IF T(!Movie) 
+DO ADD '- %enr'  
+
+// If the file version is v2 or higher add it here  
+IF F(!1) 
+DO ADD 'v%ver'  
+
+// Video Resolution  
+DO ADD ' [%res]'  
+
+// Sub group name  
+DO ADD ' [%grp] '    
+
+// Replacement rules (cleanup)  
+DO REPLACE ' ' '_' 
+
+// replace spaces with underscores  
+DO REPLACE '0x0' ''  
+DO REPLACE '__' '_'  
+DO REPLACE '__' '_'    
+
+// Replacement rules (codecs)  
+DO REPLACE 'H264/AVC' 'H264'  
+DO REPLACE 'DivX5/6' 'DivX'  
+DO REPLACE 'WMV9' 'WMV9'    
+DO REPLACE 'MP3 CBR' 'MP3'  
+DO REPLACE 'MP3 VBR' 'MP3'  
+DO REPLACE 'Vorbis (Ogg Vorbis)' 'Vorbis'    
+
+// Replace all illegal file name characters  
+DO REPLACE '&lt;' '('   
+DO REPLACE '&gt;' ')'   
+DO REPLACE ':' ';'   
+DO REPLACE '"' '`'  
+DO REPLACE '/' '_'  
+DO REPLACE '\' '_'   
+DO REPLACE '|' '_'   
+DO REPLACE '?' '_'   
+DO REPLACE '*' '_'</pre>
+      <span class="anchor" id="sample-scripts-sample-4"></span>
+      <h3>Sample 4 - Original File Name</h3>
+      <p><strong>Output:</strong> [Coalgirls] Highschool of the Dead - 06 [1920x1080 Blu-Ray FLAC] [00AF0C10].mkv</p>
+      <pre class="code">// Use the file name as original specified by the release group  
+DO ADD '%sna'</pre>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../../js/styleswitch.js"></script> 
+<script src="../../js/jquery.min.js"></script> 
+<script src="../../js/responsiveTabs.js"></script> 
+<script src="../../js/rcrumbs.js"></script> 
+<script src="../../js/stickUp.js"></script> 
+<script src="../../js/layout.js"></script> 
+<script src="../../js/prettify.js"></script> 
+<script src="../../js/sidr.min.js"></script> 
+<script src="../../js/localscroll.js"></script> 
+<script src="../../js/scrollTo.js"></script> 
+<script src="../../js/colorbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../../css/style2.css">
+<link rel="stylesheet" href="../../css/prettify.css">
+<link rel="stylesheet" href="../../css/colorbox.css">
+<link rel="stylesheet" href="../../css/sidr.dark.css">
+<link rel="stylesheet" href="../../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Community Data</strong>
+      </li><li><a href="#managing-unrecognized-files">Managing Community Data</a>
+        <div class="mobile-only-links"> </div>
+      </li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <div class="sticky">
+        <div class="rcrumbs" id="breadcrumbs">
+          <ul>
+            <li><a href="../../index.html">JMM</a><span class="divider">>></span></li>
+            <li><a href="../../documentation.html">Documentation</a><span class="divider">>></span></li>
+            <li><a href="../index.html">JMM Desktop</a><span class="divider">>></span></li>
+            <li><a href="../utilities.html">Utilities Tab</a><span class="divider">>></span></li>
+            <li><a href="community-data.html">Community Data</a>
+          </li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="docs-content">
+      <h2 id="what-is-jmm">JMM Desktop - Utilities Tab - Community Data</h2>
+      <p>The Community Data section allows you to compare your   community links against JMM's user submitted and approved community   links.  JMM Desktop currently supports comparing your Trakt and TvDB   community links against the JMM community links.</p>
+      <p>A detailed explanation of community links can be found <strong><a href="../general/faq.html" target="_blank">here</a></strong>.</p>
+      <p><a href="../../images/jmmdesktop/utilities-community-data.png" class="colorbox" title="JMM Desktop - Utilities - Community Data"><img src="../../images/jmmdesktop/utilities-community-data.png" alt="JMM Desktop - Utilities - Community Data"></a></p>
+      <p><strong>Trakt Only<br>
+      </strong></p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Check my links are still valid on Trakt</strong></td>
+            <td>Will check your links to make sure they are still accurate on Trakt.</td>
+          </tr>
+          <tr>
+            <td><strong>Automatically remove bad information from the database</strong></td>
+            <td>Will remove any outdated information from your collection and Trakt. </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Global<br>
+      </strong></p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Check if my links are different from the community recommendations</strong></td>
+            <td>Will check your community links (TvDB) against JMM's community links and display any series that do not match.</td>
+          </tr>
+          <tr>
+            <td><strong>Stop after finding this many problems</strong></td>
+            <td>Will stop  searching for errors once JMM Desktop reaches the number you've entered. Default value is <strong>50</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="../../images/jmmdesktop/utilities-community-data-approval.png" class="colorbox" title="JMM Desktop - Utilities - Community Data - Approval"><img src="../../images/jmmdesktop/utilities-community-data-approval.png" alt="JMM Desktop - Utilities - Community Data - Approval"></a></p>
+      <p><strong>Filter Options<br>
+      </strong></p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>All</strong></td>
+            <td>Will show all found problems. </td>
+          </tr>
+          <tr>
+            <td><strong>Missing A Link</strong></td>
+            <td>Will only show series that do not have a valid Trakt link on your side. </td>
+          </tr>
+          <tr>
+            <td><strong>Link is Different to Approved Link</strong></td>
+            <td>Will only show series that don't match up with JMM's Community Recommendation link.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Reading The Results</strong><br>
+        In the example image, the series <strong>11 Eyes</strong> does   not have a Trakt link. Because there is no Trakt link, JMM Desktop can   not confirm if the Trakt link is valid which is why the<strong> Valid Trakt Link</strong> indicator is neither red or green. The <strong>Community Link</strong> being green does not mean the link is correct, it means your <strong>Community Link</strong> (TvDB) is different than the approved community recommended link. In this case a red indicator would mean the <strong>Community Link</strong> (TvDB) is correct as we are comparing Trakt TV link to the <strong>Community Link</strong> (TvDB). If you use the community recommended link and refresh the series it will show a red indicator under <strong>Links Match?</strong> which tells you the <strong>Community Link</strong> (TvDB) is correct but does not match the Trakt link. </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../../js/styleswitch.js"></script> 
+<script src="../../js/jquery.min.js"></script> 
+<script src="../../js/responsiveTabs.js"></script> 
+<script src="../../js/rcrumbs.js"></script> 
+<script src="../../js/stickUp.js"></script> 
+<script src="../../js/layout.js"></script> 
+<script src="../../js/prettify.js"></script> 
+<script src="../../js/sidr.min.js"></script> 
+<script src="../../js/localscroll.js"></script> 
+<script src="../../js/scrollTo.js"></script> 
+<script src="../../js/colorbox.js"></script>
+</body>
+</html>
