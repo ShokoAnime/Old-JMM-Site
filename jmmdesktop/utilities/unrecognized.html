@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
+<link rel="shortcut icon" href="../../images/site/favicon.ico" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" title="light" href="../../css/style.css">
+<link rel="alternate stylesheet" title="dark" href="../../css/style2.css">
+<link rel="stylesheet" href="../../css/prettify.css">
+<link rel="stylesheet" href="../../css/colorbox.css">
+<link rel="stylesheet" href="../../css/sidr.dark.css">
+<link rel="stylesheet" href="../../css/responsive-tabs.css">
+</head>
+<body style="margin-top:45px">
+<nav class="sticky">
+  <div class="container">
+    <h1><a href="../../index.html">JMM</a></h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="../../about.html">About JMM</a></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </ul>
+    </div>
+    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Japanese Media Manager</h2>
+    <h3 class="docs-header">Anime Catalog Software</h3>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Unrecognized</strong></li>
+      <li><a href="#unrecognized-overview">Unrecognized Overview</a></li>
+      <li><a href="#managing-unrecognized-files">Managing Unrecognized Files</a></li>
+      <li><a href="#linking-unrecognized-files">Linking Unrecognized Files</a></li>
+      <div class="mobile-only-links">
+        <li class="separator"></li>
+        <li><strong>Links</strong></li>
+        <li><a href="../../downloads.html">Downloads</a></li>
+        <li><a href="../../documentation.html">Documentation</a></li>
+        <li><a href="../../changelog.html">Changelog</a></li>
+        <li><a href="../../support.html">Support</a></li>
+        <li><a href="../../contribute.html">Contribute</a></li>
+        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="../../images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
+        <li class="separator"></li>
+        <li><strong>Mobile Links</strong></li>
+        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
+        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
+        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
+      </div>
+    </ul>
+    <div class="docs-content">
+      <div class="sticky">
+        <div class="rcrumbs" id="breadcrumbs">
+          <ul>
+            <li><a href="../../index.html">JMM</a><span class="divider">>></span></li>
+            <li><a href="../../documentation.html">Documentation</a><span class="divider">>></span></li>
+            <li><a href="../index.html">JMM Desktop</a><span class="divider">>></span></li>
+            <li><a href="../utilities.html">Utilities Tab</a><span class="divider">>></span></li>
+            <li><a href="unrecognized.html">Unrecognized</a><span class="divider"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="docs-content">
+      <h2 id="what-is-jmm">JMM Desktop - Utilities Tab - Unrecognized</h2>
+      <span class="anchor" id="unrecognized-overview"></span>
+      <p>When you're importing your collection, any file  that JMM Server is unable to find (by matching hashes) on AniDB will be listed under the unrecognized tab. It's important to note that any file listed as unrecognized does not always mean a record for that series, episode, move or special does not exsist on AniDB. It simply means that that the version or file you have in your collection is not known to AniDB.</p>
+      <p>There's two reasons why you might have unrecognized files, either the file has never been submitted or is corrupted. </p>
+      <p>It's important to note that a corrupted file does not mean a broken file, in other words just because a file is corrupt it does not mean the file has playback issues. What usually happens is the copy you downloaded has slight varations from the offical source which results in the CRC and hash being different which is why the file is unrecognized. If this is the case then you <strong>should not</strong> submit your file to AniDB as it will be rejected, instead it needs to be Manually Linked. If the file has never been submitted before then there will be nothing to check against which is why the file is unrecongnized. You can submit the file to AniDB using AVDump2 which will add the file which will benefit all users of JMM.      </p>
+      <p><a href="../../images/jmmdesktop/utilities-unrecognized.png" class="colorbox" title="JMM Desktop - Utilities - Unrecognized"><img src="../../images/jmmdesktop/utilities-unrecognized.png" alt="JMM Desktop - Utilities - Unrecognized"></a></p>
+      <span class="anchor" id="managing-unrecognized-files"></span>
+      <h3>Managing Your Unrecognized Files</h3>
+      <p>Your presented with an array of options to manage your unrecognized files. </p>
+      <table class="BlueTable">
+        <tbody>
+          <tr>
+            <td>Option</td>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><strong>Refresh</strong></td>
+            <td>This will refresh your unrecognized files adding any new files and/or removing previously unlinked files.</td>
+          </tr>
+          <tr>
+            <td><strong>Search</strong></td>
+            <td>If you have a huge list of unrecognized files, you can narrow the search by typing the name here.</td>
+          </tr>
+          <tr>
+            <td><strong>Re-Scan All</strong></td>
+            <td>Will queue up all unrecognized files to be re-scanned via JMM Server for comparison with AniDB.</td>
+          </tr>
+          <tr>
+            <td><strong>Re-Hash All</strong></td>
+            <td>Will queue up all unrecognized files to be re-hashed via JMM Server for comparison with AniDB.</td>
+          </tr>
+          <tr>
+            <td><strong>Logs</strong></td>
+            <td>Opens your log folder, useful if you have a lot of unrecognized files and want more information on why. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="anchor" id="linking-unrecognized-files"></span>
+      <h3>Linking Your Unrecognized Files </h3>
+      <p>You have a number of options when linking files to an episode</p>
+      <p>If you select one file, you can then select a single episode     from the episode drop down list. You can also optionally select an     episode range which is used when you have one file that covers multiple     episode. You can also select multiple file followed by selecting the     episode range. For example, select 20 files and then assign episode 1 -     20. You can also just select one episode for episodes that are split     across multiple files </p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="container">
+    <h4>Get involved with JMM! <a href="../../contribute.html">Click Here</a> to learn how you can help</h4>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 Japanese Media Manager</p>
+    <p> Template &copy; 2014 EGrappler </p>
+  </div>
+</footer>
+<script src="../../js/styleswitch.js"></script> 
+<script src="../../js/jquery.min.js"></script> 
+<script src="../../js/responsiveTabs.js"></script> 
+<script src="../../js/rcrumbs.js"></script> 
+<script src="../../js/stickUp.js"></script> 
+<script src="../../js/layout.js"></script> 
+<script src="../../js/prettify.js"></script> 
+<script src="../../js/sidr.min.js"></script> 
+<script src="../../js/localscroll.js"></script> 
+<script src="../../js/scrollTo.js"></script> 
+<script src="../../js/colorbox.js"></script>
+</body>
+</html>
