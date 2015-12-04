@@ -157,7 +157,7 @@ img {
 	height: auto;
 }
 img, iframe {
-	max-width: 60%;
+	max-width: 100%;
 }
 input {
 	display: block;
