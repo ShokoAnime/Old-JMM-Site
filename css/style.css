@@ -36,12 +36,13 @@ body {
 	background: #F5F6FA;
 }
 .container {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	position: relative;
 }
 .docs-content {
-	padding-left: 310px;
+	padding-left: 0;
+	text-align: center;
 }
 .docs-nav {
 	background-color: #FCFCFC;
