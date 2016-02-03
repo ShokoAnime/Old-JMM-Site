@@ -36,12 +36,13 @@ body {
 	background: #F5F6FA;
 }
 .container {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	position: relative;
 }
 .docs-content {
-	padding-left: 310px;
+	padding-left: 0;
+	text-align: center;
 }
 .docs-nav {
 	background-color: #FCFCFC;
@@ -132,7 +133,7 @@ h6 {
 header {
 	width: 100%;
 	overflow: hidden;
-	padding: 2em 0 2em 0;
+	padding: 1em 0 1em 0;
 	text-align: center;
 	background: #26abe2;
 	color: #fff;
@@ -157,7 +158,7 @@ img {
 	height: auto;
 }
 img, iframe {
-	max-width: 60%;
+	max-width: 100%;
 }
 input {
 	display: block;
@@ -192,9 +193,9 @@ nav #menu {
 nav a {
 	padding: 0.4em;
 	color: #FFF;
-	font-size: 1.2vw;
+	font-size: 1.05vw;
 	height: 60px;
-	line-height: 70px;
+	line-height: 75px;
 	display: block;
 }
 nav a:hover {

@@ -6,36 +6,13 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="refresh" content="0;url=http://jmediamanager.org/changelog" />
 <title>Japanese Media Manager (JMM) - Anime Catalog Software</title>
-<link rel="shortcut icon" href="images/site/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../../images/site/favicon.ico" type="image/x-icon">
 <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
-<link rel="stylesheet" title="light" href="css/style.css">
-<link rel="alternate stylesheet" title="dark" href="css/style2.css">
-<link rel="stylesheet" href="css/prettify.css">
-<link rel="stylesheet" href="css/colorbox.css">
-<link rel="stylesheet" href="css/sidr.dark.css">
-<link rel="stylesheet" href="css/responsive-tabs.css">
+<link rel="stylesheet" title="light" href="../../../css/style.css">
 </head>
 <body style="margin-top:45px">
-<nav class="sticky">
-  <div class="container">
-    <h1><a href="index.html">JMM</a></h1>
-    <div id="menu">
-      <ul class="toplinks">
-        <li><a href="about.html">About JMM</a></li>
-        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
-        <li><a href="downloads.html">Downloads</a></li>
-        <li><a href="documentation.html">Documentation</a></li>
-        <li><a href="changelog.html">Changelog</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
-        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
-        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
-      </ul>
-    </div>
-    <a id="existing-content-menu" href="#existing-content-menu">&#9776;</a> </div>
-</nav>
 <header>
   <div class="container">
     <h2 class="docs-header">Japanese Media Manager</h2>
@@ -44,298 +21,18 @@
 </header>
 <section>
   <div class="container">
-    <ul class="docs-nav" id="menu-left" style="" name="menu-left">
-      <li><strong>JMM Updates</strong></li>
-	  <li><a href="#3-4-6-1">3.4.6.2 (9th Nov 2015)</a></li>
-      <li><a href="#3-4-5-3">3.4.5.3 (2nd Nov 2015)</a></li>
-      <li><a href="#3-4-5">3.4.5 (12th Oct 2015)</a></li>
-      <li><a href="#3-4-4-3">3.4.4.3 (10th Sep 2015)</a></li>
-      <li><a href="#3-4-3-1">3.4.3.1 (4th May 2015)</a></li>
-      <li><a href="#3-4-2-19">3.4.2.19 (2nd Feb 2015)</a></li>
-      <li><a href="#3-4-2-16">3.4.2.16 (31st Jan 2015)</a></li>
-      <li><a href="#3-4-2-14">3.4.2.14 (29th Jan 2015)</a></li>
-      <li><a href="#3-4-2-13">3.4.2.13 (22nd Jan 2015)</a></li>
-      <li><a href="#3-4-2-11">Older Updates</a></li>
-      <li class="separator"></li>
-      <li><strong>Anime Buddy Updates</strong></li>
-      <li><a href="#1-0-0-3">1.0.0.3</a></li>
-      <li><a href="#1-0-0-2">1.0.0.2</a></li>
-      <div class="mobile-only-links">
-        <li class="separator"></li>
-        <li><strong>Links</strong></li>
-        <li><a href="downloads.html">Downloads</a></li>
-        <li><a href="documentation.html">Documentation</a></li>
-        <li><a href="changelog.html">Changelog</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="https://discord.gg/0XKJW7TObKIX4Ug2" target="_blank">Chat With Us!<img src="images/site/discord.png" class="discord" alt="Discord Icon"></a></li>
-        <li class="separator"></li>
-        <li><strong>Mobile Links</strong></li>
-        <li><a href="https://github.com/japanesemediamanager" target="_blank">Github Repo</a></li>
-        <li><a href="javascript:chooseStyle('dark', 60)" class="dark-theme">Dark Theme</a></li>
-        <li><a href="javascript:chooseStyle('light', 60)" class="light-theme">Light Theme</a></li>
-      </div>
-    </ul>
     <div class="docs-content">
-      <div class="sticky">
-        <div class="rcrumbs" id="breadcrumbs">
-          <ul>
-            <li><a href="../index.html">JMM</a><span class="divider">>></span></li>
-            <li><a href="changelog.html">Changelog</a><span class="divider"></span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="docs-content">
-      <h2 id="changelog">Changelog</h2>
-	  
-	  <span class="anchor" id="3-4-6-2"></span>
-      <h3>Version 3.4.6.2 (9th Nov 2015)</h3>
-      <ul>
-	  <li><span class="jmmdesktop">JMM Desktop</span> - Show a summary of the folders that files are stored in for a series</li>
-		<li><span class="jmmserver">JMM Server</span> - Remove folders from drop sources when they are empty (don't have any files in them)</li>
-		<li><span class="jmmserver">JMM Server</span> - Added button to update all stats (watched states, missing file counts)</li>
-		<li><span class="jmmserver">JMM Server</span> - Fixed updating of stats when new files are added</li>
-		<li><span class="jmmserver">JMM Server</span> - Updating of stats are now queued rather than running as an invisible background process</li>
-		<li><span class="jmmserver">JMM Server</span> - Fixed long standing issue of downloading group statuses for releases</li>
-		<li><span class="jmmserver">JMM Server</span> - Handle Trakt seasons which don't have any episodes</li>
-		<li><span class="jmmserver">JMM Server</span> - Fix for execessive refreshing of Trakt tokens</li>
-      </ul>
-	  
-      <span class="anchor" id="3-4-5-3"></span>
-      <h3>Version 3.4.5.3 (2nd Nov 2015)</h3>
-      <ul>
-	    <li><span class="jmmserver">JMM ALL</span> - Remove auto updates and instead just check for new version functionality</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/177">#177</a> - Display a friendly message when AniDB is missing episode information</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/256">#256</a> - Cater for Trakt shows not having a runtime value set</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/169">#169</a> - New option to always use the AniDB Poster</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/173">#173</a> - All scheduled server updates now support additional options of 1 week and 1 month</li>
-		<li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/74">#74</a> - Fix JMM Server 100% CPU issue by deprecating the LogMessage database table</li>
-		<li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/116">#116</a> - Renew Trakt token daily</li>
-		<li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/181">#181</a> - JMMServerPlex and Search command broken</li>
-		<li><span class="jmmserver">JMM Server</span> - Fix to handle sync'ing of Trakt collection for first time users</li>
-		<li><span class="jmmserver">JMM Server</span> - Handle a Trakt series not having any episodes</li>
-      </ul>
-      <span class="anchor" id="3-4-5"></span>
-      <h3>Version 3.4.5 (12th Oct 2015)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/180">#180</a> - Unwatched episodes counter sometimes doesn't update on addition of new episode</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/241">#241</a> - Scrolling issues with JMM Desktop 3.4.4.3</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/245">#245</a> - Incorrect text for Trakt Update button in collection tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/56">#56</a> - Hide tags when unwatched or just hide them altogether through collapsing</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/244">#244</a> - Tooltip Image on Series- Details page shows random Cover instead of currently displayed Image</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/240">#240</a> - Comments from Users always empty</li>
-      </ul>
-      <span class="anchor" id="3-4-4-3"></span>
-      <h3>Version 3.4.4.3 (10th Sep 2015)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Combine Trakt comments and AniDB comments on regular series control</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Format Trakt comments and AniDB comments (on dashboard and series control) to be uniform size</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Add ability to view details of a Trakt/AniDB comment, and also open on the website</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Remove user images for Trakt users (no longer provided in API)</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Remove Trakt activity from dashboards</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Drop support for approving/denying Trakt friend requests</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Add refresh button to series control on Metro dashboard</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Series control on Metro dashboard nows shows the previously played episode as well as more information about the next episode</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/181">#181</a> - Allow syncing of Trakt collection and history status per series</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Characters/Seiyuu are now shown on the metro series view</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/191">#191</a> - Dock the top Toolbar on the Metro Series Page</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Add vlc ini file reading for recent plays</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/171">#171</a> - Poster Display will now properly use the default or a random one from the selection of enabled posters</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/169">#169</a> - Rating type blocks rating number from view</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/139">#139</a> - Delete multiple highlighted file in the unrecognized tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/196">#196</a> - Auto scale TvDB page to fit screen/windows size</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/231">#231</a> - Random Series tag list does not show tag filter</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/211">#211</a> - While using the rename feature the CRC turns to all-zeroes</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/116">#116</a> - Update Trakt API to version 2.0</li>
-        <li><span class="jmmserver">JMM Server</span> - Maintain watched date and collected date on Trakt to match JMM dates</li>
-        <li><span class="jmmserver">JMM Server</span> - Fix scheduled task which checks for JMM Server updates</li>
-      </ul>
-      <a href="/changes/3.4.4.html">See more details and screenshots</a> <span class="anchor" id="3-4-3-1"></span>
-      <h3>Version 3.4.3.1 (4th May 2015)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/129">#129</a> - Limit the length of anime titles to 30 characters on the Pinned tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Prevent other tabs from shifting to the right when mouse hovers over a tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/135">#135</a> - Problem viewing all variations of a file</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Changes to controls so that all data is visible and smooth scrolling is enabled (Multiple Files, Episode List)</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Changes to controls so using mouse to scroll through a list works (Multiple Files, Episode List, Related Anime, Similar Anime, Search Tab, Episodes/Recommendations/Shouts on Metro Dashboard, All controls on Regular Dashboard, Anime Detail)</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Changes to File Summary control to remove weird spacing</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/126">#126</a> - New button to re-hash on files on Unrecognized Files tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/130">#130</a> - New button to re-scan selected files on Unrecognized Files tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/70">#70</a> - Properly handle German language for rating control and prevent JMM Desktop crashing</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/68">#68</a> - Prevent errors on download recommendations when selecting "Get Missing Data"</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/137">#137</a> - Clipboard error when using AVDump</li>
-        <li><span class="plex">Plex</span> - Re-factored Plex code</li>
-        <li><span class="plex">Plex</span> - Fixed almost all glitches on Plex clients.</li>
-        <li><span class="plex">Plex</span> - Added experimental UPnP to the FileServer. Experimental UPnP requires changes in the plex plugin, but, may fix if the router supports Hairpin NAT</li>
-        <li><span class="plex">Plex</span> - Fixed subtitle/audio streams languages name in Plex</li>
-        <li><span class="plex">0lex</span> - Issue <a href="https://github.com/japanesemediamanager/plexplugin/issues/8">#8</a> Fixed 0lex Plugin does not display info text about the episode correctly</li>
-        <li><span class="plex">0lex</span> - Issue <a href="https://github.com/japanesemediamanager/plexplugin/issues/2">#2</a> May fix 0lex for XBMC has thumbnails broken</li>
-        <li><span class="jmmserver">JMM Server</span> - Fixed Unicode characters in hasher.dll invoke</li>
-        <li><span class="jmmserver">JMM Server</span> - Huge speed improvements to file hasher</li>
-        <li><span class="jmmserver">JMM Server</span> - Bug fixes to file hasher</li>
-        <li><span class="jmmserver">JMM Server</span> - Speed improvements to importing/scanning files</li>
-        <li><span class="jmmserver">JMM Server</span> - Speed improvements to multiple file operations e.g. deleting files</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/133">#133</a> - Migrate from Categories to Tags - Mandatory AniDB Update</li>
-        <li><span class="ma3">MyAnime3</span> - UI config option local thumbnail loading and image loading enhancements</li>
-      </ul>
-      <span class="anchor" id="3-4-2-19"></span>
-      <h3>Version 3.4.2.19 (2nd Feb 2015)</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Updated AniDB UDP API protocol version</li>
-      </ul>
-      <span class="anchor" id="3-4-2-16"></span>
-      <h3>Version 3.4.2.16 (31st Jan 2015)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/106">#106</a> - Fix bug for MySQL which prevented multiple MAL links being selected for one anime</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Fix rendering error when selecting the community recommendation for TvDB links</li>
-      </ul>
-      <span class="anchor" id="3-4-2-14"></span>
-      <h3>Version 3.4.2.14 (29th Jan 2015)</h3>
-      <ul>
-        <li><span class="ma3">MyAnime3</span> - Local thumbnail support for episodes</li>
-        <li><span class="jmmserver">JMM Server</span> - Automatically check for updates every 6 hours</li>
-        <li><span class="jmmserver">JMM Server</span> - Make sure TvDB links are removed from web cache when the user deletes them locally</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/116">#116</a> - Show file version number in multiple files utility tab</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/75">#75</a> - Add an option to the mini calendar widget to only show upcoming anime</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/75">#75</a> - Sort the mini calendar widget by newest first instead of oldest first</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/75">#75</a> - Add a button to the mini calendar widget to refresh the data from AniDB</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/117">#117</a> - Auto download amount for MovieDB posters was using the wrong setting</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/117">#117</a> - Auto download amounts for TvDB and MovieDB images were not respecting the limits set by the user</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/108">#108</a> - Add option in JMM Desktop to disable usage stats</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/71">#71</a> - Add ability on the 'New Series' screen to use AniDB ID directly when searching for a series</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/104">#104</a> - Allow MAL links to be re-assigned without needing to delete first</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/104">#104</a> - Rendering issues when TvDB or Trakt links are added or removed</li>
-      </ul>
-      <span class="anchor" id="3-4-2-13"></span>
-      <h3>Version 3.4.2.13 (22nd Jan 2015)</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/108">#108</a> - Allow users to submit anonymous usage information from JMM Server</li>
-      </ul>
-      <span class="anchor" id="3-4-2-11"></span>
-      <h3>Version 3.4.2.11 (21st Jan 2015)</h3>
-      <ul>
-        <li><span class="ma3">MyAnime3</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/19">#19</a> - Changing find (search) setting in config to zero prevents ma3 from working</li>
-        <li><span class="ma3">MyAnime3</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/18">#18</a> - No art from themoviedb</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/110">#110</a> - Cannot hash files or folders with Unicode characters (Linux/MySQL)</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/17">#17</a> - MySQL Case Sensitivity on systems that aren't windows</li>
-        <li><span class="jmmserver">JMM Server</span> - Handle missing Trakt show information when the Cross Ref Info exists</li>
-        <li><span class="jmmserver">JMM Server</span> - Remove calls to web cache to get Anime XML</li>
-        <li><span class="jmmserver">JMM Server</span> - Fix sorting of file file summaries</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/108">#108</a> - JMM Desktop is unresponsive</li>
-      </ul>
-      <span class="anchor" id="3-4-2-10"></span>
-      <h3>Version 3.4.2.10 (14th Jan 2015)</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/110">#110</a> - Cannot hash files or folders with Unicode characters</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/117">#117</a> - Typo in the about page of JMM Server</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/72">#72</a> - Add !niDB DeleteAction "Mark external storage"</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/77">#77</a> - JMM Desktop constantly using half a CPU core</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/110">#110</a> - Tool tips on the TvDB settings are slightly wrong</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/20">#20</a> - Group filter does not show all groups</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/101">#101</a> - Error message: "Object reference not set to an instance of an object"</li>
-      </ul>
-      <span class="anchor" id="3-4-2-9"></span>
-      <h3>Version 3.4.2.9 (30th Dec 2014)</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Fix error in Trakt processing of results from web cache</li>
-        <li><span class="jmmserver">JMM Server</span> - Don't add Trakt commands to the queue unless the user has enabled the appropriate settings</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/115">#115</a> - SQLite support was broken in 3.4.2.4</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/109">#109</a> - Disable calculation of CRC32 when using the hasher.dll</li>
-      </ul>
-      <span class="anchor" id="3-4-2-8"></span>
-      <h3>Version 3.4.2.8 (19th November 2014)</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Added support for 32bit/64bit versions of Hasher and MediaInfo DLL's</li>
-        <li><span class="jmmserver">JMM Server</span> - Extra logging for hasher versions and MediaInfo versions</li>
-        <li><span class="jmmserver">JMM Server</span> - Extra information for logging of files being hashed</li>
-        <li><span class="jmmserver">JMM Server</span> - Update Operating System detection</li>
-      </ul>
-      <span class="anchor" id="3-4-2-4"></span>
-      <h3>Version 3.4.2.4 (11th November 2014)</h3>
-      <ul>
-        <li><span class="plex">0lex</span> - Issue <a href="https://github.com/japanesemediamanager/plexplugin/issues/6">#6</a> - 0lex plugin is not displaying Cover art or Thumbnails</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/24">#24</a> - Show tag descriptions in tooltips for custom tags</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/93">#93</a> - Show more detailed file size information by group and including bitrate</li>
-      </ul>
-      <span class="anchor" id="3-4-2-2"></span>
-      <h3>Version 3.4.2.2 (10th November 2014)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/24">#24</a> - Add the ability to create your own custom tags, and use them in group filters</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmclient/issues/99">#99</a> - Continue Watching should only show one series from a group</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/93">#93</a> - Show total size of all files in the File Summary widget for an anime series</li>
-      </ul>
-      <span class="anchor" id="3-4-2-1"></span>
-      <h3>Version 3.4.2.1 (5th November 2014)</h3>
-      <ul>
-        <li><span class="ma3">MyAnime3</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/17">#17</a> - Update MA3 to support MediaPortal 1.9</li>
-        <li><span class="ma3">MyAnime3</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/13">#13</a> - StreamedMP has updated skin design dimensions to 1920x1080</li>
-        <li><span class="ma3">MyAnime3</span> - Issue <a href="https://github.com/japanesemediamanager/animeplugin3/issues/12">#12</a> - Keyboard hook is producing messaging events on a disposed form</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/91">#91</a> - Group Filter Name is invisible when creating a new Group Filter</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href="https://github.com/japanesemediamanager/jmmserver/issues/30">#30</a> - Add ability to show messages from developer in JMM desktop and Server</li>
-      </ul>
-      <span class="anchor" id="3-4-2-0"></span>
-      <h3>Version 3.4.2.0 (29th Oct 2014)</h3>
-      <ul>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Fixed sorting of episode numbers in TvDB/Trakt selections</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Fixed MovieDB linking (updated to the latest API version)</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Implement button to update info from from MovieDB</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/12">#12</a> - Allow Trakt linking to work in the same way as TvDB</li>
-        <li><span class="jmmdesktop">JMM Desktop</span> - WebCache - de-couple Trakt settings from TvDB settings</li>
-        <li><span class="jmmserver">JMM Server</span> - WebCache - Drop support for storing file hashes</li>
-        <li><span class="jmmserver">JMM Server</span> - WebCache - Drop support for storing AniDB file info (rarely used)</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/71">#71</a> - Fix issues with accessing the MAL api.</li>
-      </ul>
-      <span class="anchor" id="3-4-1-0"></span>
-      <h3>Version 3.4.1.0</h3>
-      <ul>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/81">#81</a> - Reduce PING frequency to AniDB</li>
-        <li><span class="jmmserver">JMM Server</span> - Issue <a href=" https://github.com/japanesemediamanager/jmmserver/issues/82">#82</a> - Updated command gets stuck in a loop when the Web Cache has errors</li>
-      </ul>
-      <span class="anchor" id="3-3-32-5"></span>
-      <h3>Version 3.3.32.5</h3>
-      <ul>
-        <li><span class="plex">Plex</span> - Fixed bug in Date Serialization (Broke Android version)</li>
-        <li><span class="jmmserver">JMM Server</span> - Updated SQLite libraries to .NET 4.5</li>
-        <li><span class="jmmserver">JMM Server</span> - Adding caching to group retrievals. (Group retrievals are blazing fast now)</li>
-        <li><span class="plex">Plex</span> - Fixed About Requester bug</li>
-      </ul>
-      <span class="anchor" id="3-3-32-4"></span>
-      <h3>Version 3.3.32.4</h3>
-      <ul>
-        <li><span class="plex">Plex</span> - SmartTV Support. (There is some limitation on embedded subtitles)</li>
-        <li><span class="plex">Plex</span> - Updated back framework from 3.5 to 4.5. httplistener seems to be bandwidth limited on external ips, on 3.5.</li>
-        <li><span class="plex">Plex</span> - Updated mediainfo.dll to the lastest version 0.7.67.0</li>
-      </ul>
-      <span class="anchor" id="3-3-32-3"></span>
-      <h3>Version 3.3.32.3</h3>
-      <ul>
-        <li><span class="plex">Plex</span> - Issue #473</li>
-        <li><span class="plex">Plex</span> - Added support for Plex Media Server</li>
-        <li><span class="plex">Plex</span> - Upgraded mediainfo.dll to latest version.</li>
-        <li><span class="plex">Plex</span> - Added support to Plex Home Theater. (Direct Play, support for HEAD and OPTIONS verb in http, ip redirection)</li>
-        <li><span class="plex">Plex</span> - Added Support for Http Range to File Streaming.</li>
-      </ul>
-      <h2 id="anime-buddy">Anime Buddy </h2>
-      <span class="anchor" id="1-0-0-3"></span>
-      <h3>Version 1.0.0.3</h3>
-      <ul>
-        <li>You can now mark an episode as watched (JMM Server Required)</li>
-        <li>An indicator for the unwatched episode count is shown in the main screen (JMM Server Required)</li>
-        <li>You can now download and play an episode (JMM Server Required)</li>
-        <li>Show sequels and prequels in the "You May Also Like" section (JMM Server Required)</li>
-      </ul>
-      <span class="anchor" id="1-0-0-2"></span>
-      <h3>Version 1.0.0.2</h3>
-      <ul>
-        <li>Initial release </li>
-      </ul>
+      <h2 id="404">We've Moved The Site!      </h2>
+      <p>The JMM website has  moved to its new home at <a href="http://jmediamanager.org" target="_blank">http://jmediamanager.org</a>, no need to do anything as you're being redirected automatically. </p>
+      <p>Thank You,<br>
+        JMM Staff
+      </p>
     </div>
   </div>
 </section>
 <section class="vibrant centered">
   <div class="container">
-    <h4>Get involved with JMM! <a href="contribute.html">Click Here</a> to learn how you can help</h4>
+    <h4>Get involved with JMM! <a href="http://jmediamanager.org" target="_blank">Click Here</a> to learn how you can help</h4>
   </div>
 </section>
 <footer>
@@ -344,16 +41,5 @@
     <p> Template &copy; 2014 EGrappler </p>
   </div>
 </footer>
-<script src="js/styleswitch.js"></script> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/responsiveTabs.js"></script> 
-<script src="js/rcrumbs.js"></script> 
-<script src="js/stickUp.js"></script> 
-<script src="js/layout.js"></script> 
-<script src="js/prettify.js"></script> 
-<script src="js/sidr.min.js"></script> 
-<script src="js/localscroll.js"></script> 
-<script src="js/scrollTo.js"></script> 
-<script src="js/colorbox.js"></script>
 </body>
 </html>
